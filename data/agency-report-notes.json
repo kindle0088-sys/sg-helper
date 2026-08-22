@@ -1,244 +1,439 @@
 {
-  "generatedAt": "2026-08-22",
-  "note": "研报人工整理素材。来源已标注：官网/第三方报道/聚合站。未公开数据一律标注'未公开，需咨询'。",
-  "agencies": {
-    "goodhire": {
-      "fees": {
-        "summary": "官网公开定价，模式透明：按服务类型分档收费。特色：不向女佣收取任何费用、不从女佣工资扣款（social enterprise 模式）",
-        "items": [
-          { "service": "Direct Transfer Helper（新加坡转介女佣）", "price": "from S$428", "source": "goodhire.sg 官网《Our Services》" },
-          { "service": "Direct Hire 菲律宾（境外新聘）", "price": "from S$1,600", "source": "goodhire.sg 官网《Our Services》" },
-          { "service": "Direct Hire 印尼/缅甸（境外新聘）", "price": "from S$1,100", "source": "goodhire.sg 官网《Our Services》" },
-          { "service": "Transfer Helper Fee", "price": "from S$1,488", "source": "goodhire.sg 官网（bestmaid.com.sg 中介主页转引）" },
-          { "service": "Ex-Singapore 印尼女佣", "price": "from S$2,200", "source": "goodhire.sg 官网（bestmaid.com.sg 转引）" },
-          { "service": "New/Ex-Singapore/Ex-Abroad 菲律宾女佣", "price": "from S$2,800", "source": "goodhire.sg 官网（bestmaid.com.sg 转引）" }
-        ],
-        "notes": "官网提示 MOM 费用另计：WP 申请费 S$35 + 签发费 S$35；MOM 强制保险 from S$490.50；机票 S$120-150；新加坡交通 S$85-100；体检 S$85；SIP S$75；住宿 from S$25/晚。官网引用 MOM 规定：placement 后 6 个月内服务费可退 50%。"
-      },
-      "cases": [
-        { "case": "社会企业模式：不向女佣收 placement fee、不扣工资、不放贷。官网解释其与普通中介的差异——不以女佣贷款绑定佣工，避免 Debt Bondage（债务奴役）。", "source": "goodhire.sg 官网 + bestmaid.com.sg 中介主页" }
-      ],
-      "strengths": [
-        "收费完全公开且分档清晰（S$428-S$2,800），行业内少见",
-        "不向女佣收费的社会企业定位（raiSE 注册社会企业、Honest Jobs 投资）",
-        "MOM 数据：Retention 72.77%（13 家最高）、Transfer 0.39%（第二低）"
-      ],
-      "weaknesses": [
-        "MOM 评论数仅 61 条，样本量偏小",
-        "Google 评论数与 Universal（2,480）等相比偏少",
-        "成立 10 年，规模与老牌大店有差距"
-      ]
-    },
-    "gentlehelp": {
-      "fees": {
-        "summary": "官网未公开收费标准，需联系顾问（care advisor）获取报价。",
-        "items": [
-          { "service": "中介费 / package", "price": "未公开，需咨询（+65 6904 3966）", "source": "gentlehelp.com.sg" }
-        ],
-        "notes": "菲律宾 DMW（海外劳工部）认证 + 印尼使馆认证。主打专业服务，无公开价格表。"
-      },
-      "cases": [
-        { "case": "运营 8 年服务超 1,000 个家庭，获菲律宾 DMW 与印尼使馆双重认证。", "source": "gentlehelp.com.sg / helpertransfer.com 中介主页" }
-      ],
-      "strengths": [
-        "MOM 数据：Transfer 0%（13 家并列最低）、MOM 评分 4.1/80 评",
-        "菲律宾/印尼使馆认证，正规性强",
-        "Google 4.9/95 高口碑"
-      ],
-      "weaknesses": [
-        "收费不透明（官网无价格表）",
-        "规模较小（placement 183、9 年经营）",
-        "仅 Changi 一个门店"
-      ]
-    },
-    "green-employment": {
-      "fees": {
-        "summary": "官网宣称 'Clear fee structure and refund policy'（清晰收费结构与退款政策），但具体金额未公开，需咨询。",
-        "items": [
-          { "service": "中介费 / package", "price": "未公开，需咨询（Toa Payoh / Serangoon）", "source": "greenemployment.sg" }
-        ],
-        "notes": "官网有 free consultation 服务。退款政策明确写入官网承诺但金额不公开。"
-      },
-      "cases": [
-        { "case": "自有候选品牌 'GREEN-ies'（GREEN nannies），来源国印尼/菲律宾/缅甸，强调筛选与培训体系。", "source": "greenemployment.sg" }
-      ],
-      "strengths": [
-        "MOM 数据：Transfer 0.27%（第二低）、Retention 65.01%、MOM 评分 4.1/161 评",
-        "Google 4.9/206 + 4.9/218（两店）双高分",
-        "首次雇主引导、free consultation"
-      ],
-      "weaknesses": [
-        "收费具体金额未公开",
-        "经营仅 4 年，品牌历史短",
-        "placement 389，规模中档"
-      ]
-    },
-    "universal-employment": {
-      "fees": {
-        "summary": "官网未公开中介费。第三方聚合站 maidssingapore.com 引用其 helper 月薪区间 S$500-800。",
-        "items": [
-          { "service": "中介费", "price": "未公开，需咨询（+65 6735 3456）", "source": "universal.sg" },
-          { "service": "Helper 月薪区间（第三方引用）", "price": "S$500-800/月", "source": "maidssingapore.com（二手，待核实）" }
-        ],
-        "notes": "另一官网入口 universalmaidagency.com 运营中。"
-      },
-      "cases": [
-        { "case": "1986 年成立，经营 40 年，行业最老牌之一；印尼自营培训中心历史可追溯至 1980s。", "source": "universal.sg" }
-      ],
-      "strengths": [
-        "经营 40 年（13 家最长），品牌最老牌",
-        "Google 4.8/2,480 评论（前十中评论量最大）",
-        "MOM placement 840、Retention 67.76%"
-      ],
-      "weaknesses": [
-        "MOM 评分仅 3.6/317 评（前十中最低）",
-        "Transfer 0.91% 略高于行业均值",
-        "收费不透明"
-      ]
-    },
-    "status-maids": {
-      "fees": {
-        "summary": "官网宣称 'fair and transparent pricing'（公平透明定价）保护客户免受隐藏费用，但具体金额未公开。",
-        "items": [
-          { "service": "中介费 / package", "price": "未公开，需咨询（6224 7323）", "source": "statusmaids.com" },
-          { "service": "Security Bond S$5,000", "price": "可用保险产品替代（官网明示）", "source": "statusmaids.com FAQ" }
-        ],
-        "notes": "支付方式：Cash / Cheque / PayNow / Bank Transfer。官网提供置换/换人服务（含 MOM 步骤代办）。"
-      },
-      "cases": [
-        { "case": "客户 Rebekah Khoo：与 Status 合作超过 8 年，称满足其所有标准并超出预期。", "source": "statusmaids.com 官网 testimonial" },
-        { "case": "客户 Jeanette Tay：称雇佣印尼女佣过程 seamless & stress-free，机构专业、诚实、可靠，服务与支持到位。", "source": "statusmaids.com 官网 testimonial" }
-      ],
-      "strengths": [
-        "MOM 评分 4.3/76 评（前十最高）",
-        "Google 4.9/313 高口碑",
-        "Retention 69.06%（前三）",
-        "缅甸/印尼专精，transfer 女佣快（7-10 工作日）"
-      ],
-      "weaknesses": [
-        "Transfer 1.29% 略高于均值",
-        "收费具体金额未公开",
-        "placement 176 规模偏小"
-      ]
-    },
-    "jforce": {
-      "fees": {
-        "summary": "官网 FAQ 未公开中介费，但公开了配套法定成本参考：保险 S$250-500/年、女佣月薪 S$500-800、Security Bond S$5,000。",
-        "items": [
-          { "service": "中介费", "price": "未公开，需咨询（Boon Keng / AMK / Jurong East 三店）", "source": "jforce.com.sg" },
-          { "service": "Maid 保险（市场参考）", "price": "S$250-500/年", "source": "jforce.com.sg FAQ" },
-          { "service": "女佣月薪（市场参考）", "price": "S$500-800/月", "source": "jforce.com.sg FAQ" }
-        ],
-        "notes": "首页公布各来源国工资参考：菲律宾 S$580-800、印尼 S$550-750、缅甸 S$500-750、柬埔寨 S$450-600。"
-      },
-      "cases": [
-        { "case": "2015 Top 25 Prestige Award、2016 Singapore Enterprise Award（官网自述）。", "source": "jforce.com.sg" }
-      ],
-      "strengths": [
-        "MOM 数据均衡：Retention 66.3%、Transfer 0.85%、placement 945（大）",
-        "Google 4.7/138 + 4.7/88（两店）",
-        "direct hire 专精、公开价格定位（无硬推销）"
-      ],
-      "weaknesses": [
-        "MOM 评分 4.0/383（一般）",
-        "中介费未公开",
-        "置换条款无费用/次数细节（官网仅称提供 replacement options）"
-      ]
-    },
-    "ministry-of-helpers": {
-      "fees": {
-        "summary": "平台模式，官网公开三档价格：DIY S$59/月起、Concierge S$499、Agency Service S$1,499。女佣免费加入。",
-        "items": [
-          { "service": "Do-It-Yourself 自助档", "price": "from S$59/月（Premium plan）", "source": "ministryofhelpers.com" },
-          { "service": "Concierge 礼宾档", "price": "S$499", "source": "ministryofhelpers.com" },
-          { "service": "Agency Service 全托管档", "price": "S$1,499", "source": "ministryofhelpers.com" }
-        ],
-        "notes": "官网自称 'We're not a maid agency'——定位为平台（雇主/女佣/中介三方连接）。15,000+ 已验证档案。无隐藏费用、女佣免费。"
-      },
-      "cases": [
-        { "case": "客户 Angeline Tan：用 Concierge 档将前女佣免贷款带回新加坡，称赞回复迅速。", "source": "ministryofhelpers.com 官网 testimonial" },
-        { "case": "客户 Nicholas Farr：称平台寻找合适女佣 easy to use，不与中介绑定。", "source": "ministryofhelpers.com 官网 testimonial" }
-      ],
-      "strengths": [
-        "收费完全公开（三档模式）+ 女佣零费用（打破传统扣佣模式）",
-        "MOM Transfer 0%、Retention 59.09%",
-        "AI 匹配推荐、贷款-free 直聘/礼宾女佣"
-      ],
-      "weaknesses": [
-        "MOM placement 仅 27、经营 2 年——平台模式成立不久，规模极小",
-        "MOM 评论仅 9 条（样本几乎无效）",
-        "Google 4.9/109，但体验高度依赖所选服务档"
-      ]
-    },
-    "eden-grace": {
-      "fees": {
-        "summary": "官网未公开定价。第三方 maidinfo.sg 官方指标 'Clear Fee Structure' 评分 4.3/5（较高）。",
-        "items": [
-          { "service": "中介费 / package", "price": "未公开，需咨询（6262 5562）", "source": "edengracemaids.com" }
-        ],
-        "notes": "基督教背景机构，特色：Employer Integration Programme、Sunday Programmes、年度颁奖活动。部署后 3 个月内跟进回访。"
-      },
-      "cases": [
-        { "case": "客户 Louis Looi（parentsworld 报道）：首次请女佣，全流程 pleasant & worry-free，无隐藏费用。", "source": "parentsworld.com.sg 2023-08" },
-        { "case": "客户 Yong Qi：称 Eden Grace 在每一步更新进度并提供居家过渡建议，为雇主和女佣建立的社群罕见。", "source": "parentsworld.com.sg 2023-08" }
-      ],
-      "strengths": [
-        "MOM Transfer 0%（并列最低）",
-        "Google 4.7/294 + 4.9/65（两店）",
-        "独特的基督教社群支持体系（Sunday 活动、雇主整合计划）",
-        "2013 起服务 5,000+ 家庭，7 次获得 Parents World 最佳中介奖"
-      ],
-      "weaknesses": [
-        "MOM Retention 53.15%（maidinfo 数据，偏低）",
-        "收费不透明",
-        "官网部分页面有占位文本（'Lorem Ipsum'），官网质量一般"
-      ]
-    },
-    "helper-express": {
-      "fees": {
-        "summary": "官网直接对比竞品：'exorbitant agency fees of up to $888 or $688'，自述以更低价格提供同等质量女佣，主打价格优势。具体自身报价未公开。",
-        "items": [
-          { "service": "中介费", "price": "自述低于行业 $888/$688 水平，具体需咨询（6980 8886）", "source": "helperexpress.com.sg" }
-        ],
-        "notes": "自营缅甸培训中心，砍掉中间商降低成本。7 天营业。"
-      },
-      "cases": [
-        { "case": "第三方评价聚合站 wherecrowded.sg 汇总客户反馈：客服 Keith 与 Brell 高效、专业、耐心，全程无缝。", "source": "wherecrowded.sg（二手汇总）" }
-      ],
-      "strengths": [
-        "价格定位清晰（比 $888/$688 更低），主打性价比",
-        "自营缅甸培训中心，质量控制",
-        "Google 4.8/221、MOM Transfer 0%"
-      ],
-      "weaknesses": [
-        "MOM Retention 62.73%（低于均值）",
-        "经营仅 3 年",
-        "具体收费金额未公开"
-      ]
-    },
-    "nation-employment": {
-      "fees": {
-        "summary": "套餐制：官网明示提供多种 service package（含不同置换权利），费用按套餐定制。预付款在女佣被送回并成功转给新雇主后按服务协议条款退还（conditional refund）。",
-        "items": [
-          { "service": "中介服务套餐", "price": "按套餐定制（含置换权利差异），需咨询", "source": "nation.sg FAQ" },
-          { "service": "印尼女佣月薪", "price": "S$570（视经验能力）", "source": "nation.sg 官网" },
-          { "service": "菲律宾女佣月薪", "price": "from S$620", "source": "nation.sg 官网" }
-        ],
-        "notes": "支付方式：现金 / Nets / 支票 / 信用卡 / PayNow / PayLah。APS 快速安置 7-10 天。广告宣称'无隐藏费用'。"
-      },
-      "cases": [
-        { "case": "1993 年成立，服务 90,000+ 家庭，获 SPBA 2025（新加坡金字品牌奖）。SGX 上市公司 Advancer Global 旗下。", "source": "nation.sg" }
-      ],
-      "strengths": [
-        "规模最大（MOM placement 2,554、评论 1,034）、流程成熟 ISO 9001",
-        "Retention 70.98%（前三）、Google 4.9/334",
-        "套餐灵活可定制置换权利；90,000+ 家庭品牌背书"
-      ],
-      "weaknesses": [
-        "MOM 评分 4.0/1034（大样本下一般）",
-        "Transfer 1.83%（前十中最高）",
-        "大店对个案关注度可能不如小店"
-      ]
+ "generatedAt": "2026-08-22",
+ "note": "研报人工整理素材。来源已标注：官网/第三方报道/聚合站。未公开数据一律标注'未公开，需咨询'。",
+ "agencies": {
+  "goodhire": {
+   "fees": {
+    "summary": "官网公开定价，模式透明：按服务类型分档收费。特色：不向女佣收取任何费用、不从女佣工资扣款（social enterprise 模式）",
+    "items": [
+     {
+      "service": "Direct Transfer Helper（新加坡转介女佣）",
+      "price": "from S$428",
+      "source": "goodhire.sg 官网《Our Services》"
+     },
+     {
+      "service": "Direct Hire 菲律宾（境外新聘）",
+      "price": "from S$1,600",
+      "source": "goodhire.sg 官网《Our Services》"
+     },
+     {
+      "service": "Direct Hire 印尼/缅甸（境外新聘）",
+      "price": "from S$1,100",
+      "source": "goodhire.sg 官网《Our Services》"
+     },
+     {
+      "service": "Transfer Helper Fee",
+      "price": "from S$1,488",
+      "source": "goodhire.sg 官网（bestmaid.com.sg 中介主页转引）"
+     },
+     {
+      "service": "Ex-Singapore 印尼女佣",
+      "price": "from S$2,200",
+      "source": "goodhire.sg 官网（bestmaid.com.sg 转引）"
+     },
+     {
+      "service": "New/Ex-Singapore/Ex-Abroad 菲律宾女佣",
+      "price": "from S$2,800",
+      "source": "goodhire.sg 官网（bestmaid.com.sg 转引）"
+     }
+    ],
+    "notes": "官网提示 MOM 费用另计：WP 申请费 S$35 + 签发费 S$35；MOM 强制保险 from S$490.50；机票 S$120-150；新加坡交通 S$85-100；体检 S$85；SIP S$75；住宿 from S$25/晚。官网引用 MOM 规定：placement 后 6 个月内服务费可退 50%。"
+   },
+   "cases": [
+    {
+     "case": "社会企业模式：不向女佣收 placement fee、不扣工资、不放贷。官网解释其与普通中介的差异——不以女佣贷款绑定佣工，避免 Debt Bondage（债务奴役）。",
+     "source": "goodhire.sg 官网 + bestmaid.com.sg 中介主页"
     }
+   ],
+   "strengths": [
+    "收费完全公开且分档清晰（S$428-S$2,800），行业内少见",
+    "不向女佣收费的社会企业定位（raiSE 注册社会企业、Honest Jobs 投资）",
+    "MOM 数据：Retention 72.77%（13 家最高）、Transfer 0.39%（第二低）"
+   ],
+   "weaknesses": [
+    "MOM 评论数仅 61 条，样本量偏小",
+    "Google 评论数与 Universal（2,480）等相比偏少",
+    "成立 10 年，规模与老牌大店有差距"
+   ]
+  },
+  "gentlehelp": {
+   "fees": {
+    "summary": "官网未公开收费标准，需联系顾问（care advisor）获取报价。",
+    "items": [
+     {
+      "service": "中介费 / package",
+      "price": "未公开，需咨询（+65 6904 3966）",
+      "source": "gentlehelp.com.sg"
+     }
+    ],
+    "notes": "菲律宾 DMW（海外劳工部）认证 + 印尼使馆认证。主打专业服务，无公开价格表。"
+   },
+   "cases": [
+    {
+     "case": "运营 8 年服务超 1,000 个家庭，获菲律宾 DMW 与印尼使馆双重认证。",
+     "source": "gentlehelp.com.sg / helpertransfer.com 中介主页"
+    }
+   ],
+   "strengths": [
+    "MOM 数据：Transfer 0%（13 家并列最低）、MOM 评分 4.1/80 评",
+    "菲律宾/印尼使馆认证，正规性强",
+    "Google 4.9/95 高口碑"
+   ],
+   "weaknesses": [
+    "收费不透明（官网无价格表）",
+    "规模较小（placement 183、9 年经营）",
+    "仅 Changi 一个门店"
+   ]
+  },
+  "green-employment": {
+   "fees": {
+    "summary": "官网宣称 'Clear fee structure and refund policy'（清晰收费结构与退款政策），但具体金额未公开，需咨询。",
+    "items": [
+     {
+      "service": "中介费 / package",
+      "price": "未公开，需咨询（Toa Payoh / Serangoon）",
+      "source": "greenemployment.sg"
+     }
+    ],
+    "notes": "官网有 free consultation 服务。退款政策明确写入官网承诺但金额不公开。"
+   },
+   "cases": [
+    {
+     "case": "自有候选品牌 'GREEN-ies'（GREEN nannies），来源国印尼/菲律宾/缅甸，强调筛选与培训体系。",
+     "source": "greenemployment.sg"
+    }
+   ],
+   "strengths": [
+    "MOM 数据：Transfer 0.27%（第二低）、Retention 65.01%、MOM 评分 4.1/161 评",
+    "Google 4.9/206 + 4.9/218（两店）双高分",
+    "首次雇主引导、free consultation"
+   ],
+   "weaknesses": [
+    "收费具体金额未公开",
+    "经营仅 4 年，品牌历史短",
+    "placement 389，规模中档"
+   ]
+  },
+  "universal-employment": {
+   "fees": {
+    "summary": "官网未公开中介费。第三方聚合站 maidssingapore.com 引用其 helper 月薪区间 S$500-800。",
+    "items": [
+     {
+      "service": "中介费",
+      "price": "未公开，需咨询（+65 6735 3456）",
+      "source": "universal.sg"
+     },
+     {
+      "service": "Helper 月薪区间（第三方引用）",
+      "price": "S$500-800/月",
+      "source": "maidssingapore.com（二手，待核实）"
+     }
+    ],
+    "notes": "另一官网入口 universalmaidagency.com 运营中。"
+   },
+   "cases": [
+    {
+     "case": "1986 年成立，经营 40 年，行业最老牌之一；印尼自营培训中心历史可追溯至 1980s。",
+     "source": "universal.sg"
+    }
+   ],
+   "strengths": [
+    "经营 40 年（13 家最长），品牌最老牌",
+    "Google 4.8/2,480 评论（前十中评论量最大）",
+    "MOM placement 840、Retention 67.76%"
+   ],
+   "weaknesses": [
+    "MOM 评分仅 3.6/317 评（前十中最低）",
+    "Transfer 0.91% 略高于行业均值",
+    "收费不透明"
+   ]
+  },
+  "status-maids": {
+   "fees": {
+    "summary": "官网宣称 'fair and transparent pricing'（公平透明定价）保护客户免受隐藏费用，但具体金额未公开。",
+    "items": [
+     {
+      "service": "中介费 / package",
+      "price": "未公开，需咨询（6224 7323）",
+      "source": "statusmaids.com"
+     },
+     {
+      "service": "Security Bond S$5,000",
+      "price": "可用保险产品替代（官网明示）",
+      "source": "statusmaids.com FAQ"
+     }
+    ],
+    "notes": "支付方式：Cash / Cheque / PayNow / Bank Transfer。官网提供置换/换人服务（含 MOM 步骤代办）。"
+   },
+   "cases": [
+    {
+     "case": "客户 Rebekah Khoo：与 Status 合作超过 8 年，称满足其所有标准并超出预期。",
+     "source": "statusmaids.com 官网 testimonial"
+    },
+    {
+     "case": "客户 Jeanette Tay：称雇佣印尼女佣过程 seamless & stress-free，机构专业、诚实、可靠，服务与支持到位。",
+     "source": "statusmaids.com 官网 testimonial"
+    }
+   ],
+   "strengths": [
+    "MOM 评分 4.3/76 评（前十最高）",
+    "Google 4.9/313 高口碑",
+    "Retention 69.06%（前三）",
+    "缅甸/印尼专精，transfer 女佣快（7-10 工作日）"
+   ],
+   "weaknesses": [
+    "Transfer 1.29% 略高于均值",
+    "收费具体金额未公开",
+    "placement 176 规模偏小"
+   ]
+  },
+  "jforce": {
+   "fees": {
+    "summary": "官网 FAQ 未公开中介费，但公开了配套法定成本参考：保险 S$250-500/年、女佣月薪 S$500-800、Security Bond S$5,000。",
+    "items": [
+     {
+      "service": "中介费",
+      "price": "未公开，需咨询（Boon Keng / AMK / Jurong East 三店）",
+      "source": "jforce.com.sg"
+     },
+     {
+      "service": "Maid 保险（市场参考）",
+      "price": "S$250-500/年",
+      "source": "jforce.com.sg FAQ"
+     },
+     {
+      "service": "女佣月薪（市场参考）",
+      "price": "S$500-800/月",
+      "source": "jforce.com.sg FAQ"
+     }
+    ],
+    "notes": "首页公布各来源国工资参考：菲律宾 S$580-800、印尼 S$550-750、缅甸 S$500-750、柬埔寨 S$450-600。"
+   },
+   "cases": [
+    {
+     "case": "2015 Top 25 Prestige Award、2016 Singapore Enterprise Award（官网自述）。",
+     "source": "jforce.com.sg"
+    }
+   ],
+   "strengths": [
+    "MOM 数据均衡：Retention 66.3%、Transfer 0.85%、placement 945（大）",
+    "Google 4.7/138 + 4.7/88（两店）",
+    "direct hire 专精、公开价格定位（无硬推销）"
+   ],
+   "weaknesses": [
+    "MOM 评分 4.0/383（一般）",
+    "中介费未公开",
+    "置换条款无费用/次数细节（官网仅称提供 replacement options）"
+   ]
+  },
+  "ministry-of-helpers": {
+   "fees": {
+    "summary": "平台模式，官网公开三档价格：DIY S$59/月起、Concierge S$499、Agency Service S$1,499。女佣免费加入。",
+    "items": [
+     {
+      "service": "Do-It-Yourself 自助档",
+      "price": "from S$59/月（Premium plan）",
+      "source": "ministryofhelpers.com"
+     },
+     {
+      "service": "Concierge 礼宾档",
+      "price": "S$499",
+      "source": "ministryofhelpers.com"
+     },
+     {
+      "service": "Agency Service 全托管档",
+      "price": "S$1,499",
+      "source": "ministryofhelpers.com"
+     }
+    ],
+    "notes": "官网自称 'We're not a maid agency'——定位为平台（雇主/女佣/中介三方连接）。15,000+ 已验证档案。无隐藏费用、女佣免费。"
+   },
+   "cases": [
+    {
+     "case": "客户 Angeline Tan：用 Concierge 档将前女佣免贷款带回新加坡，称赞回复迅速。",
+     "source": "ministryofhelpers.com 官网 testimonial"
+    },
+    {
+     "case": "客户 Nicholas Farr：称平台寻找合适女佣 easy to use，不与中介绑定。",
+     "source": "ministryofhelpers.com 官网 testimonial"
+    }
+   ],
+   "strengths": [
+    "收费完全公开（三档模式）+ 女佣零费用（打破传统扣佣模式）",
+    "MOM Transfer 0%、Retention 59.09%",
+    "AI 匹配推荐、贷款-free 直聘/礼宾女佣"
+   ],
+   "weaknesses": [
+    "MOM placement 仅 27、经营 2 年——平台模式成立不久，规模极小",
+    "MOM 评论仅 9 条（样本几乎无效）",
+    "Google 4.9/109，但体验高度依赖所选服务档"
+   ]
+  },
+  "eden-grace": {
+   "fees": {
+    "summary": "官网未公开定价。第三方 maidinfo.sg 官方指标 'Clear Fee Structure' 评分 4.3/5（较高）。",
+    "items": [
+     {
+      "service": "中介费 / package",
+      "price": "未公开，需咨询（6262 5562）",
+      "source": "edengracemaids.com"
+     }
+    ],
+    "notes": "基督教背景机构，特色：Employer Integration Programme、Sunday Programmes、年度颁奖活动。部署后 3 个月内跟进回访。"
+   },
+   "cases": [
+    {
+     "case": "客户 Louis Looi（parentsworld 报道）：首次请女佣，全流程 pleasant & worry-free，无隐藏费用。",
+     "source": "parentsworld.com.sg 2023-08"
+    },
+    {
+     "case": "客户 Yong Qi：称 Eden Grace 在每一步更新进度并提供居家过渡建议，为雇主和女佣建立的社群罕见。",
+     "source": "parentsworld.com.sg 2023-08"
+    }
+   ],
+   "strengths": [
+    "MOM Transfer 0%（并列最低）",
+    "Google 4.7/294 + 4.9/65（两店）",
+    "独特的基督教社群支持体系（Sunday 活动、雇主整合计划）",
+    "2013 起服务 5,000+ 家庭，7 次获得 Parents World 最佳中介奖"
+   ],
+   "weaknesses": [
+    "MOM Retention 53.15%（maidinfo 数据，偏低）",
+    "收费不透明",
+    "官网部分页面有占位文本（'Lorem Ipsum'），官网质量一般"
+   ]
+  },
+  "helper-express": {
+   "fees": {
+    "summary": "官网直接对比竞品：'exorbitant agency fees of up to $888 or $688'，自述以更低价格提供同等质量女佣，主打价格优势。具体自身报价未公开。",
+    "items": [
+     {
+      "service": "中介费",
+      "price": "自述低于行业 $888/$688 水平，具体需咨询（6980 8886）",
+      "source": "helperexpress.com.sg"
+     }
+    ],
+    "notes": "自营缅甸培训中心，砍掉中间商降低成本。7 天营业。"
+   },
+   "cases": [
+    {
+     "case": "第三方评价聚合站 wherecrowded.sg 汇总客户反馈：客服 Keith 与 Brell 高效、专业、耐心，全程无缝。",
+     "source": "wherecrowded.sg（二手汇总）"
+    }
+   ],
+   "strengths": [
+    "价格定位清晰（比 $888/$688 更低），主打性价比",
+    "自营缅甸培训中心，质量控制",
+    "Google 4.8/221、MOM Transfer 0%"
+   ],
+   "weaknesses": [
+    "MOM Retention 62.73%（低于均值）",
+    "经营仅 3 年",
+    "具体收费金额未公开"
+   ]
+  },
+  "nation-employment": {
+   "fees": {
+    "summary": "套餐制：官网明示提供多种 service package（含不同置换权利），费用按套餐定制。预付款在女佣被送回并成功转给新雇主后按服务协议条款退还（conditional refund）。",
+    "items": [
+     {
+      "service": "中介服务套餐",
+      "price": "按套餐定制（含置换权利差异），需咨询",
+      "source": "nation.sg FAQ"
+     },
+     {
+      "service": "印尼女佣月薪",
+      "price": "S$570（视经验能力）",
+      "source": "nation.sg 官网"
+     },
+     {
+      "service": "菲律宾女佣月薪",
+      "price": "from S$620",
+      "source": "nation.sg 官网"
+     }
+    ],
+    "notes": "支付方式：现金 / Nets / 支票 / 信用卡 / PayNow / PayLah。APS 快速安置 7-10 天。广告宣称'无隐藏费用'。"
+   },
+   "cases": [
+    {
+     "case": "1993 年成立，服务 90,000+ 家庭，获 SPBA 2025（新加坡金字品牌奖）。SGX 上市公司 Advancer Global 旗下。",
+     "source": "nation.sg"
+    }
+   ],
+   "strengths": [
+    "规模最大（MOM placement 2,554、评论 1,034）、流程成熟 ISO 9001",
+    "Retention 70.98%（前三）、Google 4.9/334",
+    "套餐灵活可定制置换权利；90,000+ 家庭品牌背书"
+   ],
+   "weaknesses": [
+    "MOM 评分 4.0/1034（大样本下一般）",
+    "Transfer 1.83%（前十中最高）",
+    "大店对个案关注度可能不如小店"
+   ]
+  },
+  "labour-express": {
+   "fees": {
+    "summary": "官网未公开中介费具体金额，服务页仅列服务范围。费用需直接咨询中介。",
+    "items": [
+     {
+      "service": "Cancellation of Work Permit（现有客户）",
+      "price": "免费",
+      "source": "labourexpress.com.sg《Services》"
+     },
+     {
+      "service": "Airport Shuttle Service（接/送机）",
+      "price": "特价（金额未公开）",
+      "source": "labourexpress.com.sg《Services》"
+     },
+     {
+      "service": "Medical Check-up 安排（额外项目）",
+      "price": "更便宜（金额未公开）",
+      "source": "labourexpress.com.sg《Services》"
+     },
+     {
+      "service": "Direct Hire Application 文档服务",
+      "price": "未公开",
+      "source": "labourexpress.com.sg《Services》"
+     },
+     {
+      "service": "中介费 / Package（首年/续约）",
+      "price": "需咨询",
+      "source": "官网未公开"
+     }
+    ],
+    "notes": "官网引用 MOM 合规运营（牌照 13C6536）。自称 'Most economic, genuine & affordable service charges'（官网首页自述），但无公开价目。"
+   },
+   "cases": [
+    {
+     "case": "新到新加坡的家庭急需找菲佣，此前在其他中介经历糟糕，转至 Labour Express 后由顾问 Calvin 接待（客户评价转述）。",
+     "source": "Google 评论（Jie Yu）2026-08-22"
+    },
+    {
+     "case": "客户 15 年前在 Labour Express 雇佣第一位女佣，此后长期持续合作，认可员工热情尽职。",
+     "source": "Google 评论（Yinan Zhang）2026-08-22"
+    },
+    {
+     "case": "续约客户：'通过这间公司找到了合适的女佣，这次是续合同'，表扬 Audrey 工作热情且高效。",
+     "source": "Google 评论（SHIMENG WAN）2026-08-22"
+    },
+    {
+     "case": "首次请女佣的家庭，认可顾问 Jia Qi 耐心解答、帮助完成全部文件。",
+     "source": "Google 评论（Aimei Chen / Hong Zhao）2026-08-22"
+    }
+   ],
+   "strengths": [
+    "MOM 官方 Retention 65.33%，高于行业均值 62.43%",
+    "MOM 官方评分 4.0（573 条评论），评论样本量大",
+    "MOM 官方 Placement 1,470 家，派工规模在 Top 20 中位居前列",
+    "13 年经营（MOM 数据），服务齐全：direct hire / transfer / WP 取消（现有客户免费）/ 机场接送 / 体检安排 / holiday drop off",
+    "Google 4.5（276 评），抓取评论全部为 5 星，多名顾问（Audrey / Calvin / Jia Qi / Kevin Ng / Ms Sun）被点名表扬"
+   ],
+   "weaknesses": [
+    "MOM 官方 Transfer 3.08%，明显高于行业均值 1.05%（女佣中途转走风险偏高）",
+    "官网不公开中介费金额，收费透明度较低，需线下咨询",
+    "Google 4.5 略低于多数 Top 10 中介（4.7-4.9）",
+    "官网自述 2003 年成立，与 MOM 记录 13 年经验（约 2013 起）存在出入，成立时间信息不一致"
+   ]
   }
+ }
 }

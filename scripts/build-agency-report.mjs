@@ -33,7 +33,9 @@ function componentRow(label, score) {
 }
 
 // 前端 JS 用数据（原始值，渲染时转义）
-const top10 = new Set(scores.scores.slice(0, 10).map(s => s.id));
+// 研报徽章：检测 agencies/reports/<id>.html 文件是否存在（Top 10 + EXTRA_IDS 生成）
+const reportsDir = path.join(ROOT, 'agencies', 'reports');
+const hasReportFile = (id) => fs.existsSync(path.join(reportsDir, id + '.html'));
 const data = scores.scores.map(s => {
   const a = byId[s.id] || {};
   const m = s.momData || {};
@@ -54,7 +56,7 @@ const data = scores.scores.map(s => {
     placement: m.placement ?? null,
     exp: m.experienceYears ?? null,
     url: a.url || '',
-    hasReport: top10.has(s.id),
+    hasReport: hasReportFile(s.id),
   };
 });
 
@@ -151,7 +153,7 @@ const html = `<!DOCTYPE html>
 <body>
 <div class="wrap">
   <h1>🏢 新加坡女佣中介对比</h1>
-  <p class="toplink"><a href="../index.html">🏠 返回看板</a> ｜ <a href="./reports/index.html" style="font-weight:600;">📚 Top 10 中介独立研报 →</a></p>
+  <p class="toplink"><a href="../index.html">🏠 返回看板</a> ｜ <a href="./reports/index.html" style="font-weight:600;">📚 中介独立研报 →</a></p>
   <p class="sub">数据日期：${scores.generatedAt} ｜ 数据来源：MOM EA Directory（官方）+ Google Maps + 小红书观察<br>行业基准（MOM 官方，2026-08-16~17）：Retention 均值 ${scores.benchmarks.retentionAvg}% ｜ Transfer 均值 ${scores.benchmarks.transferAvg}% ｜ Placement 均值 ${scores.benchmarks.placementAvg}</p>
 
   <div class="legend">

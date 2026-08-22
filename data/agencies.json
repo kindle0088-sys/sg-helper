@@ -856,6 +856,66 @@
         "note": null
       },
       "urlSource": "官网核实 2026-08-22（研报阶段）"
+    },
+    {
+      "id": "labour-express",
+      "name": "Labour Express",
+      "url": "http://www.labourexpress.com.sg/",
+      "address": "170 Upper Bukit Timah Rd, #01-31/32, Bukit Timah Shopping Centre, Singapore 588179",
+      "license": [
+        "13C6536"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "首次女佣 + transfer + direct hire"
+      ],
+      "feeRange": null,
+      "rating": {
+        "google": 4.5,
+        "googleCount": 276,
+        "xhs": null
+      },
+      "notes": "官网自述成立于 2003 年，覆盖新加坡与马来西亚；官网服务页：现有客户 WP 取消免费、机场接送特价、体检安排更便宜、Direct Hire 文档服务、Holiday drop off。收费金额官网未公开。",
+      "pros": [],
+      "cons": [],
+      "replacementPolicy": null,
+      "lastVerified": "2026-08-22",
+      "source": [
+        "MOM EA Directory",
+        "Google Maps"
+      ],
+      "verifyNeeded": [
+        "中介费/package 价格",
+        "置换条款",
+        "小红书评价"
+      ],
+      "momData": {
+        "officialName": "LABOUR EXPRESS EMPLOYMENT AGENCY PTE. LTD.",
+        "license": "13C6536",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 65.33,
+        "transfer": 3.08,
+        "placement": 1470,
+        "experienceYears": 13,
+        "momRating": 4,
+        "momReviews": 573,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 80,
+          "googleScore": 90,
+          "retentionScore": 93.32857142857142,
+          "transferScore": 23,
+          "scaleScore": 61.79510905320062
+        },
+        "total": 74.8,
+        "note": null
+      }
     }
   ]
 }

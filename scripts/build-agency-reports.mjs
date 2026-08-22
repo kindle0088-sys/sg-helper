@@ -23,10 +23,19 @@ const byId = Object.fromEntries(agencies.map(a => [a.id, a]));
 const reviewsById = Object.fromEntries(reviewsRaw.agencies.map(a => [a.id, a.reviews || []]));
 
 const TOP_N = 10;
-const top = scores.scores.slice(0, TOP_N);
+// 额外强制生成研报的中介（即使不在 Top N），逗号分隔，如 EXTRA_IDS=labour-express
+const EXTRA_IDS = (process.env.EXTRA_IDS || 'labour-express').split(',').map(s => s.trim()).filter(Boolean);
+const topBase = scores.scores.slice(0, TOP_N);
+const topIds = new Set(topBase.map(s => s.id));
+const top = [
+  ...topBase,
+  ...scores.scores.filter(s => EXTRA_IDS.includes(s.id) && !topIds.has(s.id)),
+];
 
 const pct = (v) => (v != null ? v.toFixed(1) + '%' : '—');
-const rankMedal = (i) => i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}`;
+// 真实综合排名（全量表内位置），用于 extra 中介正确显示名次
+const rankOf = (id) => scores.scores.findIndex(s => s.id === id) + 1;
+const rankMedal = (r) => r === 1 ? '🥇' : r === 2 ? '🥈' : r === 3 ? '🥉' : `#${r}`;
 
 function starStr(r) {
   if (r == null) return '';
@@ -209,10 +218,10 @@ const reportPages = top.map((s, idx) => {
 <div class="wrap">
   <div class="bread"><a href="../../index.html">🏠 看板</a> ｜ <a href="../index.html">中介对比</a> ｜ <a href="./index.html">研报索引</a></div>
   <div class="hero">
-    <h1>${rankMedal(idx)} ${esc(a.name)}</h1>
+    <h1>${rankMedal(rankOf(s.id))} ${esc(a.name)}</h1>
     <p class="sub">${esc((s.momData || {}).officialName || '')} · MOM 牌照 ${esc((s.momData || {}).license || '—')}</p>
     <div class="big">${s.total != null ? s.total.toFixed(1) : '—'}</div>
-    <p class="desc" style="margin-top:2px;">综合评分（第 ${idx + 1} 名 / ${top.length}）</p>
+    <p class="desc" style="margin-top:2px;">综合评分（第 ${rankOf(s.id)} 名 / 全量 ${scores.scores.length} 家）</p>
     <div class="meta">
       <span><b>MOM 评分</b> ${(s.momData || {}).momRating ?? '—'} / ${(s.momData || {}).momReviews ?? '—'} 评</span>
       <span><b>Google</b> ${s.google ?? '—'} / ${a.rating?.googleCount ?? '—'} 评</span>
@@ -242,7 +251,7 @@ const rows = top.map((s, idx) => {
   const rv = reviewsById[s.id] || [];
   return `
   <tr>
-    <td>${rankMedal(idx)}</td>
+    <td>${rankMedal(rankOf(s.id))}</td>
     <td><a href="${s.id}.html"><b>${esc(a.name)}</b></a><div class="src">${esc((s.momData || {}).officialName || '')}</div></td>
     <td class="num">${s.total != null ? s.total.toFixed(1) : '—'}</td>
     <td class="num">${(s.momData || {}).momRating ?? '—'}</td>
@@ -284,7 +293,7 @@ const indexHtml = `<!DOCTYPE html>
 <body>
 <div class="wrap">
   <p class="toplink"><a href="../../index.html">🏠 返回看板</a> ｜ <a href="../index.html">中介对比</a></p>
-  <h1>📚 中介研报（Top ${top.length}）</h1>
+  <h1>📚 中介研报（${top.length} 份）</h1>
   <p class="sub">按综合评分排序生成 2026-08-22。每份研报含：收费模式、优势劣势、实际案例、客户真实评论（Google）、MOM 官方指标。<br>数据来源：MOM EA Directory、Google Maps、各中介官网、公开报道。详情见各研报底部免责声明。</p>
   <div class="table-scroll">
   <table>

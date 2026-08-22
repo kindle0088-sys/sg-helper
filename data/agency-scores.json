@@ -333,6 +333,35 @@
       "note": null
     },
     {
+      "id": "labour-express",
+      "name": "Labour Express",
+      "total": 74.8,
+      "components": {
+        "momScore": 80,
+        "googleScore": 90,
+        "retentionScore": 93.32857142857142,
+        "transferScore": 23,
+        "scaleScore": 61.79510905320062
+      },
+      "momData": {
+        "officialName": "LABOUR EXPRESS EMPLOYMENT AGENCY PTE. LTD.",
+        "license": "13C6536",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 65.33,
+        "transfer": 3.08,
+        "placement": 1470,
+        "experienceYears": 13,
+        "momRating": 4,
+        "momReviews": 573,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.5,
+      "note": null
+    },
+    {
       "id": "best-home",
       "name": "Best Home Employment Agency",
       "total": 72.6,
