@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成本模型 · sg-helper</title>
+<meta name="description" content="法定成本汇总表 + 市场成本模板（工资/中介费/保险保费待询价）">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+<style>
+:root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:#f9fafb; line-height:1.8; }
+.wrap { max-width:820px; margin:0 auto; padding:36px 20px 60px; }
+.bread { font-size:12px; color:var(--muted); margin-bottom:18px; }
+.bread a { color:var(--accent); text-decoration:none; }
+h1 { font-size:26px; margin:0 0 8px; }
+.doc-sub { color:var(--muted); font-size:13px; margin-bottom:26px; padding-bottom:16px; border-bottom:2px solid var(--line); }
+article { background:#fff; border:1px solid var(--line); border-radius:12px; padding:28px 32px; }
+article h1 { font-size:22px; margin-bottom:16px; }
+article h2 { font-size:19px; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+article h3 { font-size:16px; margin:20px 0 8px; }
+article p { margin:10px 0; font-size:14px; }
+article ul, article ol { margin:10px 0 10px 24px; font-size:14px; }
+article li { margin:4px 0; }
+article blockquote { border-left:4px solid var(--accent); background:#eff6ff; padding:10px 16px; margin:12px 0; border-radius:0 8px 8px 0; color:#1e3a8a; font-size:13px; }
+article blockquote p { margin:4px 0; }
+article table { width:100%; border-collapse:collapse; margin:14px 0; font-size:13px; }
+article th, article td { padding:8px 10px; border:1px solid var(--line); text-align:left; vertical-align:top; }
+article th { background:#f3f4f6; font-weight:600; }
+article a { color:var(--accent); }
+article code { background:#f3f4f6; padding:1px 6px; border-radius:4px; font-size:12px; }
+article pre { background:#111827; color:#f9fafb; padding:14px 16px; border-radius:8px; overflow-x:auto; font-size:12px; margin:12px 0; }
+article pre code { background:none; padding:0; color:inherit; }
+.back { margin-top:24px; font-size:13px; }
+.back a { color:var(--accent); text-decoration:none; }
+/* 索引页 */
+.cards { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px; }
+@media (max-width:640px) { .cards { grid-template-columns:1fr; } }
+.card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; transition:box-shadow .15s, border-color .15s; }
+.card:hover { border-color:var(--accent); box-shadow:0 2px 8px rgba(37,99,235,.12); }
+.card .ic { font-size:22px; }
+.card h3 { font-size:15px; margin:8px 0 6px; }
+.card h3 a { color:var(--ink); text-decoration:none; }
+.card h3 a:hover { color:var(--accent); }
+.card p { font-size:12px; color:var(--muted); line-height:1.7; }
+.hint { font-size:12px; color:var(--muted); margin-top:22px; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bread"><a href="../index.html">🏠 看板</a> ｜ <a href="./index.html">📚 文档索引</a></div>
+  <h1>💰 成本模型</h1>
+  <p class="doc-sub">法定成本汇总表 + 市场成本模板（工资/中介费/保险保费待询价）</p>
+  <article><h1>成本模型 · Cost Model</h1>
+<blockquote>
+<p>雇佣女佣的全部成本构成。分「官方法定成本」与「市场成本」两类。
+法定成本有 MOM 明文规定；市场成本（工资/中介费/保险保费）无官方统一价，需中介报价与市场调研（阶段 3 收集）。
+所有官方数字抓取自 MOM 官网（2026-08-22）。金额为新币（SGD）。</p>
+</blockquote>
+<h2>一、官方法定成本 · Statutory Costs</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额</th>
+<th>说明</th>
+<th>时机</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WP 申请费</td>
+<td>$35 × 2 = <strong>$70</strong></td>
+<td>提交 $35 + 签发 $35（每份）</td>
+<td>申请时 / 签发时</td>
+<td>apply-for-work-permit</td>
+</tr>
+<tr>
+<td>EOP 雇主课程</td>
+<td>线上 <strong>$29–$36</strong>；面授 <strong>$35–$76</strong></td>
+<td>首次雇主必须；3 小时</td>
+<td>申请 WP 前 ≥2 个工作日</td>
+<td>EOP 页面</td>
+</tr>
+<tr>
+<td>SIP 安置课程</td>
+<td><strong>$76.40 / $92.65 / $77.00</strong>（按供应商）</td>
+<td>首次女佣必须；1 天；雇主付费</td>
+<td>到达后 7 天内（不含周日/公共假日）</td>
+<td>SIP 页面</td>
+</tr>
+<tr>
+<td>安全保证金</td>
+<td><strong>$5,000</strong>（可退）</td>
+<td>非马来西亚女佣；银行/保险保证；不得转嫁给女佣</td>
+<td>到达前生效</td>
+<td>security-bond</td>
+</tr>
+<tr>
+<td>外劳税 levy</td>
+<td>标准 <strong>$300/月</strong>（首名）；<strong>$450/月</strong>（第 2+ 名）；优惠 <strong>$60/月</strong></td>
+<td>按月缴，次月 17 日前</td>
+<td>首次女佣到达第 5 天起</td>
+<td>paying-levy</td>
+</tr>
+<tr>
+<td>医疗险 MI</td>
+<td>年保额 ≥ <strong>$60,000</strong>；≥$15,000 以上部分自付 25%</td>
+<td>覆盖住院与日间手术</td>
+<td>到达前</td>
+<td>insurance</td>
+</tr>
+<tr>
+<td>个人意外险 PA</td>
+<td>保额 ≥ <strong>$60,000/年</strong></td>
+<td>永久伤残/身故一次性赔付</td>
+<td>到达前</td>
+<td>insurance</td>
+</tr>
+<tr>
+<td>入境体检</td>
+<td>无官方统一定价（诊所收费）</td>
+<td>4 种传染病筛查 + 是否适合工作</td>
+<td>到达后 2 周内</td>
+<td>medical-examination</td>
+</tr>
+<tr>
+<td>半年体检 6ME</td>
+<td>无官方统一定价（诊所收费，雇主承担）</td>
+<td>怀孕/梅毒 6 个月一次；HIV 2 年一次；TB 满 2 年一次</td>
+<td>每 6 个月</td>
+<td>six-monthly-medical-examination</td>
+</tr>
+</tbody>
+</table>
+<h2>二、市场成本 · Market Costs（无官方定价，需询价）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+<th>阶段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>女佣月薪</strong></td>
+<td>无官方最低工资；由市场/中介/合同约定。MOM 只要求&quot;不得低于向 MOM 申报的工资&quot;、每月按时支付</td>
+<td>阶段 3/5</td>
+</tr>
+<tr>
+<td><strong>中介费</strong></td>
+<td>各中介不同（通常含安置/换人服务），新加坡行业常见 1 年或 2 年套餐</td>
+<td>阶段 3</td>
+</tr>
+<tr>
+<td><strong>保险保费</strong></td>
+<td>MI/PA 无官方定价；由保险公司报价，2023/2025 两阶段增强 MI 后保费有年龄分层（≤50 / &gt;50 两个年龄带）</td>
+<td>阶段 3</td>
+</tr>
+<tr>
+<td><strong>机票</strong></td>
+<td>入境机票（通常由中介/雇主安排）+ 送返机票（雇主强制承担，含托运行李与国内联程）</td>
+<td>按需</td>
+</tr>
+<tr>
+<td><strong>SDF / 培训等</strong></td>
+<td>如相关，见中介套餐说明</td>
+<td>阶段 3</td>
+</tr>
+</tbody>
+</table>
+<h2>三、成本测算模板 · Cost Template</h2>
+<pre><code>一次性成本（Startup）:
+  中介费          $______（待询价）
+  WP 申请费       $70
+  EOP（如首次）   $______（29–76）
+  SIP（如首次）   $______（76.40 / 92.65 / 77.00）
+  入境体检        $______（诊所定价）
+  保险首年保费    $______（中介/保险公司报价）
+
+月度成本（Monthly）:
+  月薪            $______
+  levy            $300（或 $60 优惠）
+  （可选）补休日工资等
+
+可退/保证金:
+  安全保证金      $5,000（离境且无违约后退还）
+</code></pre>
+<blockquote>
+<p>提示：优惠 levy（$60）适用于家中有 16 岁以下新加坡籍儿童 / 67 岁及以上长者 / 残障人士的情形，需满足条件且自动生效，留意账单确认。
+Home Caregiving Grant（每月最高 $400）由 AIC 管理，适用于照护需 3+ ADL 帮助的家庭成员。</p>
+</blockquote>
+<h2>四、未纳入/待补充项</h2>
+<ul>
+<li>女佣国籍不同，中介费与流程可能不同（印尼/缅甸/菲律宾市场价差异大）——阶段 3 按中介收集</li>
+<li>转雇主（transfer）情形成本结构不同——按需研究</li>
+<li>实际汇率、GST 影响——按签约时情况计算</li>
+</ul>
+</article>
+  <p class="back"><a href="./index.html">← 返回文档索引</a> ｜ <a href="../index.html">返回看板</a></p>
+</div>
+</body>
+</html>

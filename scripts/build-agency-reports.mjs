@@ -156,6 +156,8 @@ const reportPages = top.map((s, idx) => {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(a.name)} 中介研报 · sg-helper</title>
+<meta name="description" content="${esc(a.name)} 中介研报：收费模式、优势劣势、实际案例、客户真实评论、MOM 官方指标">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
 <style>
   :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --ok:#15803d; --bad:#b91c1c; --bg:#f9fafb; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -205,7 +207,7 @@ const reportPages = top.map((s, idx) => {
 </head>
 <body>
 <div class="wrap">
-  <div class="bread"><a href="./index.html">← 研报索引</a> ｜ <a href="../index.html">中介对比</a></div>
+  <div class="bread"><a href="../../index.html">🏠 看板</a> ｜ <a href="../index.html">中介对比</a> ｜ <a href="./index.html">研报索引</a></div>
   <div class="hero">
     <h1>${rankMedal(idx)} ${esc(a.name)}</h1>
     <p class="sub">${esc((s.momData || {}).officialName || '')} · MOM 牌照 ${esc((s.momData || {}).license || '—')}</p>
@@ -257,30 +259,39 @@ const indexHtml = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>中介研报索引 · sg-helper</title>
+<meta name="description" content="Top 10 新加坡女佣中介独立研报：收费模式、优势劣势、实际案例、真实评论">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:#1f2937; background:#f9fafb; padding:32px 20px; }
   .wrap { max-width:900px; margin:0 auto; }
+  .toplink { font-size:13px; margin-bottom:16px; }
+  .toplink a { color:#2563eb; text-decoration:none; }
   h1 { font-size:26px; margin-bottom:6px; }
   .sub { color:#6b7280; font-size:13px; margin-bottom:22px; line-height:1.7; }
+  .table-scroll { overflow-x:auto; }
   table { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
-  th, td { padding:10px 12px; border-bottom:1px solid #e5e7eb; text-align:left; vertical-align:middle; }
+  th, td { padding:10px 12px; border-bottom:1px solid #e5e7eb; text-align:left; vertical-align:middle; white-space:nowrap; }
   th { font-size:12px; color:#6b7280; background:#f3f4f6; }
-  td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; }
   .src { font-size:11px; color:#6b7280; }
   a { color:#2563eb; text-decoration:none; }
   a:hover { text-decoration:underline; }
   .muted { color:#6b7280; font-size:12px; margin-top:20px; line-height:1.7; }
+  @media (max-width:720px) { body { padding:20px 10px; } h1 { font-size:22px; } }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <p class="toplink"><a href="../../index.html">🏠 返回看板</a> ｜ <a href="../index.html">中介对比</a></p>
   <h1>📚 中介研报（Top ${top.length}）</h1>
   <p class="sub">按综合评分排序生成 2026-08-22。每份研报含：收费模式、优势劣势、实际案例、客户真实评论（Google）、MOM 官方指标。<br>数据来源：MOM EA Directory、Google Maps、各中介官网、公开报道。详情见各研报底部免责声明。</p>
+  <div class="table-scroll">
   <table>
     <thead><tr><th>#</th><th>中介</th><th>综合分</th><th>MOM</th><th>Google</th><th>Retention</th><th>Transfer</th><th>评论样本</th></tr></thead>
     <tbody>${rows}</tbody>
   </table>
+  </div>
   <p class="muted">⚠️ 研究参考用途，非正式评级。费用/置换条款以线下咨询为准。请通过 MOM 官网核验中介牌照与评分。</p>
 </div>
 </body>

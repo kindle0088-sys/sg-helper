@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>完整雇佣流程 · sg-helper</title>
+<meta name="description" content="申请前 → 申请 → 到达前/后 → 雇佣期 → 通知义务 → 结束雇佣，双语对照含全部时限">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+<style>
+:root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:#f9fafb; line-height:1.8; }
+.wrap { max-width:820px; margin:0 auto; padding:36px 20px 60px; }
+.bread { font-size:12px; color:var(--muted); margin-bottom:18px; }
+.bread a { color:var(--accent); text-decoration:none; }
+h1 { font-size:26px; margin:0 0 8px; }
+.doc-sub { color:var(--muted); font-size:13px; margin-bottom:26px; padding-bottom:16px; border-bottom:2px solid var(--line); }
+article { background:#fff; border:1px solid var(--line); border-radius:12px; padding:28px 32px; }
+article h1 { font-size:22px; margin-bottom:16px; }
+article h2 { font-size:19px; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+article h3 { font-size:16px; margin:20px 0 8px; }
+article p { margin:10px 0; font-size:14px; }
+article ul, article ol { margin:10px 0 10px 24px; font-size:14px; }
+article li { margin:4px 0; }
+article blockquote { border-left:4px solid var(--accent); background:#eff6ff; padding:10px 16px; margin:12px 0; border-radius:0 8px 8px 0; color:#1e3a8a; font-size:13px; }
+article blockquote p { margin:4px 0; }
+article table { width:100%; border-collapse:collapse; margin:14px 0; font-size:13px; }
+article th, article td { padding:8px 10px; border:1px solid var(--line); text-align:left; vertical-align:top; }
+article th { background:#f3f4f6; font-weight:600; }
+article a { color:var(--accent); }
+article code { background:#f3f4f6; padding:1px 6px; border-radius:4px; font-size:12px; }
+article pre { background:#111827; color:#f9fafb; padding:14px 16px; border-radius:8px; overflow-x:auto; font-size:12px; margin:12px 0; }
+article pre code { background:none; padding:0; color:inherit; }
+.back { margin-top:24px; font-size:13px; }
+.back a { color:var(--accent); text-decoration:none; }
+/* 索引页 */
+.cards { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px; }
+@media (max-width:640px) { .cards { grid-template-columns:1fr; } }
+.card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; transition:box-shadow .15s, border-color .15s; }
+.card:hover { border-color:var(--accent); box-shadow:0 2px 8px rgba(37,99,235,.12); }
+.card .ic { font-size:22px; }
+.card h3 { font-size:15px; margin:8px 0 6px; }
+.card h3 a { color:var(--ink); text-decoration:none; }
+.card h3 a:hover { color:var(--accent); }
+.card p { font-size:12px; color:var(--muted); line-height:1.7; }
+.hint { font-size:12px; color:var(--muted); margin-top:22px; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bread"><a href="../index.html">🏠 看板</a> ｜ <a href="./index.html">📚 文档索引</a></div>
+  <h1>🛤️ 完整雇佣流程</h1>
+  <p class="doc-sub">申请前 → 申请 → 到达前/后 → 雇佣期 → 通知义务 → 结束雇佣，双语对照含全部时限</p>
+  <article><h1>MOM 雇佣流程 · Full Process</h1>
+<blockquote>
+<p>从申请到雇佣结束的完整流程，双语对照，数字均来自 MOM 官网（抓取 2026-08-22）。
+权威来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker</a>
+本页仅汇总流程与时限；具体法律依据见 <code>legal-framework.md</code>，成本汇总见 <code>costs.md</code>。</p>
+</blockquote>
+<hr>
+<h2>总览 · Pass Map（MOM 官方五步流程）</h2>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>阶段</th>
+<th>关键动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>申请前</strong> Before applying</td>
+<td>核实资格；阅读雇主指南；首次雇主注册 EOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>到达前</strong> Before arrival</td>
+<td>申请 WP；买保证金/保险；首次女佣注册 SIP</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>到达后</strong> Upon arrival</td>
+<td>SIP（7 天内）；体检（2 周内）；注册指纹；领取 WP 卡</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>每月</strong> Monthly</td>
+<td>按月付 levy；每 6 个月体检</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>需要时</strong> As and when required</td>
+<td>通知变更；续签/补卡/取消准证</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/key-facts">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/key-facts</a></p>
+<hr>
+<h2>A. 申请前 · Before Applying</h2>
+<h3>A1. 雇主资格 · Employer eligibility</h3>
+<p>MOM 原文：</p>
+<blockquote>
+<p>&quot;To hire a helper, you must:</p>
+<ul>
+<li>Be 21 years old and above.</li>
+<li>Not be an undischarged bankrupt.</li>
+<li>Have the mental capacity to fully understand and discharge your responsibility as an employer.&quot;</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>EN</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>年龄</td>
+<td>Be 21 years old and above</td>
+<td>年满 21 岁</td>
+</tr>
+<tr>
+<td>破产</td>
+<td>Not be an undischarged bankrupt</td>
+<td>非未解除破产者</td>
+</tr>
+<tr>
+<td>行为能力</td>
+<td>Have the mental capacity to fully understand and discharge your responsibility as an employer</td>
+<td>具备完全理解并履行雇主责任的行为能力</td>
+</tr>
+</tbody>
+</table>
+<p>补充（MOM 原文）：</p>
+<blockquote>
+<p>&quot;We will also consider your care-giving needs (e.g. young children or elderly family members) and financial ability to hire, maintain and upkeep the helper in an acceptable accommodation.&quot;
+中文：MOM 还会评估你的照护需求（如幼儿或年长家人）以及经济能力（能否在合格住宿条件下雇佣、供养女佣）。</p>
+</blockquote>
+<blockquote>
+<p>&quot;You should not be diagnosed with any medical condition that would impair your ability to exercise supervision and control over the well-being of the helper. Examples of such medical conditions include Alzheimer, dementia and schizophrenia...&quot;
+中文：不应患有会损害你监督女佣福利能力的疾病，如阿兹海默症、失智症、精神分裂症等。</p>
+</blockquote>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/employer-requirements">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/employer-requirements</a></p>
+<p><strong>收入要求说明</strong>：MOM 未公布固定收入门槛，按个案评估（care-giving needs + financial ability）。已婚夫妻可合并收入；不满足时可申请特别计划（见 A4）。</p>
+<h3>A2. MDW 本人资格 · MDW eligibility</h3>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>EN（原文）</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>性别</td>
+<td>Female</td>
+<td>女性</td>
+</tr>
+<tr>
+<td>年龄</td>
+<td>From 23 to below 50 years old during the Work Permit application</td>
+<td>申请时 23 岁至 50 岁以下</td>
+</tr>
+<tr>
+<td>高龄续签</td>
+<td>Helpers aged 50 and above can only renew their Work Permits until they are 60 years old</td>
+<td>50 岁以上只能续签到 60 岁</td>
+</tr>
+<tr>
+<td>来源国</td>
+<td>From an approved source country or region, including Bangladesh, Cambodia, Hong Kong, India, Indonesia, Macau, Malaysia, Myanmar, Philippines, South Korea, Sri Lanka, Taiwan and Thailand</td>
+<td>来自批准来源地（含孟加拉、柬埔寨、香港、印度、印尼、澳门、马来西亚、缅甸、菲律宾、韩国、斯里兰卡、台湾、泰国）</td>
+</tr>
+<tr>
+<td>教育</td>
+<td>Minimum 8 years of formal education with a recognised certificate</td>
+<td>至少 8 年正规教育并持有认可证书</td>
+</tr>
+<tr>
+<td>工作地点</td>
+<td>Work at employers' NRIC-registered addresses</td>
+<td>在雇主 NRIC 登记的地址工作</td>
+</tr>
+<tr>
+<td>首次女佣</td>
+<td>Attend the Settling-in Programme (SIP) if they are first-time helpers</td>
+<td>首次来新女佣须参加 SIP</td>
+</tr>
+<tr>
+<td>亲属关系</td>
+<td>Not be related to their employers</td>
+<td>与雇主无亲属关系</td>
+</tr>
+<tr>
+<td>申请时所在地</td>
+<td>Not be in Singapore during the Work Permit application</td>
+<td>申请时不在新加坡境内</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&quot;Employers can only bring helpers into Singapore after they have received an IPA letter and bought a $5,000 security bond. Note: This does not apply to Malaysian workers.&quot;
+中文：雇主只有在收到 IPA（原则批准信）并购买 $5,000 保证金后才能带女佣入境（马来西亚籍除外）。</p>
+</blockquote>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/fdw-eligibility">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/fdw-eligibility</a></p>
+<h3>A3. 首次雇主：雇主导向课程 EOP</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>EN</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>谁必须参加</td>
+<td>First-time employer</td>
+<td>首次雇佣女佣的雇主</td>
+</tr>
+<tr>
+<td>何时完成</td>
+<td>At least 2 working days before submitting a Work Permit application</td>
+<td>提交 WP 申请至少 2 个工作日前</td>
+</tr>
+<tr>
+<td>时长</td>
+<td>3-hour programme</td>
+<td>3 小时课程</td>
+</tr>
+<tr>
+<td>费用</td>
+<td>Classroom EOP: $35 to $76; Online EOP: $29 to $36</td>
+<td>面授 $35–$76；线上 $29–$36</td>
+</tr>
+<tr>
+<td>形式</td>
+<td>Classroom or online</td>
+<td>面授或线上</td>
+</tr>
+</tbody>
+</table>
+<p>豁免/代上：慢性病、行走不便、60 岁以上身体不适的雇主；或待产/产后 1 个月内的新妈妈，可委托代表/担保人代上（需在线申请任命，审批 1 个工作日）。代表上完后保留材料至少 3 个月备查。</p>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/employers-orientation-programme-eop">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/employers-orientation-programme-eop</a></p>
+<h3>A4. 特别计划 · Special Schemes（收入不足时）</h3>
+<table>
+<thead>
+<tr>
+<th>计划</th>
+<th>EN</th>
+<th>条件要点</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>联合收入计划</strong></td>
+<td>Joint Income Scheme</td>
+<td>SC/PR；≥21 岁；非破产；与一名同居的非配偶家人（兄弟姐妹/父母/子女/亲属）合并收入，且<strong>只能合并 1 人</strong>；本人收入须高于合并对象</td>
+<td>与同居家人（非配偶）合并收入，只可加 1 人</td>
+</tr>
+<tr>
+<td><strong>赞助计划</strong></td>
+<td>Sponsorship Scheme</td>
+<td>SC/PR；≥60 岁；无收入；不与任何工作成年人同住；由最多 2 名赞助人（子女/孙辈/兄弟姐妹及其配偶）的收入支持申请</td>
+<td>60 岁以上无收入长者，由最多 2 名亲属赞助</td>
+</tr>
+</tbody>
+</table>
+<p>赞助/联合申请人的责任与雇主相同：负责女佣的生活与福利、确保 levy 按时缴纳。</p>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/apply-under-a-special-scheme">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/apply-under-a-special-scheme</a></p>
+<hr>
+<h2>B. 申请 Work Permit · Apply</h2>
+<h3>B1. 谁可以申请</h3>
+<blockquote>
+<p>&quot;Who can apply: Employer, sponsor or authorised employment agent (EA).&quot;
+中文：雇主、担保人或授权中介（EA）均可申请。</p>
+</blockquote>
+<h3>B2. 费用与时长</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>EN</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>申请费</td>
+<td>$35 for each pass when you submit the application</td>
+<td>提交时每份 $35</td>
+</tr>
+<tr>
+<td>签发费</td>
+<td>$35 for each pass when you get the pass issued</td>
+<td>签发时每份 $35</td>
+</tr>
+<tr>
+<td>在线处理</td>
+<td>FDW eService: within 1 week</td>
+<td>FDW eService 提交：约 1 周</td>
+</tr>
+<tr>
+<td>表单处理</td>
+<td>Application form: within 3 weeks for most cases</td>
+<td>纸质/在线表单：多数 3 周内</td>
+</tr>
+</tbody>
+</table>
+<h3>B3. 两种申请方式</h3>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>适用</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FDW eService</strong></td>
+<td>有 Singpass 的雇主与中介</td>
+<td>更快；需女佣书面同意书；提交时在线支付 $35（Visa/Mastercard/PayNow）</td>
+</tr>
+<tr>
+<td><strong>在线表单</strong></td>
+<td>无法登录 FDW eService 的雇主</td>
+<td>中介<strong>不得</strong>使用；下载申请表电子填写（不打印）；连同支持文件提交并付 $35</td>
+</tr>
+</tbody>
+</table>
+<h3>B4. 申请获批后（IPA）</h3>
+<blockquote>
+<p>&quot;We will email the in-principle approval (IPA) letter and declaration forms for you and your helper to sign. Send your helper her copy of the IPA. She needs it to enter Singapore.&quot;
+中文：MOM 会电邮 IPA 原则批准信与声明书，雇主和女佣需签署。女佣需要 IPA 才能入境新加坡。</p>
+</blockquote>
+<ul>
+<li>新女佣的 FIN（外国身份证号）在 WP 申请获批后 <strong>3 个工作日内</strong>分配</li>
+<li>若 IPA 信息与护照不符，女佣将被拒绝入境；错误须及时更正</li>
+<li>IPA 有效期不够时可申请延期</li>
+</ul>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/apply-for-work-permit">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/apply-for-work-permit</a></p>
+<hr>
+<h2>C. 到达前准备 · Before Arrival</h2>
+<table>
+<thead>
+<tr>
+<th>事项</th>
+<th>EN（要点）</th>
+<th>中文</th>
+<th>时限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>安全保证金</td>
+<td>Buy a security bond for a non-Malaysian helper</td>
+<td>为非马来西亚女佣购买 $5,000 保证金</td>
+<td>到达时须生效（银行/保险公司传输最多 3 个工作日）</td>
+</tr>
+<tr>
+<td>医疗+意外险</td>
+<td>Buy medical and personal accident insurance</td>
+<td>购买医疗险与个人意外险并在线提交保单信息</td>
+<td>到达前</td>
+</tr>
+<tr>
+<td>SIP 注册</td>
+<td>Register the MDW for the Settling-in Programme</td>
+<td>首次女佣注册 SIP</td>
+<td>确定到达日期后尽早</td>
+</tr>
+<tr>
+<td>麻疹免疫</td>
+<td>If there are children below 7 years old who are not fully vaccinated against measles, you must ensure that your helper has immunity against measles</td>
+<td>家中有 7 岁以下且未完全接种麻疹疫苗的儿童，女佣须有麻疹免疫力</td>
+<td>到达前</td>
+</tr>
+<tr>
+<td>入境要求</td>
+<td>Ensure that the MDW complies with the latest travel requirements</td>
+<td>确保女佣符合 ICA 最新入境要求</td>
+<td>到达前</td>
+</tr>
+<tr>
+<td>使馆要求</td>
+<td>Check with the helper's embassy on whether there are additional requirements for her to leave her country/region (e.g. visa or overseas government letter)</td>
+<td>与女佣国家使馆核实出境要求（如签证/政府信函）</td>
+<td>申请时</td>
+</tr>
+</tbody>
+</table>
+<p><strong>保证金要点</strong>（来源：security-bond 页面）：</p>
+<ul>
+<li>金额：每名女佣 $5,000（马来西亚籍除外）；<strong>不得要求女佣支付</strong></li>
+<li>形式：银行或保险公司的保证（banker's / insurer's guarantee）</li>
+<li>未在到达时生效 → 移民官员拒绝入境，只能立即送回家</li>
+<li>解除条件：取消 WP + 女佣回国 + 未违反条件 → 通常女佣离境 <strong>1 周后</strong>解除</li>
+<li>没收情形：违反 WP/保证金条件、拖欠工资、WP 到期/撤销/取消后未送返、女佣失踪</li>
+</ul>
+<p>来源：</p>
+<ul>
+<li><a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/security-bond">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/security-bond</a></li>
+<li><a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/insurance-requirements">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/insurance-requirements</a></li>
+<li><a href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore">https://www.ica.gov.sg/enter-transit-depart/entering-singapore</a></li>
+</ul>
+<hr>
+<h2>D. 到达后 · Upon Arrival</h2>
+<table>
+<thead>
+<tr>
+<th>事项</th>
+<th>EN</th>
+<th>中文</th>
+<th>时限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参加 SIP</td>
+<td>Send the MDW to attend the SIP</td>
+<td>首次女佣参加安置课程</td>
+<td>到达后 <strong>7 天内</strong>（不含周日与公共假日）；到达当天不能上课</td>
+</tr>
+<tr>
+<td>体检</td>
+<td>Send the MDW for a medical examination by a Singapore-registered doctor</td>
+<td>由新加坡注册医生体检</td>
+<td>到达后 <strong>2 周内</strong></td>
+</tr>
+<tr>
+<td>签发临时 WP</td>
+<td>You can get the permit issued and you will get a Temporary Work Permit stating whether registration is required</td>
+<td>领取临时工作准证</td>
+<td>到达后即可</td>
+</tr>
+<tr>
+<td>指纹/照片注册</td>
+<td>Make an appointment for the MDW to register their fingerprints and photo</td>
+<td>预约注册指纹与照片</td>
+<td>视临时 WP 指示</td>
+</tr>
+<tr>
+<td>领取 WP 卡</td>
+<td>Receive the Work Permit card at the address provided 4 working days after registration or document verification</td>
+<td>注册或文件核验后 <strong>4 个工作日</strong>寄达</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>SIP 详情</strong>：</p>
+<ul>
+<li>时长 1 天；费用由雇主承担：Absolute Kinetics $76.40 / Grace Management $92.65 / NTUC LearningHub $77.00（含 GST）</li>
+<li>授课语言：女佣母语</li>
+<li>女佣须在 <strong>完成 SIP 后才能开始工作</strong></li>
+<li>注册材料：IPA 信（全套）、女佣护照、学历证书副本、ICA 入境卡副本</li>
+</ul>
+<p><strong>体检详情</strong>：</p>
+<ul>
+<li>筛查 4 种传染病：TB（结核）、HIV、syphilis（梅毒）、malaria（疟疾）+ 是否适合工作</li>
+<li>携带医疗检查表（medical examination form）</li>
+<li>体检<strong>不合格则不能签发 WP，必须送回</strong></li>
+<li>有特定健康顾虑可加做项目；可向医生索取报告副本</li>
+</ul>
+<p>来源：</p>
+<ul>
+<li><a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/settling-in-programme-sip">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/settling-in-programme-sip</a></li>
+<li><a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/medical-examination">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/medical-examination</a></li>
+</ul>
+<hr>
+<h2>E. 雇佣期间 · Ongoing Employment</h2>
+<h3>E1. 每月：levy（外劳税）</h3>
+<p>费率表（MOM 原文）：</p>
+<table>
+<thead>
+<tr>
+<th>Levy type</th>
+<th>Monthly rate</th>
+<th>Daily rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal (1st helper)</td>
+<td>$300</td>
+<td>$9.87</td>
+</tr>
+<tr>
+<td>Normal (Subsequent helpers)</td>
+<td>$450</td>
+<td>$14.80</td>
+</tr>
+<tr>
+<td>Concessionary</td>
+<td>$60</td>
+<td>$1.98</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>首次女佣 levy 从<strong>到达第 5 天</strong>（含到达日）开始；否则从<strong>到达次日</strong>开始</li>
+<li>支付截止：次月 <strong>17 日</strong>（遇周末/假日顺延）；建议 GIRO 自动扣款或 PayNow QR</li>
+<li>不按时支付：罚款、连续 2 个月未付 <strong>WP 会被吊销</strong>、禁止再申请、可能被法律追讨</li>
+</ul>
+<p>优惠税率（$60/月）条件（满足其一，限 1 人 1 名女佣，每户最多 2 名）：</p>
+<ul>
+<li>家中有 <strong>16 岁以下新加坡籍儿童</strong></li>
+<li>家中有 <strong>67 岁及以上新加坡公民</strong>长者</li>
+<li>家中有 <strong>67 岁及以上永久居民</strong>长者（条件与公民略异）</li>
+<li>家中有 <strong>残障人士（PWD）</strong></li>
+<li>若为居家照护需要且照护对象需 3 项以上 ADL 帮助，可另申请 Home Caregiving Grant（每月最高 $400，AIC 负责）</li>
+</ul>
+<p>来源：</p>
+<ul>
+<li><a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/foreign-domestic-worker-levy/paying-levy">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/foreign-domestic-worker-levy/paying-levy</a></li>
+<li><a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/foreign-domestic-worker-levy/levy-concession">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/foreign-domestic-worker-levy/levy-concession</a></li>
+</ul>
+<h3>E2. 每月：工资 · Salary</h3>
+<p>MOM 原文要点：</p>
+<blockquote>
+<p>&quot;You must pay your foreign domestic worker (FDW) every month. The salary must not be lower than what you declared to MOM.&quot;
+中文：必须每月支付工资，且不得低于向 MOM 申报的数额。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>规则</th>
+<th>EN</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>支付时限</td>
+<td>no later than 7 days after the last day of the salary period</td>
+<td>工资周期结束后 7 天内支付</td>
+</tr>
+<tr>
+<td>周期上限</td>
+<td>The salary period must not exceed 1 month</td>
+<td>工资周期不得超过 1 个月</td>
+</tr>
+<tr>
+<td>支付方式</td>
+<td>direct bank transfer if she requests for it</td>
+<td>女佣要求时须银行转账（非联名账户）</td>
+</tr>
+<tr>
+<td>现金支付</td>
+<td>Keep a record; both parties sign each payment record</td>
+<td>现金支付须留记录，双方签字</td>
+</tr>
+<tr>
+<td>代管资金</td>
+<td>From 1 January 2019, you must not keep your FDW's salary or any other money belonging to her, even if she requests for it. You must not keep her bank book or bank card.</td>
+<td>自 2019-01-01 起不得代管女佣工资/其他钱财，不得保管其银行存折/银行卡</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/salary-guidelines">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/salary-guidelines</a></p>
+<h3>E3. 休息日 · Rest Day</h3>
+<table>
+<thead>
+<tr>
+<th>规则</th>
+<th>EN</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每周</td>
+<td>Your MDW is entitled to one rest day per week</td>
+<td>每周 1 天休息日（双方协商定哪天）</td>
+</tr>
+<tr>
+<td>补薪</td>
+<td>If your MDW agrees to work on her rest day, you must compensate her with at least 1 day's salary</td>
+<td>休息日工作须补偿至少 1 天工资</td>
+</tr>
+<tr>
+<td>底线</td>
+<td>You must ensure that your MDW has at least one rest day per month that cannot be compensated away</td>
+<td>每月至少 1 天休息日<strong>不可用金钱折抵</strong></td>
+</tr>
+<tr>
+<td>弹性</td>
+<td>taken as one full day or over two half days; may be deferred by up to one month</td>
+<td>可整日或拆成两个半天；可延后最多 1 个月</td>
+</tr>
+<tr>
+<td>违规</td>
+<td>Employers who fail to provide the mandatory rest day may be subjected to enforcement action</td>
+<td>不提供强制休息日可能被执法</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/rest-days-and-well-being">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/rest-days-and-well-being</a></p>
+<h3>E4. 住宿与伙食 · Accommodation &amp; Food</h3>
+<p>住宿要求（MOM 原文要点）：</p>
+<ul>
+<li><strong>Adequate shelter</strong>（充足遮蔽）；<strong>Basic amenities</strong>（床垫、枕头、毯子、浴室用品、洗漱用品）；<strong>Sufficient ventilation</strong>（充分通风，自然通风不足须加风扇）；<strong>Safety</strong>（不得靠近危险设备/结构）；<strong>Modesty</strong>（不得与成年/青少年男性同房；家中监控设备须告知女佣并不得设在卧室/更衣/浴室等隐私处）；<strong>Space and privacy</strong>（尽量单独房间，否则须有足够空间与隐私）</li>
+</ul>
+<p>伙食：<strong>每日 3 餐</strong>（MOM 给出参考配比）；不得强迫女佣吃违背宗教/饮食习惯的食物。</p>
+<p>医疗：雇主承担<strong>全部</strong>医疗费用，包括住院与 6 个月体检。</p>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/rest-days-and-well-being">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/rest-days-and-well-being</a></p>
+<h3>E5. 每 6 个月：定期体检 6ME</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>EN</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>频率</td>
+<td>medical screening every 6 months</td>
+<td>每 6 个月一次</td>
+</tr>
+<tr>
+<td>筛查</td>
+<td>Pregnancy and VDRL every 6 months; HIV every 2 years; TB once upon 2 years of stay; BMI and visible signs of abuse</td>
+<td>怀孕+梅毒每 6 个月；HIV 每 2 年；TB 在新居住满 2 年时一次；BMI 与虐待伤痕检查</td>
+</tr>
+<tr>
+<td>提交</td>
+<td>All 6ME results must be submitted by clinics</td>
+<td>所有结果由诊所提交 MOM</td>
+</tr>
+<tr>
+<td>费用</td>
+<td>You must pay for the 6ME and any medical expenses arising from it</td>
+<td>雇主承担费用</td>
+</tr>
+<tr>
+<td>地点</td>
+<td>All 6MEs must be conducted in clinics. Employers or their representatives should not be present during the examination</td>
+<td>在诊所进行；雇主/代表<strong>不得在场</strong></td>
+</tr>
+<tr>
+<td>50 岁以上</td>
+<td>doesn't need to go for 6ME</td>
+<td>50 岁以上免 6ME（续签时体检）</td>
+</tr>
+<tr>
+<td>不合格</td>
+<td>you must cancel her Work Permit and send her home immediately</td>
+<td>必须立即取消 WP 并送回国</td>
+</tr>
+<tr>
+<td>即将送返</td>
+<td>If sending home within 1 month from 6ME due date, can choose not to send</td>
+<td>到期前 1 个月内送返可免做</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/six-monthly-medical-examination">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/eligibility-and-requirements/six-monthly-medical-examination</a></p>
+<h3>E6. 合同与安全协议 · Contract &amp; Safety Agreement</h3>
+<ul>
+<li><strong>雇佣合同</strong>（鼓励签署）：女佣不受 Employment Act 覆盖，MOM 鼓励签合同避免纠纷。建议包含：工资、安置贷款（placement loan）、每月休息日天数、休息日补薪、通知期、代通知金</li>
+<li><strong>安全协议</strong>（强制）：中介须安排雇主与女佣签署，三方言（雇主、中介、女佣）各持一份；女佣版用其母语。重点：<strong>清洁窗外</strong>的限制。首次女佣须在完成 SIP 后、开始工作前签署；其他女佣在派工前签署。续约同一名女佣可免签</li>
+</ul>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/contracts-and-safety-agreement">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/contracts-and-safety-agreement</a></p>
+<h3>E7. 海外假期 · Overseas Leave</h3>
+<ul>
+<li>女佣可回家休假；休假期间<strong>继续计 levy</strong>，返回后可申请 <strong>levy waiver</strong></li>
+<li>申请条件：连续离境 <strong>至少 7 天</strong>；每年豁免上限 <strong>60 个日历日</strong></li>
+<li>回国度假期间若临近 6ME 可申请延期</li>
+<li>未返回：取消 WP 停 levy；保留机票/行程证明；经核验离境后解除保证金；若其再度入境则须立即送返，否则保证金可能被没收</li>
+</ul>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/overseas-leave-for-fdw">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/overseas-leave-for-fdw</a></p>
+<hr>
+<h2>F. 变更通知 · Notify MOM</h2>
+<table>
+<thead>
+<tr>
+<th>情形</th>
+<th>EN</th>
+<th>中文</th>
+<th>时限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>搬家</td>
+<td>update your new residential address</td>
+<td>更新新住址</td>
+<td>变更后 <strong>2 周内</strong>（SC/PR 走 ICA eService；EP/S Pass/DP/LTVP 走 EP eService；ICA 发的 LTVP 走 FDW eService）</td>
+</tr>
+<tr>
+<td>联系方式</td>
+<td>update your email address and mobile number</td>
+<td>更新电邮/手机号</td>
+<td>FDW eService 随时</td>
+</tr>
+<tr>
+<td>女佣资料</td>
+<td>changes in passport details, name, DOB, marital status</td>
+<td>护照等资料变更</td>
+<td>FDW eService 更新</td>
+</tr>
+<tr>
+<td>减薪</td>
+<td>get her written consent; inform MOM of her new salary</td>
+<td>减薪须书面同意并通知 MOM</td>
+<td>减薪前</td>
+</tr>
+<tr>
+<td>怀孕</td>
+<td>clinic or employer update MOM</td>
+<td>怀孕须通知（6ME 时诊所报，否则雇主报并上传医生证明）</td>
+<td>7 个工作日内处理</td>
+</tr>
+<tr>
+<td>女佣失踪</td>
+<td>File a missing person police report. Cancel the Work Permit</td>
+<td>报警 + 取消 WP</td>
+<td>得知失踪 <strong>1 周内</strong>；取消 1 个月内未找到，没收 <strong>$2,500</strong>（保证金一半）</td>
+</tr>
+<tr>
+<td>女佣身故</td>
+<td>Contact the police immediately; send info within 12 hours; cancel WP immediately</td>
+<td>立即报警；12 小时内上报信息；立即取消 WP</td>
+<td>死亡后 12 小时内</td>
+</tr>
+<tr>
+<td>海外托付</td>
+<td>temporary accommodation not exceeding one month; notify at least 7 days before trip</td>
+<td>海外期间托付亲友/中介照看（≤1 个月），出发前至少 7 天通知</td>
+<td>出发前 7 天</td>
+</tr>
+<tr>
+<td>授权家人代办</td>
+<td>1 family member per employer</td>
+<td>指定 1 名家人代办（配偶/兄弟姐妹/子女/孙辈/侄甥），审批 3 个工作日</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/notify-mom-of-changes">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/notify-mom-of-changes</a></p>
+<hr>
+<h2>G. 结束雇佣 · End of Employment</h2>
+<h3>G1. 取消 Work Permit</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>EN</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>何时取消</td>
+<td>Within 1 week after the last day of work</td>
+<td>最后工作日 <strong>1 周内</strong></td>
+</tr>
+<tr>
+<td>女佣已离境</td>
+<td>cancel her Work Permit within 1 week from her departure date</td>
+<td>离境后 1 周内取消</td>
+</tr>
+<tr>
+<td>取消时效</td>
+<td>Cancellation is immediate</td>
+<td>即时生效</td>
+</tr>
+<tr>
+<td>levy 截止</td>
+<td>When levy stops: 1 day before cancellation</td>
+<td>levy 计至取消前 1 天</td>
+</tr>
+<tr>
+<td>在途身份</td>
+<td>request for a Special Pass to give them a valid stay</td>
+<td>女佣留新期间须申请 Special Pass，否则超期逗留罚款</td>
+</tr>
+<tr>
+<td>已过期</td>
+<td>You do not need to cancel the pass if it has expired</td>
+<td>准证已过期无需取消</td>
+</tr>
+</tbody>
+</table>
+<h3>G2. 送女佣回国（取消前）</h3>
+<p>MOM 原文要点：</p>
+<ul>
+<li>结清所有雇佣事宜（含工资）</li>
+<li>确认护照有效</li>
+<li>买机票前书面商定：转机安排、转机期间生活费</li>
+<li>机票含托运行李；承担到其国内最近国际口岸的联程交通费；离境日期须在 <strong>WP 取消后 2 周内</strong>；让她书面确认收到交通费</li>
+</ul>
+<h3>G3. 取消后</h3>
+<ul>
+<li>WP 取消后女佣<strong>不得工作</strong>（即使等离境）</li>
+<li>剪卡丢弃防滥用</li>
+<li>保证金：通常女佣离境 1 周后解除（条件齐备）</li>
+</ul>
+<p>来源：</p>
+<ul>
+<li><a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/cancel-a-work-permit">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/cancel-a-work-permit</a></li>
+<li><a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/sending-an-fdw-home">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/employers-guide/sending-an-fdw-home</a></li>
+</ul>
+<hr>
+<h2>转雇主（如需）· Transfer</h2>
+<ul>
+<li><strong>直接转</strong>：现有雇主与新雇主交接（见 transfer-to-a-new-employer）</li>
+<li><strong>经中介转</strong>：中介可承接女佣并另寻雇主（见 transfer-to-new-employer-through-ea）</li>
+<li>关联页面：Advance Placement Scheme（为长者照护培训过的女佣找中介）、Customer ratings（FDW 中介客户评分，见阶段 3）</li>
+</ul>
+<p>来源：<a href="https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/transfer-to-a-new-employer">https://www.mom.gov.sg/passes-and-permits/work-permit-for-foreign-domestic-worker/transfer-to-a-new-employer</a></p>
+</article>
+  <p class="back"><a href="./index.html">← 返回文档索引</a> ｜ <a href="../index.html">返回看板</a></p>
+</div>
+</body>
+</html>

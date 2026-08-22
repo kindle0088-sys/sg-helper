@@ -5,12 +5,16 @@
   "type": "module",
   "description": "新加坡女佣雇佣管理：法律流程 / 中介对比 / 候选人档案",
   "scripts": {
-    "build": "node scripts/build-agency-score.mjs && node scripts/build-agency-report.mjs && node scripts/build-agency-reports.mjs",
+    "build": "node scripts/build-agency-score.mjs && node scripts/build-agency-report.mjs && node scripts/build-agency-reports.mjs && node scripts/build-docs.mjs",
     "build:agency": "node scripts/build-agency-score.mjs && node scripts/build-agency-report.mjs",
     "build:reports": "node scripts/build-agency-reports.mjs",
+    "build:docs": "node scripts/build-docs.mjs",
     "fetch:reviews": "node scripts/fetch-google-reviews.mjs",
     "fetch:ea": "node scripts/search-ea-directory.mjs",
     "fetch:gmaps": "node scripts/search-google-maps.mjs",
     "fetch:xhs": "node scripts/search-xhs.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "^15.0.0"
   }
 }

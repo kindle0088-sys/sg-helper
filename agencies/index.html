@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>中介对比 · sg-helper</title>
+<meta name="description" content="新加坡女佣中介对比：MOM 官方评分、Google 评分、Retention、Transfer、综合评分排序">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
 <style>
   :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --gold:#b45309; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -52,12 +54,16 @@
   a { color:var(--accent); text-decoration:none; }
   a:hover { text-decoration:underline; }
   .no-result { display:none; text-align:center; padding:24px; color:var(--muted); font-size:14px; }
+  .table-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  .toplink { font-size:13px; margin-bottom:14px; }
+  .toplink a { color:var(--accent); text-decoration:none; }
+  @media (max-width:720px) { body { padding:20px 10px; } h1 { font-size:22px; } .wrap { max-width:100%; } }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>🏢 新加坡女佣中介对比</h1>
-  <p class="sub">📚 <a href="./reports/index.html" style="color:var(--accent);font-weight:600;">查看 Top 10 中介独立研报 →</a></p>
+  <p class="toplink"><a href="../index.html">🏠 返回看板</a> ｜ <a href="./reports/index.html" style="font-weight:600;">📚 Top 10 中介独立研报 →</a></p>
   <p class="sub">数据日期：2026-08-22 ｜ 数据来源：MOM EA Directory（官方）+ Google Maps + 小红书观察<br>行业基准（MOM 官方，2026-08-16~17）：Retention 均值 62.43% ｜ Transfer 均值 1.05% ｜ Placement 均值 48</p>
 
   <div class="legend">
@@ -75,6 +81,7 @@
     <span class="result-count" id="resultCount"></span>
   </div>
 
+  <div class="table-scroll">
   <table id="mainTable">
     <thead>
       <tr>
@@ -92,6 +99,7 @@
     </thead>
     <tbody id="tbody"></tbody>
   </table>
+  </div>
   <div class="no-result" id="noResult">没有匹配的中介，换个关键词试试。</div>
 
   <h2 style="margin-top:32px;font-size:18px;">各家中介明细</h2>
