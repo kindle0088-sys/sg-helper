@@ -434,6 +434,75 @@
     "Google 4.5 略低于多数 Top 10 中介（4.7-4.9）",
     "官网自述 2003 年成立，与 MOM 记录 13 年经验（约 2013 起）存在出入，成立时间信息不一致"
    ]
+  },
+  "homekeeper": {
+   "fees": {
+    "summary": "官网未公开中介费 package 具体金额。已知：WP 续签手续免服务费；transfer 女佣（转雇主）可能比 fresh maid 月薪高 S$10-200。",
+    "items": [
+     {
+      "service": "Work Permit 续签手续（renewal）",
+      "price": "免服务费",
+      "source": "homekeepermaidagency.com《Maid Employment Paperwork》"
+     },
+     {
+      "service": "transfer 女佣月薪溢价",
+      "price": "比 fresh maid 高 S$10-200/月（视经验与在坡时长）",
+      "source": "homekeepermaidagency.com《Transfer Maids》"
+     },
+     {
+      "service": "中介费 / Package（新聘/转雇主）",
+      "price": "需咨询",
+      "source": "官网未公开"
+     },
+     {
+      "service": "置换条款（不满意换人）",
+      "price": "需咨询",
+      "source": "官网未公开"
+     },
+     {
+      "service": "Maid Insurance（官网有保险产品）",
+      "price": "需咨询（官网 Maid Insurance 页）",
+      "source": "homekeepermaidagency.com《Maid Insurance》"
+     }
+    ],
+    "notes": "官网自称 1998 年成立、20+ 年经验、服务 80,000+ 家庭、Google 平均 4.8+。运营牌照：09C5350 / 09C5352 / 22C0891。提供免费 counselling（马来语/缅甸语/Tagalog）。"
+   },
+   "cases": [
+    {
+     "case": "全家长期使用，反馈女佣'培训的很好，来到几乎不需要教'，感谢顾问 Leo Lee（Bukit Timah 店）。",
+     "source": "Google 评论（Haiwen Wang）2026-08-22"
+    },
+    {
+     "case": "客户急需女佣，顾问 Bella 加急办理相关手续，快速找到可靠佣人（Yishun 店）。",
+     "source": "Google 评论（Mooihow Lim）2026-08-22"
+    },
+    {
+     "case": "考虑更换女佣时，顾问 Bryan 未急着促成换人，而是耐心帮客户分析（AMK 店）。",
+     "source": "Google 评论（Koh LH）2026-08-22"
+    },
+    {
+     "case": "客户 3 年前在 Homekeeper 请女佣，期间几经波折，团队（Esther）最终把女佣从缅甸接回；另有女佣服务满 4 年续新约（AMK 店，Fion）。",
+     "source": "Google 评论（Junmo Sun / SK Ong）2026-08-22"
+    },
+    {
+     "case": "刚来新加坡的陪读妈妈，经顾问 Avery 帮助找到适合照顾孩子的女佣（Pasir Ris 店）。",
+     "source": "Google 评论（sa li）2026-08-22"
+    }
+   ],
+   "strengths": [
+    "全岛 6+ 分店，规模大：MOM Placement 1,332、17 年经营（MOM 口径）",
+    "MOM 官方 Transfer 0.85%，显著低于行业均值 1.05%（女佣稳定性好）",
+    "Google 高分多店覆盖：Bukit Timah 4.8/709、Yishun 5.0/618、AMK 4.8/568、Pasir Ris 4.8/562、Bedok 4.9/101",
+    "抓取 12 条评论全部 5 星，多分店顾问（Leo Lee / Bella / Bryan / Esther / Fion / Avery / Rebecca / Kevin / Vivienne）被点名表扬",
+    "服务完善：fresh/transfer/direct transfer/experienced 多类型、官网自述免费 counselling、WP 续签免服务费",
+    "网站内容专业：FAQ 详细、引用 MOM 官方规则（对首次雇主友好）"
+   ],
+   "weaknesses": [
+    "MOM 官方评分 3.8（561 条评论），是 Top 14 中较低的一档",
+    "官网不公开中介费，收费透明度低，需线下咨询",
+    "官网自称 1998 年成立，与 MOM 记录 17 年经验（约 2009 起）存在出入",
+    "小红书无正面或负面直接提及（用户评价样本主要依赖 Google）"
+   ]
   }
  }
 }

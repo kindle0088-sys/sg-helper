@@ -23,8 +23,8 @@ const byId = Object.fromEntries(agencies.map(a => [a.id, a]));
 const reviewsById = Object.fromEntries(reviewsRaw.agencies.map(a => [a.id, a.reviews || []]));
 
 const TOP_N = 10;
-// 额外强制生成研报的中介（即使不在 Top N），逗号分隔，如 EXTRA_IDS=labour-express
-const EXTRA_IDS = (process.env.EXTRA_IDS || 'labour-express').split(',').map(s => s.trim()).filter(Boolean);
+// 额外强制生成研报的中介（即使不在 Top N），逗号分隔，如 EXTRA_IDS=labour-express,homekeeper
+const EXTRA_IDS = (process.env.EXTRA_IDS || 'labour-express,homekeeper').split(',').map(s => s.trim()).filter(Boolean);
 const topBase = scores.scores.slice(0, TOP_N);
 const topIds = new Set(topBase.map(s => s.id));
 const top = [
