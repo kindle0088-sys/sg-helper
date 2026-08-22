@@ -18,6 +18,25 @@ const DOCS = [
   { file: 'xhs-insights.md', title: '小红书观察', icon: '📕', desc: '用户评价观察摘要（红黑榜线索、避雷、收费透明度关注点）' },
 ];
 
+const INTERNAL_DOCS = new Set(DOCS.map(d => d.file.replace(/\.md$/, '')));
+
+// 渲染后的 HTML 中，把文档交叉引用（.md 文本）改为指向渲染版 HTML 的可点击链接
+function linkInternalDocs(body) {
+  // 1) code 内引用：<code>xxx.md</code> → <code><a href="xxx.html">xxx.md</a></code>
+  body = body.replace(/<code>((?:docs\/)?[a-zA-Z0-9_-]+\.md)<\/code>/g, (m, f) => {
+    const base = f.replace(/\.md$/, '').replace(/^docs\//, '');
+    if (INTERNAL_DOCS.has(base)) return `<code><a href="${base}.html">${f}</a></code>`;
+    return m;
+  });
+  // 2) 裸文本引用（排除 HTML 标签内部，避免与上面已生成的链接冲突）
+  body = body.replace(/(?<![<>\/a-zA-Z0-9_-])(?:docs\/)?([a-zA-Z0-9_-]+\.md)(?![a-zA-Z0-9_-])/g, (m, f) => {
+    const base = f.replace(/\.md$/, '').replace(/^docs\//, '');
+    if (INTERNAL_DOCS.has(base)) return `<a href="${base}.html">${f}</a>`;
+    return m;
+  });
+  return body;
+}
+
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 const CSS = `
@@ -62,8 +81,7 @@ article pre code { background:none; padding:0; color:inherit; }
 
 // 生成单篇文档页
 const docPages = DOCS.map(d => {
-  const mdSrc = fs.readFileSync(path.join(ROOT, 'docs', d.file), 'utf8');
-  const body = md.render(mdSrc);
+  const body = linkInternalDocs(md.render(fs.readFileSync(path.join(ROOT, 'docs', d.file), 'utf8')));
   const base = d.file.replace(/\.md$/, '');
   return `<!DOCTYPE html>
 <html lang="zh-CN">
