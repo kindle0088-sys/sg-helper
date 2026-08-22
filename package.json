@@ -1,0 +1,8 @@
+{
+  "name": "sg-helper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "新加坡女佣雇佣管理：法律流程 / 中介对比 / 候选人档案",
+  "scripts": {}
+}

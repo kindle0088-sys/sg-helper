@@ -1,0 +1,20 @@
+# ---- 个人敏感数据（绝不入库）----
+# 候选人简历原件：照片 / PDF / 扫描件
+data/candidates/raw/
+# 候选人照片
+data/candidates/*.jpg
+data/candidates/*.jpeg
+data/candidates/*.png
+data/candidates/*.webp
+
+# ---- 运行产物 ----
+logs/
+node_modules/
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
+*.log
+
+# ---- 抓取原始数据（可再抓，不入库防杂乱）----
+data/agencies/raw/

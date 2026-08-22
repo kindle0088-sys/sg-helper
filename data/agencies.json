@@ -1,0 +1,21 @@
+{
+  "_comment": "中介主数据。手动维护 + 自动抓取补充。lastVerified 必须标注核实日期。",
+  "agencies": [
+    {
+      "id": "example-agency",
+      "name": "示例中介（占位）",
+      "url": "",
+      "address": "",
+      "phone": "",
+      "whatsapp": "",
+      "license": "",
+      "services": [],
+      "feeRange": { "min": 0, "max": 0, "note": "" },
+      "rating": { "google": 0, "googleCount": 0, "xhs": null },
+      "pros": [],
+      "cons": [],
+      "replacementPolicy": "",
+      "lastVerified": "2026-08-22"
+    }
+  ]
+}
