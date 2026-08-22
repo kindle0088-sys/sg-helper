@@ -18,6 +18,7 @@
   .card .count { font-size:12px; color:var(--accent); }
   .status { display:inline-block; font-size:11px; padding:2px 8px; border-radius:99px; background:#f3f4f6; color:var(--muted); }
   .status.done { background:#dcfce7; color:#15803d; }
+  .status.partial { background:#fef3c7; color:#92400e; }
   a.go { display:inline-block; font-size:13px; color:#fff; background:var(--accent); padding:6px 14px; border-radius:6px; text-decoration:none; margin-bottom:12px; }
 </style>
 </head>
@@ -28,14 +29,17 @@
 
   <div class="grid">
     <div class="card">
-      <h2>📚 法律与流程 <span class="status">建设中</span></h2>
-      <p>MOM 雇佣外籍女佣的法规、成本构成与完整流程研究。</p>
-      <span class="count">docs/ · 0 篇</span>
+      <h2>📚 法律与流程 <span class="status done">已生成</span></h2>
+      <p>MOM 雇佣外籍女佣（MDW）的法规、成本与完整流程，中英对照。</p>
+      <a class="go" href="docs/legal-framework.md">法律框架 →</a>
+      <a class="go" href="docs/mom-process.md" style="background:#6b7280;">完整流程 →</a>
+      <span class="count">docs/ · 4 篇（含 costs / sources）</span>
     </div>
     <div class="card">
       <h2>🏢 中介对比 <span class="status done">已生成</span></h2>
       <p>13 家中介综合评分：MOM 官方数据 + Google 评分 + retention/transfer。</p>
       <a class="go" href="agencies/index.html">查看对比报告 →</a>
+      <a class="go" href="agencies/reports/index.html" style="background:#6b7280;">Top 10 研报 →</a>
       <span class="count">agencies/ · 13 家</span>
     </div>
     <div class="card">
@@ -44,8 +48,9 @@
       <span class="count">candidates/ · 0 份</span>
     </div>
     <div class="card">
-      <h2>📋 入职规划 <span class="status">建设中</span></h2>
-      <p>WP 申请 → 保险 → 接机 → 到岗 checklist。</p>
+      <h2>📋 入职规划 <span class="status partial">部分完成</span></h2>
+      <p>WP 申请 → 保险 → 接机 → 到岗 checklist（流程研究已就绪，checklist 工具待建）。</p>
+      <a class="go" href="docs/mom-process.md">流程文档 →</a>
       <span class="count">docs/mom-process.md</span>
     </div>
   </div>
