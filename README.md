@@ -7,8 +7,13 @@
 3. **候选人档案** — 每份女佣简历生成一个标准 HTML 档案，便于对比选择
 4. **入职规划** — 确定人选后的 WP 申请、保险、接机、到岗 checklist
 
-> **Private 仓库**：候选人简历含个人敏感信息，只给自己和家人看。
-> 页面部署方案待定（GitHub Pages 不支持 private，候选：CloudStudio/EdgeOne 部署或 public 脱敏展示仓）。
+> **Public 仓库 + GitHub Pages**：在线预览 https://kindle0088-sys.github.io/sg-helper/
+>
+> **脱敏策略（重要）**：仓库公开，凡涉及候选人个人信息的字段一律脱敏入库——
+> - 姓名 → 缩写（如 `S.N.（印尼）`），不存全名
+> - 照片、身份证件、联系方式 → 不入库，仅存本地 `data/candidates/raw/`（已 gitignore）
+> - 页面/JSON 中出现的电话号码、住址等 → 一律脱敏或省略
+> - 简历原件 PDF/图片只存在本地，不发到任何公开渠道
 
 ## 目录结构
 
@@ -32,9 +37,14 @@ sg-helper/
 手动/抓取数据 → data/*.json → scripts/build-*.mjs → agencies/ candidates/ index.html
 ```
 
+## 部署
+
+GitHub Pages 从 `main` 分支根目录自动部署，push 即生效。
+在线地址：https://kindle0088-sys.github.io/sg-helper/
+
 ## 状态
 
-- [x] 仓库骨架
+- [x] 仓库骨架（public + GitHub Pages 就绪）
 - [ ] 阶段 2：MOM 法律流程研究（docs/）
 - [ ] 阶段 3：中介清单 + 评论收集（小红书 / Google / 官网）
 - [ ] 阶段 4：中介对比评分
