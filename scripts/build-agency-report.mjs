@@ -33,6 +33,7 @@ function componentRow(label, score) {
 }
 
 // 前端 JS 用数据（原始值，渲染时转义）
+const top10 = new Set(scores.scores.slice(0, 10).map(s => s.id));
 const data = scores.scores.map(s => {
   const a = byId[s.id] || {};
   const m = s.momData || {};
@@ -53,6 +54,7 @@ const data = scores.scores.map(s => {
     placement: m.placement ?? null,
     exp: m.experienceYears ?? null,
     url: a.url || '',
+    hasReport: top10.has(s.id),
   };
 });
 
@@ -119,6 +121,8 @@ const html = `<!DOCTYPE html>
   .top1 { background:#fffbeb; }
   tr.hidden, .detail.hidden { display:none; }
   .name { font-weight:600; }
+  .badge { display:inline-block; margin-left:6px; font-size:11px; font-weight:600; padding:1px 7px; border-radius:99px; background:#eff6ff; color:var(--accent); border:1px solid #bfdbfe; vertical-align:middle; text-decoration:none; }
+  .badge:hover { background:#dbeafe; text-decoration:none; }
   .sub { font-size:11px; color:var(--muted); }
   .warn { font-size:11px; color:#b91c1c; margin-top:2px; }
   .score { font-size:18px; font-weight:800; color:var(--accent); }
@@ -218,7 +222,7 @@ function rowHtml(d, rank) {
   return \`<tr class="\${rank === 1 ? 'top1' : ''}">
     <td class="rank">\${rank}\${medal(rank - 1)}</td>
     <td>
-      <div class="name">\${esc(d.name)}</div>
+      <div class="name">\${esc(d.name)}\${d.hasReport ? '<a class="badge" href="reports/' + esc(d.id) + '.html" title="查看完整研报">📚 研报</a>' : ''}</div>
       <div class="sub">\${esc(d.sub)}</div>
       \${d.note ? '<div class="warn">' + esc(d.note) + '</div>' : ''}
     </td>
@@ -229,7 +233,7 @@ function rowHtml(d, rank) {
     <td class="num">\${pct(d.transfer)}</td>
     <td class="num">\${d.placement ?? '—'}</td>
     <td class="num">\${d.exp != null ? d.exp + 'y' : '—'}</td>
-    <td class="num">\${d.url ? '<a href="' + esc(d.url) + '" target="_blank">官网</a>' : ''}</td>
+    <td class="num">\${d.url ? '<a href="' + esc(d.url) + '" target="_blank">官网 ↗</a>' : '—'}</td>
   </tr>\`;
 }
 

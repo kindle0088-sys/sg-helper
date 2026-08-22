@@ -351,7 +351,7 @@
     {
       "id": "eden-grace",
       "name": "Eden Grace Maids",
-      "url": null,
+      "url": "https://www.edengracemaids.com",
       "address": null,
       "license": [
         "13C6831"
@@ -408,7 +408,8 @@
         },
         "total": 83.7,
         "note": null
-      }
+      },
+      "urlSource": "官网核实 2026-08-22（研报阶段）"
     },
     {
       "id": "jforce",
@@ -550,7 +551,7 @@
     {
       "id": "gentlehelp",
       "name": "gentleHelp",
-      "url": null,
+      "url": "https://www.gentlehelp.com.sg",
       "address": "160 Changi Rd, #04-07 Hexacube, Singapore 419728",
       "license": [
         "17C8609"
@@ -606,12 +607,13 @@
         },
         "total": 86.2,
         "note": null
-      }
+      },
+      "urlSource": "官网核实 2026-08-22（研报阶段）"
     },
     {
       "id": "goodhire",
       "name": "Goodhire",
-      "url": null,
+      "url": "https://www.goodhire.sg",
       "address": null,
       "license": [
         "16C7967"
@@ -667,12 +669,13 @@
         },
         "total": 87.5,
         "note": null
-      }
+      },
+      "urlSource": "官网核实 2026-08-22（研报阶段）"
     },
     {
       "id": "best-maid",
       "name": "Best Maid",
-      "url": null,
+      "url": "https://bestmaid.com.sg",
       "address": "304 Orchard Rd, #04-112 Lucky Plaza, Singapore 238863",
       "license": [
         "17C8580"
@@ -728,12 +731,13 @@
         },
         "total": 71.6,
         "note": null
-      }
+      },
+      "urlSource": "官网核实 2026-08-22（研报阶段）"
     },
     {
       "id": "ministry-of-helpers",
       "name": "Ministry of Helpers",
-      "url": null,
+      "url": "https://ministryofhelpers.com",
       "address": null,
       "license": [
         "23C2048"
@@ -790,12 +794,13 @@
         },
         "total": 83.9,
         "note": null
-      }
+      },
+      "urlSource": "官网核实 2026-08-22（研报阶段）"
     },
     {
       "id": "helper-express",
       "name": "Helper Express",
-      "url": null,
+      "url": "https://helperexpress.com.sg",
       "address": "400 Balestier Rd, #02-24, Singapore",
       "license": [
         "23C1660"
@@ -849,7 +854,8 @@
         },
         "total": 83.7,
         "note": null
-      }
+      },
+      "urlSource": "官网核实 2026-08-22（研报阶段）"
     }
   ]
 }
