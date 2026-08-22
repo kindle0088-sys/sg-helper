@@ -30,8 +30,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.9,
+        "googleCount": 334,
         "xhs": null
       },
       "notes": "1993 年成立，宣称 90,000+ 家庭，ISO 9001，SPBA 2025，SGX（Advancer Global）上市子公司。聚合站二手数据：retention 69.42%、transfer 0.35%、0 demerit（须官方核实）",
@@ -70,7 +70,9 @@
         "momReviews": 1034,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "googleBranches": "Yishun 4.9/334, Jurong 4.7/566, Toa Payoh 4.8/245, Hougang 4.9/339, Tampines 4.5/131",
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "universal-employment",
@@ -88,8 +90,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.8,
+        "googleCount": 2480,
         "xhs": null
       },
       "notes": "1986 年成立（40 年，业内最久），宣称 10,000+ 家庭。聚合站二手数据：retention 75.35%（须官方核实）",
@@ -124,7 +126,8 @@
         "momReviews": 317,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "best-home",
@@ -141,8 +144,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.6,
+        "googleCount": 374,
         "xhs": null
       },
       "notes": "1996 年成立。CaseTrust-EA 认证（全新加坡约 19 家之一），押金上限 20%，有履约担保。宣称无隐藏费用。",
@@ -177,7 +180,9 @@
         "momReviews": 660,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "googleBranches": "Thomson 4.6/374, Woodlands 4.8/76, Bukit Timah 4.7/238",
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "homekeeper",
@@ -195,7 +200,7 @@
       "feeRange": null,
       "rating": {
         "google": 4.8,
-        "googleCount": 2200,
+        "googleCount": 709,
         "xhs": null
       },
       "notes": "1998 年成立。聚合站二手数据：约 4.8 / 2,200+ Google 评论（须核实）。风格被描述为引导式、适合首次雇主。",
@@ -230,13 +235,15 @@
         "momReviews": 561,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "googleBranches": "Bukit Timah 4.8/709, Yishun 5.0/618, AMK 4.8/568, Pasir Ris 4.8/562, Potong Pasir 4.8/58, Bedok 4.9/101",
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "status-maids",
       "name": "Status Employment (Status Maids)",
       "url": "https://statusmaids.com",
-      "address": "Central Singapore",
+      "address": "10 Anson Rd, #02-83 International Plaza, Singapore 079903",
       "license": [
         "16C8301"
       ],
@@ -247,8 +254,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.9,
+        "googleCount": 313,
         "xhs": null
       },
       "notes": "2001 年成立，宣称 30,000+ 家庭。聚合站二手数据：retention 约 75%（须官方核实）。",
@@ -283,7 +290,8 @@
         "momReviews": 76,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "eden-grace",
@@ -299,8 +307,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.7,
+        "googleCount": 294,
         "xhs": null
       },
       "notes": "2013 年成立。聚合站称提供 2 周内置换。",
@@ -332,7 +340,9 @@
         "momReviews": 127,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "googleBranches": "HQ 4.7/294, Tampines 4.9/65",
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "jforce",
@@ -354,8 +364,8 @@
         "note": "聚合站二手：direct-hire 行政处理费约 S$300–800；full placement 约 S$1,000–4,000"
       },
       "rating": {
-        "google": 4.9,
-        "googleCount": null,
+        "google": 4.7,
+        "googleCount": 138,
         "xhs": null
       },
       "notes": "聚合站二手数据：Google 约 4.9 分（须核实）；公开定价、无硬推销。牌照号一处写 14C7171（另一处 14C717，须官方核实）。",
@@ -391,7 +401,9 @@
         "momReviews": 383,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "googleBranches": "Boon Keng 4.7/138, AMK 4.7/88",
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "green-employment",
@@ -409,7 +421,7 @@
       "feeRange": null,
       "rating": {
         "google": 4.9,
-        "googleCount": null,
+        "googleCount": 206,
         "xhs": null
       },
       "notes": "聚合站二手数据：transfer 率低于 0.4%、年派工约 305、Google 4.9（须核实）。牌照号未列出。",
@@ -443,13 +455,15 @@
         "momReviews": 161,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "googleBranches": "Serangoon 4.9/206, Toa Payoh 4.9/218",
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "gentlehelp",
       "name": "gentleHelp",
       "url": null,
-      "address": null,
+      "address": "160 Changi Rd, #04-07 Hexacube, Singapore 419728",
       "license": [
         "17C8609"
       ],
@@ -459,8 +473,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.9,
+        "googleCount": 95,
         "xhs": null
       },
       "notes": "2016 年成立。聚合站称其公开置换与退款政策。",
@@ -492,7 +506,8 @@
         "momReviews": 80,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "goodhire",
@@ -508,8 +523,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.8,
+        "googleCount": 133,
         "xhs": null
       },
       "notes": "聚合站称其不从女佣工资中扣费（更符合伦理的收费方式）。",
@@ -541,13 +556,14 @@
         "momReviews": 61,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "best-maid",
       "name": "Best Maid",
       "url": null,
-      "address": null,
+      "address": "304 Orchard Rd, #04-112 Lucky Plaza, Singapore 238863",
       "license": [
         "17C8580"
       ],
@@ -557,8 +573,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 5.0,
+        "googleCount": 1,
         "xhs": null
       },
       "notes": "聚合站称约 1988 年起步，37 年记录。",
@@ -590,7 +606,8 @@
         "momReviews": 17,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "ministry-of-helpers",
@@ -607,8 +624,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.9,
+        "googleCount": 109,
         "xhs": null
       },
       "notes": "聚合站称 24 小时营业、跨境业务。",
@@ -640,13 +657,14 @@
         "momReviews": 9,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "ratingSource": "Google Maps 2026-08-22"
     },
     {
       "id": "helper-express",
       "name": "Helper Express",
       "url": null,
-      "address": null,
+      "address": "400 Balestier Rd, #02-24, Singapore",
       "license": [
         "23C1660"
       ],
@@ -656,8 +674,8 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": null,
-        "googleCount": null,
+        "google": 4.8,
+        "googleCount": 221,
         "xhs": null
       },
       "notes": "聚合站称 full-service 新聘与转雇主。",
@@ -687,7 +705,8 @@
         "momReviews": 46,
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
-      }
+      },
+      "ratingSource": "Google Maps 2026-08-22"
     }
   ]
 }
