@@ -16,234 +16,678 @@
       "name": "Nation Employment / Nation Maid Agency",
       "url": "https://www.nation.sg",
       "address": "多分店（含市区）",
-      "license": ["12C5507", "09C5332"],
-      "licenseVerified": false,
-      "services": ["印尼/缅甸/菲律宾", "首次女佣全流程", "转雇主 transfer", "APS 认可", "长者/婴儿护理分流"],
+      "license": [
+        "12C5507",
+        "09C5332"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "印尼/缅甸/菲律宾",
+        "首次女佣全流程",
+        "转雇主 transfer",
+        "APS 认可",
+        "长者/婴儿护理分流"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "1993 年成立，宣称 90,000+ 家庭，ISO 9001，SPBA 2025，SGX（Advancer Global）上市子公司。聚合站二手数据：retention 69.42%、transfer 0.35%、0 demerit（须官方核实）",
-      "pros": ["规模大、流程化", "宣称无隐藏费用", "有牌照号可查"],
-      "cons": ["大店对个案关注度可能不如小店（待查评论）"],
+      "pros": [
+        "规模大、流程化",
+        "宣称无隐藏费用",
+        "有牌照号可查"
+      ],
+      "cons": [
+        "大店对个案关注度可能不如小店（待查评论）"
+      ],
       "replacementPolicy": "宣称有置换保证（详情须向中介确认）",
       "lastVerified": "2026-08-22",
-      "source": ["https://www.nation.sg", "https://morebetter.sg/blog/best-maid-agencies-singapore", "https://www.misslobang.com/article/best-maid-agencies-singapore-2026"],
-      "verifyNeeded": ["MOM EA Directory 牌照/demerit/retention/transfer", "Google 评分", "中介费报价", "评论"]
+      "source": [
+        "https://www.nation.sg",
+        "https://morebetter.sg/blog/best-maid-agencies-singapore",
+        "https://www.misslobang.com/article/best-maid-agencies-singapore-2026"
+      ],
+      "verifyNeeded": [
+        "MOM EA Directory 牌照/demerit/retention/transfer",
+        "Google 评分",
+        "中介费报价",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "NATION HUMAN RESOURCES PTE. LTD.",
+        "license": "12C5507",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 70.98,
+        "transfer": 1.83,
+        "placement": 2554,
+        "experienceYears": 14,
+        "momRating": 4,
+        "momReviews": 1034,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "universal-employment",
       "name": "Universal Employment Agency",
       "url": "https://universal.sg",
       "address": "三处分店",
-      "license": ["87C4847"],
-      "licenseVerified": false,
-      "services": ["多国籍", "转雇主 transfer 池深", "首次女佣"],
+      "license": [
+        "87C4847"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "多国籍",
+        "转雇主 transfer 池深",
+        "首次女佣"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "1986 年成立（40 年，业内最久），宣称 10,000+ 家庭。聚合站二手数据：retention 75.35%（须官方核实）",
-      "pros": ["经营年限最长", "transfer 女佣池深，等待短"],
+      "pros": [
+        "经营年限最长",
+        "transfer 女佣池深，等待短"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://terris.sg/blog/mom-approved-maid-agency-singapore", "https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["MOM 官方数据", "Google 评分", "中介费", "评论"]
+      "source": [
+        "https://terris.sg/blog/mom-approved-maid-agency-singapore",
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "MOM 官方数据",
+        "Google 评分",
+        "中介费",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "UNIVERSAL EMPLOYMENT AGENCY PTE. LTD.",
+        "license": "87C4847",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 67.76,
+        "transfer": 0.91,
+        "placement": 840,
+        "experienceYears": 39,
+        "momRating": 3.6,
+        "momReviews": 317,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "best-home",
       "name": "Best Home Employment Agency",
       "url": "https://besthome.com.sg",
       "address": "Bukit Timah / Thomson 等",
-      "license": ["96C5039"],
-      "licenseVerified": false,
-      "services": ["多国籍", "全流程（WP/保险/体检/6ME 管理）"],
+      "license": [
+        "96C5039"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "多国籍",
+        "全流程（WP/保险/体检/6ME 管理）"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "1996 年成立。CaseTrust-EA 认证（全新加坡约 19 家之一），押金上限 20%，有履约担保。宣称无隐藏费用。",
-      "pros": ["CaseTrust 押金保护", "资源充足"],
+      "pros": [
+        "CaseTrust 押金保护",
+        "资源充足"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://www.misslobang.com/article/best-maid-agencies-singapore-2026", "https://terris.sg/blog/mom-approved-maid-agency-singapore"],
-      "verifyNeeded": ["MOM 官方数据", "Google 评分", "中介费", "评论"]
+      "source": [
+        "https://www.misslobang.com/article/best-maid-agencies-singapore-2026",
+        "https://terris.sg/blog/mom-approved-maid-agency-singapore"
+      ],
+      "verifyNeeded": [
+        "MOM 官方数据",
+        "Google 评分",
+        "中介费",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "BEST HOME EMPLOYMENT AGENCY PTE. LTD.",
+        "license": "96C5039",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 60.48,
+        "transfer": 3.7,
+        "placement": 1619,
+        "experienceYears": 30,
+        "momRating": 3.8,
+        "momReviews": 660,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "homekeeper",
       "name": "Homekeeper Maid Agency",
       "url": "https://homekeepermaidagency.com",
       "address": "多分店（全岛）",
-      "license": ["09C5350"],
-      "licenseVerified": false,
-      "services": ["直接转雇主 transfer 专注", "全流程（WP/SIP/体检/海外文件）"],
+      "license": [
+        "09C5350"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "直接转雇主 transfer 专注",
+        "全流程（WP/SIP/体检/海外文件）"
+      ],
       "feeRange": null,
-      "rating": { "google": 4.8, "googleCount": 2200, "xhs": null },
+      "rating": {
+        "google": 4.8,
+        "googleCount": 2200,
+        "xhs": null
+      },
       "notes": "1998 年成立。聚合站二手数据：约 4.8 / 2,200+ Google 评论（须核实）。风格被描述为引导式、适合首次雇主。",
-      "pros": ["Google 评论量大且高分（二手）", "transfer 专注"],
+      "pros": [
+        "Google 评论量大且高分（二手）",
+        "transfer 专注"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://terris.sg/blog/terris-recommends-best-direct-hire-maid-agency-singapore", "https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["Google 评分核实", "MOM 官方数据", "中介费", "评论"]
+      "source": [
+        "https://terris.sg/blog/terris-recommends-best-direct-hire-maid-agency-singapore",
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "Google 评分核实",
+        "MOM 官方数据",
+        "中介费",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "HOMEKEEPER INTERNATIONAL PTE. LTD.",
+        "license": "09C5350",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 63.39,
+        "transfer": 0.85,
+        "placement": 1332,
+        "experienceYears": 17,
+        "momRating": 3.8,
+        "momReviews": 561,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "status-maids",
       "name": "Status Employment (Status Maids)",
       "url": "https://statusmaids.com",
       "address": "Central Singapore",
-      "license": ["16C8301"],
-      "licenseVerified": false,
-      "services": ["缅甸/印尼专精", "transfer 快（7-10 天）"],
+      "license": [
+        "16C8301"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "缅甸/印尼专精",
+        "transfer 快（7-10 天）"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "2001 年成立，宣称 30,000+ 家庭。聚合站二手数据：retention 约 75%（须官方核实）。",
-      "pros": ["缅甸/印尼专精", "transfer 快"],
+      "pros": [
+        "缅甸/印尼专精",
+        "transfer 快"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://terris.sg/blog/mom-approved-maid-agency-singapore", "https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["MOM 官方数据", "Google 评分", "中介费", "评论"]
+      "source": [
+        "https://terris.sg/blog/mom-approved-maid-agency-singapore",
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "MOM 官方数据",
+        "Google 评分",
+        "中介费",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "STATUS EMPLOYMENT AGENCY PTE. LTD.",
+        "license": "16C8301",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 69.06,
+        "transfer": 1.29,
+        "placement": 176,
+        "experienceYears": 9,
+        "momRating": 4.3,
+        "momReviews": 76,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "eden-grace",
       "name": "Eden Grace Maids",
       "url": null,
       "address": null,
-      "license": ["13C6831"],
-      "licenseVerified": false,
-      "services": ["首次女佣"],
+      "license": [
+        "13C6831"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "首次女佣"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "2013 年成立。聚合站称提供 2 周内置换。",
-      "pros": ["置换条款（2 周内）"],
+      "pros": [
+        "置换条款（2 周内）"
+      ],
       "cons": [],
       "replacementPolicy": "聚合站称：2 周内置换（详情须确认）",
       "lastVerified": "2026-08-22",
-      "source": ["https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["官网/联系方式", "MOM 官方数据", "评论"]
+      "source": [
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "官网/联系方式",
+        "MOM 官方数据",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "EDEN GRACE HUMAN RESOURCES PRIVATE LIMITED",
+        "license": "13C6831",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 62.68,
+        "transfer": 0.33,
+        "placement": 320,
+        "experienceYears": 12,
+        "momRating": 3.9,
+        "momReviews": 127,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "jforce",
       "name": "JForce Employment Service",
       "url": "https://jforce.com.sg",
       "address": "Boon Keng / Ang Mo Kio / Jurong East",
-      "license": ["14C7171"],
-      "licenseVerified": false,
-      "services": ["直接雇请 direct hire 专精", "全流程行政处理", "优惠 levy 指导"],
-      "feeRange": { "min": 300, "max": 800, "note": "聚合站二手：direct-hire 行政处理费约 S$300–800；full placement 约 S$1,000–4,000" },
-      "rating": { "google": 4.9, "googleCount": null, "xhs": null },
+      "license": [
+        "14C7171"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "直接雇请 direct hire 专精",
+        "全流程行政处理",
+        "优惠 levy 指导"
+      ],
+      "feeRange": {
+        "min": 300,
+        "max": 800,
+        "note": "聚合站二手：direct-hire 行政处理费约 S$300–800；full placement 约 S$1,000–4,000"
+      },
+      "rating": {
+        "google": 4.9,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "聚合站二手数据：Google 约 4.9 分（须核实）；公开定价、无硬推销。牌照号一处写 14C7171（另一处 14C717，须官方核实）。",
-      "pros": ["定价透明（二手）", "direct hire 专精", "Google 高分（二手）"],
+      "pros": [
+        "定价透明（二手）",
+        "direct hire 专精",
+        "Google 高分（二手）"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://terris.sg/blog/terris-recommends-best-direct-hire-maid-agency-singapore", "https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["牌照号核实", "Google 评分", "报价单", "评论"]
+      "source": [
+        "https://terris.sg/blog/terris-recommends-best-direct-hire-maid-agency-singapore",
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "牌照号核实",
+        "Google 评分",
+        "报价单",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "JFORCE EMPLOYMENT SERVICE PTE. LTD.",
+        "license": "14C7171",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 66.3,
+        "transfer": 0.85,
+        "placement": 945,
+        "experienceYears": 12,
+        "momRating": 4,
+        "momReviews": 383,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "green-employment",
       "name": "Green Employment",
       "url": "https://greenemployment.sg",
       "address": "Toa Payoh / Serangoon",
-      "license": null,
-      "licenseVerified": false,
-      "services": ["首次雇主导向", "印尼/菲律宾使馆认可"],
+      "license": [
+        "21C0720"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "首次雇主导向",
+        "印尼/菲律宾使馆认可"
+      ],
       "feeRange": null,
-      "rating": { "google": 4.9, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": 4.9,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "聚合站二手数据：transfer 率低于 0.4%、年派工约 305、Google 4.9（须核实）。牌照号未列出。",
-      "pros": ["低 transfer 率（二手）", "首次雇主引导"],
+      "pros": [
+        "低 transfer 率（二手）",
+        "首次雇主引导"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://terris.sg/blog/mom-approved-maid-agency-singapore"],
-      "verifyNeeded": ["牌照号", "MOM 官方数据", "Google 评分", "评论"]
+      "source": [
+        "https://terris.sg/blog/mom-approved-maid-agency-singapore"
+      ],
+      "verifyNeeded": [
+        "牌照号",
+        "MOM 官方数据",
+        "Google 评分",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "GREEN EMPLOYMENT PTE. LTD.",
+        "license": "21C0720",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 65.01,
+        "transfer": 0.27,
+        "placement": 389,
+        "experienceYears": 4,
+        "momRating": 4.1,
+        "momReviews": 161,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "gentlehelp",
       "name": "gentleHelp",
       "url": null,
       "address": null,
-      "license": ["17C8609"],
-      "licenseVerified": false,
-      "services": ["首次女佣"],
+      "license": [
+        "17C8609"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "首次女佣"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "2016 年成立。聚合站称其公开置换与退款政策。",
-      "pros": ["公开置换/退款政策（聚合站）"],
+      "pros": [
+        "公开置换/退款政策（聚合站）"
+      ],
       "cons": [],
       "replacementPolicy": "聚合站称有公开政策（须核实）",
       "lastVerified": "2026-08-22",
-      "source": ["https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["官网/联系方式", "MOM 官方数据", "评论"]
+      "source": [
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "官网/联系方式",
+        "MOM 官方数据",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "GENTLEHELP (TEO EXPRESS) PTE. LTD.",
+        "license": "17C8609",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 62.14,
+        "transfer": 0,
+        "placement": 183,
+        "experienceYears": 9,
+        "momRating": 4.1,
+        "momReviews": 80,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "goodhire",
       "name": "Goodhire",
       "url": null,
       "address": null,
-      "license": ["16C7967"],
-      "licenseVerified": false,
-      "services": ["首次女佣"],
+      "license": [
+        "16C7967"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "首次女佣"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "聚合站称其不从女佣工资中扣费（更符合伦理的收费方式）。",
-      "pros": ["不从女佣薪资扣费（聚合站）"],
+      "pros": [
+        "不从女佣薪资扣费（聚合站）"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["官网/联系方式", "MOM 官方数据", "评论"]
+      "source": [
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "官网/联系方式",
+        "MOM 官方数据",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "JOBS AND STAFF PTE. LTD.",
+        "license": "16C7967",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 72.77,
+        "transfer": 0.39,
+        "placement": 264,
+        "experienceYears": 10,
+        "momRating": 4.2,
+        "momReviews": 61,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "best-maid",
       "name": "Best Maid",
       "url": null,
       "address": null,
-      "license": ["17C8580"],
-      "licenseVerified": false,
-      "services": ["首次女佣"],
+      "license": [
+        "17C8580"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "首次女佣"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "聚合站称约 1988 年起步，37 年记录。",
-      "pros": ["经营年限长"],
+      "pros": [
+        "经营年限长"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["官网/联系方式", "MOM 官方数据", "评论"]
+      "source": [
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "官网/联系方式",
+        "MOM 官方数据",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "GODWIN EMPLOYMENT AGENCY",
+        "license": "17C8580",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 65,
+        "transfer": 3.33,
+        "placement": 35,
+        "experienceYears": 9,
+        "momRating": 3.7,
+        "momReviews": 17,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "ministry-of-helpers",
       "name": "Ministry of Helpers",
       "url": null,
       "address": null,
-      "license": ["23C2048"],
-      "licenseVerified": false,
-      "services": ["首次女佣", "24 小时营业"],
+      "license": [
+        "23C2048"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "首次女佣",
+        "24 小时营业"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "聚合站称 24 小时营业、跨境业务。",
-      "pros": ["24 小时"],
+      "pros": [
+        "24 小时"
+      ],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["官网/联系方式", "MOM 官方数据", "评论"]
+      "source": [
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "官网/联系方式",
+        "MOM 官方数据",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "MINISTRY OF DOMESTIC HELPERS PTE. LTD.",
+        "license": "23C2048",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 59.09,
+        "transfer": 0,
+        "placement": 27,
+        "experienceYears": 2,
+        "momRating": 4.2,
+        "momReviews": 9,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     },
     {
       "id": "helper-express",
       "name": "Helper Express",
       "url": null,
       "address": null,
-      "license": ["23C1660"],
-      "licenseVerified": false,
-      "services": ["首次女佣 + transfer"],
+      "license": [
+        "23C1660"
+      ],
+      "licenseVerified": true,
+      "services": [
+        "首次女佣 + transfer"
+      ],
       "feeRange": null,
-      "rating": { "google": null, "googleCount": null, "xhs": null },
+      "rating": {
+        "google": null,
+        "googleCount": null,
+        "xhs": null
+      },
       "notes": "聚合站称 full-service 新聘与转雇主。",
       "pros": [],
       "cons": [],
       "replacementPolicy": null,
       "lastVerified": "2026-08-22",
-      "source": ["https://morebetter.sg/blog/best-maid-agencies-singapore"],
-      "verifyNeeded": ["官网/联系方式", "MOM 官方数据", "评论"]
+      "source": [
+        "https://morebetter.sg/blog/best-maid-agencies-singapore"
+      ],
+      "verifyNeeded": [
+        "官网/联系方式",
+        "MOM 官方数据",
+        "评论"
+      ],
+      "momData": {
+        "officialName": "HELPER EXPRESS PTE. LTD.",
+        "license": "23C1660",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 62.73,
+        "transfer": 0,
+        "placement": 119,
+        "experienceYears": 3,
+        "momRating": 3.9,
+        "momReviews": 46,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      }
     }
   ]
 }

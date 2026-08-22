@@ -16,5 +16,6 @@ node_modules/
 Thumbs.db
 *.log
 
-# ---- 抓取原始数据（可再抓，不入库防杂乱）----
-data/agencies/raw/
+# ---- 抓取原始数据（ea-directory.json 等结构化抓取结果保留入库供审计）----
+data/agencies/raw/*.html
+data/agencies/raw/*.json.bak
