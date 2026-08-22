@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Employment 中介研报 · sg-helper</title>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --ok:#15803d; --bad:#b91c1c; --bg:#f9fafb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); padding:32px 20px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  .bread { font-size:12px; color:var(--muted); margin-bottom:14px; }
+  .bread a { color:var(--accent); text-decoration:none; }
+  h1 { font-size:26px; margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  h2 { font-size:18px; margin:28px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+  .desc { font-size:13px; color:var(--muted); margin-bottom:12px; line-height:1.7; }
+  .desc b { color:var(--ink); }
+  .footnote { font-size:12px; color:var(--muted); background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-top:12px; line-height:1.8; }
+  table.mini { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  table.mini th, table.mini td { padding:8px 12px; border-bottom:1px solid var(--line); text-align:left; font-size:13px; }
+  table.mini th { background:#f3f4f6; font-size:12px; color:var(--muted); }
+  .num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .src { font-size:11px; color:var(--muted); }
+  .bar { width:110px; height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; }
+  .bar-fill { height:100%; background:var(--accent); border-radius:99px; }
+  .hero { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:6px; }
+  .hero .big { font-size:40px; font-weight:800; color:var(--accent); }
+  .hero .meta { display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:10px; font-size:13px; }
+  .hero .meta b { color:var(--ink); }
+  .hero .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:99px; background:#eff6ff; color:var(--accent); margin-right:6px; }
+  .sw { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:640px) { .sw { grid-template-columns:1fr; } }
+  .sw-col { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .sw-col h3 { font-size:14px; margin-bottom:10px; }
+  .sw-col.ok h3 { color:var(--ok); }
+  .sw-col.bad h3 { color:var(--bad); }
+  .sw-col ul { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases li { margin-bottom:8px; }
+  ul.cases .src { display:block; font-size:11px; color:var(--muted); }
+  .review-list { display:flex; flex-direction:column; gap:10px; }
+  .review { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .rv-head { display:flex; align-items:center; gap:10px; margin-bottom:6px; font-size:12px; }
+  .rv-author { font-weight:600; color:var(--ink); }
+  .rv-stars { color:#f59e0b; letter-spacing:1px; }
+  .rv-date { color:var(--muted); }
+  .rv-text { font-size:13px; line-height:1.8; color:#374151; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bread"><a href="./index.html">← 研报索引</a> ｜ <a href="../index.html">中介对比</a></div>
+  <div class="hero">
+    <h1>🥉 Green Employment</h1>
+    <p class="sub">GREEN EMPLOYMENT PTE. LTD. · MOM 牌照 21C0720</p>
+    <div class="big">85.9</div>
+    <p class="desc" style="margin-top:2px;">综合评分（第 3 名 / 10）</p>
+    <div class="meta">
+      <span><b>MOM 评分</b> 4.1 / 161 评</span>
+      <span><b>Google</b> 4.9 / 206 评</span>
+      <span><b>Retention</b> 65.0%</span>
+      <span><b>Transfer</b> 0.3%</span>
+    </div>
+  </div>
+
+  
+  <h2>📊 综合评分</h2>
+  <p class="desc">综合分 <b>85.9</b>，模型：MOM 官方 30% + Google 25% + Retention 20% + Transfer 15% + 规模经验 10%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>得分</th><th>雷达</th></tr>
+    <tr><td>MOM 官方评分（权重 30%）</td><td class="num">82</td><td><div class="bar"><div class="bar-fill" style="width:82%"></div></div></td></tr><tr><td>Google 评分（权重 25%）</td><td class="num">98</td><td><div class="bar"><div class="bar-fill" style="width:98%"></div></div></td></tr><tr><td>Retention（权重 20%）</td><td class="num">93</td><td><div class="bar"><div class="bar-fill" style="width:93%"></div></div></td></tr><tr><td>Transfer（权重 15%）</td><td class="num">93</td><td><div class="bar"><div class="bar-fill" style="width:93%"></div></div></td></tr><tr><td>规模与经验（权重 10%）</td><td class="num">42</td><td><div class="bar"><div class="bar-fill" style="width:42%"></div></div></td></tr>
+  </table>
+  
+  <h2>💰 收费模式</h2>
+  <p class="desc">官网宣称 'Clear fee structure and refund policy'（清晰收费结构与退款政策），但具体金额未公开，需咨询。</p>
+  <table class="mini">
+    <tr><th>服务项</th><th>费用</th><th>来源</th></tr>
+    
+    <tr><td>中介费 / package</td><td class="num"><b>未公开，需咨询（Toa Payoh / Serangoon）</b></td><td class="src">greenemployment.sg</td></tr>
+  </table>
+  <p class="footnote">📌 官网有 free consultation 服务。退款政策明确写入官网承诺但金额不公开。</p>
+  
+  <h2>⚖️ 优势与劣势</h2>
+  <div class="sw">
+    <div class="sw-col ok">
+      <h3>✅ 优势</h3>
+      <ul><li>MOM 数据：Transfer 0.27%（第二低）、Retention 65.01%、MOM 评分 4.1/161 评</li><li>Google 4.9/206 + 4.9/218（两店）双高分</li><li>首次雇主引导、free consultation</li></ul>
+    </div>
+    <div class="sw-col bad">
+      <h3>⚠️ 劣势 / 顾虑</h3>
+      <ul><li>收费具体金额未公开</li><li>经营仅 4 年，品牌历史短</li><li>placement 389，规模中档</li></ul>
+    </div>
+  </div>
+  
+  <h2>📁 实际案例</h2>
+  <ul class="cases"><li>自有候选品牌 'GREEN-ies'（GREEN nannies），来源国印尼/菲律宾/缅甸，强调筛选与培训体系。<span class="src">来源：greenemployment.sg</span></li></ul>
+  
+  <h2>💬 客户真实评论（Google）</h2>
+  <p class="desc">以下为 2026-08-22 抓取的 Google Maps 评论原文，仅做排版整理，未做任何删改。评论仅代表个人观点。</p>
+  <div class="review-list">
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Megan</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">在google上搜到这家女佣中心，服务比较周到，女佣刚刚过来一天，目前感觉还可以，比较勤快。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">debbie khoo</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">非常棒的中介！之前联系过很多其他中介，但很多都杳无音信。虽然我们并不急着找家政人员，但永鸿还是认真听取了我们的需求，并花时间和精力为我们提供了几位合适的候选人。这家中介非常尊重客户，也很专业。以后有需要或者推荐给别人时，我肯定还会选择他们。他们也严格遵守人力部（MOM）的规定和定期回访，这一点非常好。强烈推荐！！！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Shruti Bhatnagar</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我们对绿盛就业中介的体验非常棒。洪勇先生在整个过程中都非常礼貌、耐心和乐于助人。他充分理解了我们的需求，并协助我们筛选出合适且经验丰富的帮手。我们非常感谢他及时的支持和专业的服务。强烈推荐！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">candy shao</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">在永鸿的帮助下，我只用了一周时间就找到了新的帮手。感谢他们快速的安排和贴心的推荐，整个过程非常顺利高效。
+
+我们的新帮手莫莫已经和我们一起生活一个多月了。我们非常感谢永鸿团队提供的专业可靠的服务。强烈推荐！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Jasmine</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我非常满意，也真心感谢这家职业介绍机构提供的优质服务。作为一名初次招聘的雇主，我有很多疑问和顾虑，但整个过程都非常顺利，让我感到安心。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Constance Yeo</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我在谷歌上找到了Green Employment，读了他们的介绍后觉得很吸引人，于是决定试一试。我通过WhatsApp联系了这家机构，Yong Hong被安排负责我的招聘事宜。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Angela Koh</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">永鸿是我指定的代理人，他协助我完成了整个家政服务人员的招聘流程。他耐心细致，认真负责，根据我的要求和需求，帮我筛选出了合适的候选人。
+
+他迅速安排了候选人的电话面试，并就我的选择提供了专业的建议。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Nick Law</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我曾联系过几家职业介绍所寻找合适的帮手，而Green Employment是我迄今为止体验最好的一家。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Ng WQ</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">这家中介是我朋友推荐的，目前为止他们的服务非常出色！我的经纪人永洪即使在休假期间也能及时回复，这一点我非常感激。我的帮佣目前为止也没有任何问题——她学习能力很强，即使不熟悉工作也积极学习。我会向所有需要帮佣的人推荐这家中介！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Genee</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">永鸿是绿业就业公司的主要联系人。我对他的服务非常满意，他耐心又专业。当我们对帮佣有疑问时，他还会主动联系帮佣确认。整个过程非常顺利，我强烈推荐给所有需要这项服务的人。谢谢永鸿！</p>
+    </div></div>
+  
+  <h2>🏛️ MOM 官方指标（EA Directory）</h2>
+  <p class="desc">数据抓取自 MOM Employment Agency Directory（2026-08-22）。行业基准：Retention 均值 62.43%、Transfer 均值 1.05%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td>MOM 官方评分</td><td>4.1（161 条评论）</td></tr><tr><td>Retention（续任率）</td><td>65.0%</td></tr><tr><td>Transfer（转手率）</td><td>0.3%</td></tr><tr><td>派工量（12 个月）</td><td>389</td></tr><tr><td>经营年限</td><td>4 年</td></tr><tr><td>牌照号</td><td>21C0720（状态核实 ✅）</td></tr><tr><td>官方注册名</td><td>GREEN EMPLOYMENT PTE. LTD.</td></tr>
+  </table>
+  <h2>📞 联系与核实</h2><ul class="cases"><li>官网：<a href="https://greenemployment.sg" target="_blank">https://greenemployment.sg</a></li><li>地址：Toa Payoh / Serangoon</li><li>MOM 牌照：21C0720</li><li class="muted">⚠️ 费用与条款以线下咨询为准；请通过 MOM 官网核验牌照与评分。</li></ul>
+
+  <p style="margin-top:28px;color:var(--muted);font-size:12px;">⚠️ 本研报由脚本生成，数据仅供研究参考。信息截至 2026-08-22；费用、置换条款等以各家中介当前正式报价为准，请通过 MOM 官网（mom.gov.sg）独立核验中介牌照与评分。评论内容来自公开渠道，仅代表评论者个人观点。</p>
+</div>
+</body>
+</html>

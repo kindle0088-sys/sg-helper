@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goodhire 中介研报 · sg-helper</title>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --ok:#15803d; --bad:#b91c1c; --bg:#f9fafb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); padding:32px 20px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  .bread { font-size:12px; color:var(--muted); margin-bottom:14px; }
+  .bread a { color:var(--accent); text-decoration:none; }
+  h1 { font-size:26px; margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  h2 { font-size:18px; margin:28px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+  .desc { font-size:13px; color:var(--muted); margin-bottom:12px; line-height:1.7; }
+  .desc b { color:var(--ink); }
+  .footnote { font-size:12px; color:var(--muted); background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-top:12px; line-height:1.8; }
+  table.mini { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  table.mini th, table.mini td { padding:8px 12px; border-bottom:1px solid var(--line); text-align:left; font-size:13px; }
+  table.mini th { background:#f3f4f6; font-size:12px; color:var(--muted); }
+  .num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .src { font-size:11px; color:var(--muted); }
+  .bar { width:110px; height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; }
+  .bar-fill { height:100%; background:var(--accent); border-radius:99px; }
+  .hero { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:6px; }
+  .hero .big { font-size:40px; font-weight:800; color:var(--accent); }
+  .hero .meta { display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:10px; font-size:13px; }
+  .hero .meta b { color:var(--ink); }
+  .hero .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:99px; background:#eff6ff; color:var(--accent); margin-right:6px; }
+  .sw { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:640px) { .sw { grid-template-columns:1fr; } }
+  .sw-col { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .sw-col h3 { font-size:14px; margin-bottom:10px; }
+  .sw-col.ok h3 { color:var(--ok); }
+  .sw-col.bad h3 { color:var(--bad); }
+  .sw-col ul { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases li { margin-bottom:8px; }
+  ul.cases .src { display:block; font-size:11px; color:var(--muted); }
+  .review-list { display:flex; flex-direction:column; gap:10px; }
+  .review { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .rv-head { display:flex; align-items:center; gap:10px; margin-bottom:6px; font-size:12px; }
+  .rv-author { font-weight:600; color:var(--ink); }
+  .rv-stars { color:#f59e0b; letter-spacing:1px; }
+  .rv-date { color:var(--muted); }
+  .rv-text { font-size:13px; line-height:1.8; color:#374151; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bread"><a href="./index.html">← 研报索引</a> ｜ <a href="../index.html">中介对比</a></div>
+  <div class="hero">
+    <h1>🥇 Goodhire</h1>
+    <p class="sub">JOBS AND STAFF PTE. LTD. · MOM 牌照 16C7967</p>
+    <div class="big">87.5</div>
+    <p class="desc" style="margin-top:2px;">综合评分（第 1 名 / 10）</p>
+    <div class="meta">
+      <span><b>MOM 评分</b> 4.2 / 61 评</span>
+      <span><b>Google</b> 4.8 / 133 评</span>
+      <span><b>Retention</b> 72.8%</span>
+      <span><b>Transfer</b> 0.4%</span>
+    </div>
+  </div>
+
+  
+  <h2>📊 综合评分</h2>
+  <p class="desc">综合分 <b>87.5</b>，模型：MOM 官方 30% + Google 25% + Retention 20% + Transfer 15% + 规模经验 10%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>得分</th><th>雷达</th></tr>
+    <tr><td>MOM 官方评分（权重 30%）</td><td class="num">84</td><td><div class="bar"><div class="bar-fill" style="width:84%"></div></div></td></tr><tr><td>Google 评分（权重 25%）</td><td class="num">96</td><td><div class="bar"><div class="bar-fill" style="width:96%"></div></div></td></tr><tr><td>Retention（权重 20%）</td><td class="num">100</td><td><div class="bar"><div class="bar-fill" style="width:100%"></div></div></td></tr><tr><td>Transfer（权重 15%）</td><td class="num">90</td><td><div class="bar"><div class="bar-fill" style="width:90%"></div></div></td></tr><tr><td>规模与经验（权重 10%）</td><td class="num">47</td><td><div class="bar"><div class="bar-fill" style="width:47%"></div></div></td></tr>
+  </table>
+  
+  <h2>💰 收费模式</h2>
+  <p class="desc">官网公开定价，模式透明：按服务类型分档收费。特色：不向女佣收取任何费用、不从女佣工资扣款（social enterprise 模式）</p>
+  <table class="mini">
+    <tr><th>服务项</th><th>费用</th><th>来源</th></tr>
+    
+    <tr><td>Direct Transfer Helper（新加坡转介女佣）</td><td class="num"><b>from S$428</b></td><td class="src">goodhire.sg 官网《Our Services》</td></tr>
+    <tr><td>Direct Hire 菲律宾（境外新聘）</td><td class="num"><b>from S$1,600</b></td><td class="src">goodhire.sg 官网《Our Services》</td></tr>
+    <tr><td>Direct Hire 印尼/缅甸（境外新聘）</td><td class="num"><b>from S$1,100</b></td><td class="src">goodhire.sg 官网《Our Services》</td></tr>
+    <tr><td>Transfer Helper Fee</td><td class="num"><b>from S$1,488</b></td><td class="src">goodhire.sg 官网（bestmaid.com.sg 中介主页转引）</td></tr>
+    <tr><td>Ex-Singapore 印尼女佣</td><td class="num"><b>from S$2,200</b></td><td class="src">goodhire.sg 官网（bestmaid.com.sg 转引）</td></tr>
+    <tr><td>New/Ex-Singapore/Ex-Abroad 菲律宾女佣</td><td class="num"><b>from S$2,800</b></td><td class="src">goodhire.sg 官网（bestmaid.com.sg 转引）</td></tr>
+  </table>
+  <p class="footnote">📌 官网提示 MOM 费用另计：WP 申请费 S$35 + 签发费 S$35；MOM 强制保险 from S$490.50；机票 S$120-150；新加坡交通 S$85-100；体检 S$85；SIP S$75；住宿 from S$25/晚。官网引用 MOM 规定：placement 后 6 个月内服务费可退 50%。</p>
+  
+  <h2>⚖️ 优势与劣势</h2>
+  <div class="sw">
+    <div class="sw-col ok">
+      <h3>✅ 优势</h3>
+      <ul><li>收费完全公开且分档清晰（S$428-S$2,800），行业内少见</li><li>不向女佣收费的社会企业定位（raiSE 注册社会企业、Honest Jobs 投资）</li><li>MOM 数据：Retention 72.77%（13 家最高）、Transfer 0.39%（第二低）</li></ul>
+    </div>
+    <div class="sw-col bad">
+      <h3>⚠️ 劣势 / 顾虑</h3>
+      <ul><li>MOM 评论数仅 61 条，样本量偏小</li><li>Google 评论数与 Universal（2,480）等相比偏少</li><li>成立 10 年，规模与老牌大店有差距</li></ul>
+    </div>
+  </div>
+  
+  <h2>📁 实际案例</h2>
+  <ul class="cases"><li>社会企业模式：不向女佣收 placement fee、不扣工资、不放贷。官网解释其与普通中介的差异——不以女佣贷款绑定佣工，避免 Debt Bondage（债务奴役）。<span class="src">来源：goodhire.sg 官网 + bestmaid.com.sg 中介主页</span></li></ul>
+  
+  <h2>💬 客户真实评论（Google）</h2>
+  <p class="desc">以下为 2026-08-22 抓取的 Google Maps 评论原文，仅做排版整理，未做任何删改。评论仅代表个人观点。</p>
+  <div class="review-list">
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Rachel Lyxeen</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我与Goodhire团队的合作体验非常棒，尤其要感谢Jude、Rob和Loiza，他们协助我完成了直接雇佣保姆和保姆调动的整个过程。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Sze “P1RT_Raiden_27”</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">这是我第一次在雇佣帮手时没有选择传统的实体中介。Rob 和 Jude 让整个过程变得非常轻松。他们通过 WhatsApp 回复迅速且清晰。所有事项，包括文件签署，都是通过 WhatsApp 和电子邮件完成的，这比亲自去实体办公室签字方便多了。付款方式也很灵活，分几个阶段支付，所以你清楚地知道每一笔钱都花在了哪里。总而言之，我的体验非常棒，强烈推荐 GoodHire 的 Jude 和 Rob！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Melissa Foo</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">从头到尾，我们聘请最新家庭佣工的整个过程都非常顺利。Jude 和 Rob…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Rajeev Rai</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">在咨询了几家中介之后，我发现GoodHire性价比很高。更重要的是，Jude非常体贴，充分考虑了我的需求，并清晰地解释了每一个流程。他经常向我汇报进度。
+
+他安排得井井有条，我的帮手无需先去马尼拉再来新加坡，这正是我要求的。而其他很多中介要么因为不了解流程，要么因为不熟悉马尼拉以外的物流安排而拒绝了我的请求。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">rachana mehta</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">您好。这家中介公司非常好，也很专业。他们真的帮我只用了三天就拿到了帮佣许可证。您可以随时通过WhatsApp联系他们，他们都会回复。特别感谢Jude，他全程指导我完成了申请流程的每一步。非常感谢他们的帮助，而且费用也很合理。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Estephani</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我对Goodhire的服务非常满意。他们的团队专业、细致、可靠，全程清晰高效地指导我完成所有流程，使一切都进行得非常顺利。我非常感谢他们的支持，并强烈推荐他们的服务。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Laure Urbin de Vienne</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我们对贵公司的租赁服务非常满意。整个流程非常顺畅，而且在任何时候我们都能与他们保持清晰的沟通。非常感谢Rob和他的团队！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Nur Aaliya Quijano</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">强烈推荐！
+
+Goodhire是一家价格非常实惠且响应迅速的家政公司。他们总是耐心解答我们的疑问和顾虑，并详细解释流程的每一步，我对此非常感激。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Alvina Tan</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我们最近委托Goodhire公司从菲律宾直接雇佣了一位帮手，整个过程非常顺利愉快。从一开始，他们的定价就非常透明——没有任何隐藏费用或意外支出。我们尤其欣赏他们全程的指导，他们始终与我们保持沟通，确保我们了解所有手续，避免我们感到不知所措。他们的支持让整个过程轻松无压力。我们非常感谢他们的专业精神和敬业态度，并强烈推荐给任何考虑直接雇佣帮手的人。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">msfixit lee</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">感谢Goodhire团队，我得以直接从菲律宾雇佣了一位帮手。整个过程非常顺利，团队专业高效，解答了我所有的疑问，并处理了所有文件。他们每一步都及时向我汇报进展，并提供了很多有用的建议。他们的价格也很合理。…... 展开</p>
+    </div></div>
+  
+  <h2>🏛️ MOM 官方指标（EA Directory）</h2>
+  <p class="desc">数据抓取自 MOM Employment Agency Directory（2026-08-22）。行业基准：Retention 均值 62.43%、Transfer 均值 1.05%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td>MOM 官方评分</td><td>4.2（61 条评论）</td></tr><tr><td>Retention（续任率）</td><td>72.8%</td></tr><tr><td>Transfer（转手率）</td><td>0.4%</td></tr><tr><td>派工量（12 个月）</td><td>264</td></tr><tr><td>经营年限</td><td>10 年</td></tr><tr><td>牌照号</td><td>16C7967（状态核实 ✅）</td></tr><tr><td>官方注册名</td><td>JOBS AND STAFF PTE. LTD.</td></tr>
+  </table>
+  <h2>📞 联系与核实</h2><ul class="cases"><li>MOM 牌照：16C7967</li><li class="muted">⚠️ 费用与条款以线下咨询为准；请通过 MOM 官网核验牌照与评分。</li></ul>
+
+  <p style="margin-top:28px;color:var(--muted);font-size:12px;">⚠️ 本研报由脚本生成，数据仅供研究参考。信息截至 2026-08-22；费用、置换条款等以各家中介当前正式报价为准，请通过 MOM 官网（mom.gov.sg）独立核验中介牌照与评分。评论内容来自公开渠道，仅代表评论者个人观点。</p>
+</div>
+</body>
+</html>

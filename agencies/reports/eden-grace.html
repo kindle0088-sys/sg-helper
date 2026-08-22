@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eden Grace Maids 中介研报 · sg-helper</title>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --ok:#15803d; --bad:#b91c1c; --bg:#f9fafb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); padding:32px 20px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  .bread { font-size:12px; color:var(--muted); margin-bottom:14px; }
+  .bread a { color:var(--accent); text-decoration:none; }
+  h1 { font-size:26px; margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  h2 { font-size:18px; margin:28px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+  .desc { font-size:13px; color:var(--muted); margin-bottom:12px; line-height:1.7; }
+  .desc b { color:var(--ink); }
+  .footnote { font-size:12px; color:var(--muted); background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-top:12px; line-height:1.8; }
+  table.mini { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  table.mini th, table.mini td { padding:8px 12px; border-bottom:1px solid var(--line); text-align:left; font-size:13px; }
+  table.mini th { background:#f3f4f6; font-size:12px; color:var(--muted); }
+  .num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .src { font-size:11px; color:var(--muted); }
+  .bar { width:110px; height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; }
+  .bar-fill { height:100%; background:var(--accent); border-radius:99px; }
+  .hero { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:6px; }
+  .hero .big { font-size:40px; font-weight:800; color:var(--accent); }
+  .hero .meta { display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:10px; font-size:13px; }
+  .hero .meta b { color:var(--ink); }
+  .hero .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:99px; background:#eff6ff; color:var(--accent); margin-right:6px; }
+  .sw { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:640px) { .sw { grid-template-columns:1fr; } }
+  .sw-col { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .sw-col h3 { font-size:14px; margin-bottom:10px; }
+  .sw-col.ok h3 { color:var(--ok); }
+  .sw-col.bad h3 { color:var(--bad); }
+  .sw-col ul { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases li { margin-bottom:8px; }
+  ul.cases .src { display:block; font-size:11px; color:var(--muted); }
+  .review-list { display:flex; flex-direction:column; gap:10px; }
+  .review { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .rv-head { display:flex; align-items:center; gap:10px; margin-bottom:6px; font-size:12px; }
+  .rv-author { font-weight:600; color:var(--ink); }
+  .rv-stars { color:#f59e0b; letter-spacing:1px; }
+  .rv-date { color:var(--muted); }
+  .rv-text { font-size:13px; line-height:1.8; color:#374151; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bread"><a href="./index.html">← 研报索引</a> ｜ <a href="../index.html">中介对比</a></div>
+  <div class="hero">
+    <h1>8 Eden Grace Maids</h1>
+    <p class="sub">EDEN GRACE HUMAN RESOURCES PRIVATE LIMITED · MOM 牌照 13C6831</p>
+    <div class="big">83.7</div>
+    <p class="desc" style="margin-top:2px;">综合评分（第 8 名 / 10）</p>
+    <div class="meta">
+      <span><b>MOM 评分</b> 3.9 / 127 评</span>
+      <span><b>Google</b> 4.7 / 294 评</span>
+      <span><b>Retention</b> 62.7%</span>
+      <span><b>Transfer</b> 0.3%</span>
+    </div>
+  </div>
+
+  
+  <h2>📊 综合评分</h2>
+  <p class="desc">综合分 <b>83.7</b>，模型：MOM 官方 30% + Google 25% + Retention 20% + Transfer 15% + 规模经验 10%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>得分</th><th>雷达</th></tr>
+    <tr><td>MOM 官方评分（权重 30%）</td><td class="num">78</td><td><div class="bar"><div class="bar-fill" style="width:78%"></div></div></td></tr><tr><td>Google 评分（权重 25%）</td><td class="num">94</td><td><div class="bar"><div class="bar-fill" style="width:94%"></div></div></td></tr><tr><td>Retention（权重 20%）</td><td class="num">90</td><td><div class="bar"><div class="bar-fill" style="width:90%"></div></div></td></tr><tr><td>Transfer（权重 15%）</td><td class="num">92</td><td><div class="bar"><div class="bar-fill" style="width:92%"></div></div></td></tr><tr><td>规模与经验（权重 10%）</td><td class="num">51</td><td><div class="bar"><div class="bar-fill" style="width:51%"></div></div></td></tr>
+  </table>
+  
+  <h2>💰 收费模式</h2>
+  <p class="desc">官网未公开定价。第三方 maidinfo.sg 官方指标 'Clear Fee Structure' 评分 4.3/5（较高）。</p>
+  <table class="mini">
+    <tr><th>服务项</th><th>费用</th><th>来源</th></tr>
+    
+    <tr><td>中介费 / package</td><td class="num"><b>未公开，需咨询（6262 5562）</b></td><td class="src">edengracemaids.com</td></tr>
+  </table>
+  <p class="footnote">📌 基督教背景机构，特色：Employer Integration Programme、Sunday Programmes、年度颁奖活动。部署后 3 个月内跟进回访。</p>
+  
+  <h2>⚖️ 优势与劣势</h2>
+  <div class="sw">
+    <div class="sw-col ok">
+      <h3>✅ 优势</h3>
+      <ul><li>MOM Transfer 0%（并列最低）</li><li>Google 4.7/294 + 4.9/65（两店）</li><li>独特的基督教社群支持体系（Sunday 活动、雇主整合计划）</li><li>2013 起服务 5,000+ 家庭，7 次获得 Parents World 最佳中介奖</li></ul>
+    </div>
+    <div class="sw-col bad">
+      <h3>⚠️ 劣势 / 顾虑</h3>
+      <ul><li>MOM Retention 53.15%（maidinfo 数据，偏低）</li><li>收费不透明</li><li>官网部分页面有占位文本（'Lorem Ipsum'），官网质量一般</li></ul>
+    </div>
+  </div>
+  
+  <h2>📁 实际案例</h2>
+  <ul class="cases"><li>客户 Louis Looi（parentsworld 报道）：首次请女佣，全流程 pleasant &amp; worry-free，无隐藏费用。<span class="src">来源：parentsworld.com.sg 2023-08</span></li><li>客户 Yong Qi：称 Eden Grace 在每一步更新进度并提供居家过渡建议，为雇主和女佣建立的社群罕见。<span class="src">来源：parentsworld.com.sg 2023-08</span></li></ul>
+  
+  <h2>💬 客户真实评论（Google）</h2>
+  <p class="desc">以下为 2026-08-22 抓取的 Google Maps 评论原文，仅做排版整理，未做任何删改。评论仅代表个人观点。</p>
+  <div class="review-list">
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">QINGPU ZHENG</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">服务专业，沟通顺畅坦诚，能够给雇主提供合理化建议。用户体验很好，值得推荐。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">JP Choong</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我们通过Eden Grace雇佣了一位帮手，整个过程非常顺利。从第一次通话开始，Alice就非常耐心，详细询问了我们家庭的情况、孩子的情况、烹饪需求以及帮手的休息日偏好等等。强烈推荐给正在寻找可靠合作机构的家庭。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Shawn Tan</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我们当时正在寻找一位帮手来照顾我们刚出生的宝宝，偶然发现了Eden Grace。他们不像其他一些机构那样提供大量的促销和赠品，但在整个寻找过程中，他们的服务质量都非常出色。接待我们的销售人员Snooky也非常热情周到，在我们浏览了许多简历后，她仍然耐心细致地帮助我们找到了合适的帮手。非常感谢！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Lavinia Santelices</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">非常感谢EdenGrace给予我和我们新来的帮手的所有支持和指导。他们非常关心体贴，也很关心帮手的福祉。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Sze</span>
+        <span class="rv-stars">★★★★☆</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">到目前为止，我从Eden Grace那里招募了4名助手，他们都很不错。
+
+可惜的是，他们都会在完成第一个合同后离开，这并非Eden Grace的问题，但如果能找到一个可以长期合作的助手就更好了。也许我一直在寻找的那种助手并不适合长期留任。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Benjamin Fwah</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">整个过程非常顺利。与Eden Grace合作非常愉快，后续跟进也很及时！强烈推荐！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">noreen yeo</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">Alice对我们的询问和顾虑回复非常及时。从选择帮手到帮手到岗，整个过程都很顺利。总体来说，这是一次非常好的体验。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Jessy Zhang</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">Eden Grace 帮了我们很大的忙！Alice 从一开始就非常积极主动，办事效率很高，安排面试也很周到。我们非常感谢 Alice 的指导！
+
+确认帮手人选后，中介也让后续的行政手续办理得非常顺利便捷。Dave 在我们接帮手回家之前，还给我们做了一次非常有见地的入职培训。强烈推荐 Eden Grace 给所有需要帮手的人 :)</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Caroline Maloney</span>
+        <span class="rv-stars">★★★☆☆</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">早餐很不错，酒吧也挺好。酒店房间一般。位置在市中心。电梯故障和持续不断的噪音让我一直到下午1点都没睡好，花了半个小时跟前台解释情况，结果凌晨才换了房间，这让我很失望。几个小时后，我们通过预订系统联系了工作人员，他们承诺会部分退款，但之后就杳无音信了。就管理团队而言，客户服务根本不值三星，只有一星。酒店看起来很气派，可惜了。健身房又小又旧，桑拿房需要提前预订，而且使用时间有限，蒸汽房和跑步机都坏了，所以健身房/水疗中心的大部分设施都无法使用。我们住的两间房都还可以，但就这个价位…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">C Y</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我最近通过Eden Grace雇佣了一位帮手，Yvonne为我提供了帮助，我对他们的服务非常满意。这家机构各方面都超出了我的预期。从始至终，沟通都非常顺畅——回复迅速、清晰明了且专业。他们认真了解我的需求，并为我匹配了一位不仅技能娴熟，而且非常适合我们家的帮手。我强烈推荐他们的服务给任何需要帮手的人。</p>
+    </div></div>
+  
+  <h2>🏛️ MOM 官方指标（EA Directory）</h2>
+  <p class="desc">数据抓取自 MOM Employment Agency Directory（2026-08-22）。行业基准：Retention 均值 62.43%、Transfer 均值 1.05%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td>MOM 官方评分</td><td>3.9（127 条评论）</td></tr><tr><td>Retention（续任率）</td><td>62.7%</td></tr><tr><td>Transfer（转手率）</td><td>0.3%</td></tr><tr><td>派工量（12 个月）</td><td>320</td></tr><tr><td>经营年限</td><td>12 年</td></tr><tr><td>牌照号</td><td>13C6831（状态核实 ✅）</td></tr><tr><td>官方注册名</td><td>EDEN GRACE HUMAN RESOURCES PRIVATE LIMITED</td></tr>
+  </table>
+  <h2>📞 联系与核实</h2><ul class="cases"><li>MOM 牌照：13C6831</li><li class="muted">⚠️ 费用与条款以线下咨询为准；请通过 MOM 官网核验牌照与评分。</li></ul>
+
+  <p style="margin-top:28px;color:var(--muted);font-size:12px;">⚠️ 本研报由脚本生成，数据仅供研究参考。信息截至 2026-08-22；费用、置换条款等以各家中介当前正式报价为准，请通过 MOM 官网（mom.gov.sg）独立核验中介牌照与评分。评论内容来自公开渠道，仅代表评论者个人观点。</p>
+</div>
+</body>
+</html>

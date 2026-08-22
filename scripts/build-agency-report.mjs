@@ -141,6 +141,7 @@ const html = `<!DOCTYPE html>
 <body>
 <div class="wrap">
   <h1>🏢 新加坡女佣中介对比</h1>
+  <p class="sub">📚 <a href="./reports/index.html" style="color:var(--accent);font-weight:600;">查看 Top 10 中介独立研报 →</a></p>
   <p class="sub">数据日期：${scores.generatedAt} ｜ 数据来源：MOM EA Directory（官方）+ Google Maps + 小红书观察<br>行业基准（MOM 官方，2026-08-16~17）：Retention 均值 ${scores.benchmarks.retentionAvg}% ｜ Transfer 均值 ${scores.benchmarks.transferAvg}% ｜ Placement 均值 ${scores.benchmarks.placementAvg}</p>
 
   <div class="legend">

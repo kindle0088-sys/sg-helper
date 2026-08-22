@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gentleHelp 中介研报 · sg-helper</title>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --ok:#15803d; --bad:#b91c1c; --bg:#f9fafb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); padding:32px 20px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  .bread { font-size:12px; color:var(--muted); margin-bottom:14px; }
+  .bread a { color:var(--accent); text-decoration:none; }
+  h1 { font-size:26px; margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  h2 { font-size:18px; margin:28px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+  .desc { font-size:13px; color:var(--muted); margin-bottom:12px; line-height:1.7; }
+  .desc b { color:var(--ink); }
+  .footnote { font-size:12px; color:var(--muted); background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-top:12px; line-height:1.8; }
+  table.mini { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  table.mini th, table.mini td { padding:8px 12px; border-bottom:1px solid var(--line); text-align:left; font-size:13px; }
+  table.mini th { background:#f3f4f6; font-size:12px; color:var(--muted); }
+  .num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .src { font-size:11px; color:var(--muted); }
+  .bar { width:110px; height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; }
+  .bar-fill { height:100%; background:var(--accent); border-radius:99px; }
+  .hero { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:6px; }
+  .hero .big { font-size:40px; font-weight:800; color:var(--accent); }
+  .hero .meta { display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:10px; font-size:13px; }
+  .hero .meta b { color:var(--ink); }
+  .hero .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:99px; background:#eff6ff; color:var(--accent); margin-right:6px; }
+  .sw { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:640px) { .sw { grid-template-columns:1fr; } }
+  .sw-col { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .sw-col h3 { font-size:14px; margin-bottom:10px; }
+  .sw-col.ok h3 { color:var(--ok); }
+  .sw-col.bad h3 { color:var(--bad); }
+  .sw-col ul { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases li { margin-bottom:8px; }
+  ul.cases .src { display:block; font-size:11px; color:var(--muted); }
+  .review-list { display:flex; flex-direction:column; gap:10px; }
+  .review { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .rv-head { display:flex; align-items:center; gap:10px; margin-bottom:6px; font-size:12px; }
+  .rv-author { font-weight:600; color:var(--ink); }
+  .rv-stars { color:#f59e0b; letter-spacing:1px; }
+  .rv-date { color:var(--muted); }
+  .rv-text { font-size:13px; line-height:1.8; color:#374151; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bread"><a href="./index.html">← 研报索引</a> ｜ <a href="../index.html">中介对比</a></div>
+  <div class="hero">
+    <h1>🥈 gentleHelp</h1>
+    <p class="sub">GENTLEHELP (TEO EXPRESS) PTE. LTD. · MOM 牌照 17C8609</p>
+    <div class="big">86.2</div>
+    <p class="desc" style="margin-top:2px;">综合评分（第 2 名 / 10）</p>
+    <div class="meta">
+      <span><b>MOM 评分</b> 4.1 / 80 评</span>
+      <span><b>Google</b> 4.9 / 95 评</span>
+      <span><b>Retention</b> 62.1%</span>
+      <span><b>Transfer</b> 0.0%</span>
+    </div>
+  </div>
+
+  
+  <h2>📊 综合评分</h2>
+  <p class="desc">综合分 <b>86.2</b>，模型：MOM 官方 30% + Google 25% + Retention 20% + Transfer 15% + 规模经验 10%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>得分</th><th>雷达</th></tr>
+    <tr><td>MOM 官方评分（权重 30%）</td><td class="num">82</td><td><div class="bar"><div class="bar-fill" style="width:82%"></div></div></td></tr><tr><td>Google 评分（权重 25%）</td><td class="num">98</td><td><div class="bar"><div class="bar-fill" style="width:98%"></div></div></td></tr><tr><td>Retention（权重 20%）</td><td class="num">89</td><td><div class="bar"><div class="bar-fill" style="width:89%"></div></div></td></tr><tr><td>Transfer（权重 15%）</td><td class="num">100</td><td><div class="bar"><div class="bar-fill" style="width:100%"></div></div></td></tr><tr><td>规模与经验（权重 10%）</td><td class="num">44</td><td><div class="bar"><div class="bar-fill" style="width:44%"></div></div></td></tr>
+  </table>
+  
+  <h2>💰 收费模式</h2>
+  <p class="desc">官网未公开收费标准，需联系顾问（care advisor）获取报价。</p>
+  <table class="mini">
+    <tr><th>服务项</th><th>费用</th><th>来源</th></tr>
+    
+    <tr><td>中介费 / package</td><td class="num"><b>未公开，需咨询（+65 6904 3966）</b></td><td class="src">gentlehelp.com.sg</td></tr>
+  </table>
+  <p class="footnote">📌 菲律宾 DMW（海外劳工部）认证 + 印尼使馆认证。主打专业服务，无公开价格表。</p>
+  
+  <h2>⚖️ 优势与劣势</h2>
+  <div class="sw">
+    <div class="sw-col ok">
+      <h3>✅ 优势</h3>
+      <ul><li>MOM 数据：Transfer 0%（13 家并列最低）、MOM 评分 4.1/80 评</li><li>菲律宾/印尼使馆认证，正规性强</li><li>Google 4.9/95 高口碑</li></ul>
+    </div>
+    <div class="sw-col bad">
+      <h3>⚠️ 劣势 / 顾虑</h3>
+      <ul><li>收费不透明（官网无价格表）</li><li>规模较小（placement 183、9 年经营）</li><li>仅 Changi 一个门店</li></ul>
+    </div>
+  </div>
+  
+  <h2>📁 实际案例</h2>
+  <ul class="cases"><li>运营 8 年服务超 1,000 个家庭，获菲律宾 DMW 与印尼使馆双重认证。<span class="src">来源：gentlehelp.com.sg / helpertransfer.com 中介主页</span></li></ul>
+  
+  <h2>💬 客户真实评论（Google）</h2>
+  <p class="desc">以下为 2026-08-22 抓取的 Google Maps 评论原文，仅做排版整理，未做任何删改。评论仅代表个人观点。</p>
+  <div class="review-list">
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Samuel Neo</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我通过梅尔文的帮助找到了合适的家庭佣工。这是我找的第二位佣人，与梅尔文及其中介的合作体验比第一次好得多。
+
+梅尔文了解我们的需求，回复迅速，并且总是及时跟进。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Jacky Seng</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我对这家家政公司非常满意。他们的团队专业、响应迅速，在推荐帮手之前，会花时间充分了解我们家的需求。整个过程流畅透明，每一步沟通都很顺畅。他们为我们匹配的帮手非常可靠，也很适合我们家。如果您也想省心省力，强烈推荐他们的服务。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">cyenwong</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">由于临时需要遣返我们的帮手，所以急需找人替代。我们联系了Teo（现在叫gentleHelp）和其他几家机构，发现他们是最便捷、最有帮助的。具体来说：
+
+- 他们推荐的候选人最符合我们的需求。我认为最关键的是候选人资料的详细程度（我在其他机构没见过），这真的帮助我们高效地筛选和最终确定人选。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Loke Ping Koh</span>
+        <span class="rv-stars">★★★★☆</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">从始至终，服务都非常棒！GentleHelp团队专业高效，而且真心实意地为我的家庭找到了最合适的保姆。他们认真倾听我们的需求，并顺利地处理了所有手续。我们的保姆已经为我们服务几个月了。强烈推荐⭐️</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">YM Tan</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我最初是去Teo Express Employment Services咨询我父母家佣的护照更新事宜，这家公司位置便利，距离芽笼峇鲁巴刹与熟食中心仅几步之遥。团队的专业精神和热情周到的服务让我惊喜不已。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Corrine Teh</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">在整个招聘过程中，Gentle Help 都给予了我很大的帮助，考虑到这是我第一次请保姆，我对此非常感激。保姆的素质也很好。短短两个月的时间，我就能放心地把保姆交给她照顾我的年迈父母了。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Wusuan Quek</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我在Teo Express家政公司获得了非常棒的体验！从我联系他们的那一刻起，他们的员工就彬彬有礼、反应迅速且非常专业。他们花时间了解我家的需求，并很快推荐了几位合适的候选人。从面试到办理手续，整个过程都非常顺利便捷。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Prudence Cheong</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">这是我第二次使用gentleHelp（Teo Express）的服务，每次都对他们的服务和家政人员的素质非常满意。
+
+May和她的团队非常有耐心，帮我找到了适合我家的家政人员。他们也认真倾听了我的需求。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">WY Ho</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我发现gentleHelp团队非常专业。他们了解我的需求，并能为我找到合适的帮手。他们迅速建立了与指定护理顾问（Gina）的沟通渠道，确保gentleHelp与我之间的沟通顺畅无阻。我强烈推荐gentleHelp给任何需要寻找帮手的家庭。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Zandra Chan</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我真心感谢Gentlehelp家政公司的各位同仁给予我的帮助。当时我几乎要崩溃了，因为之前的家政公司出了问题，我联系了好几家公司。Gentlehelp是第一个联系我的，在我最需要的时候给了我一线希望，尤其是在之前的家政人员突然离开之后。…... 展开</p>
+    </div></div>
+  
+  <h2>🏛️ MOM 官方指标（EA Directory）</h2>
+  <p class="desc">数据抓取自 MOM Employment Agency Directory（2026-08-22）。行业基准：Retention 均值 62.43%、Transfer 均值 1.05%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td>MOM 官方评分</td><td>4.1（80 条评论）</td></tr><tr><td>Retention（续任率）</td><td>62.1%</td></tr><tr><td>Transfer（转手率）</td><td>0.0%</td></tr><tr><td>派工量（12 个月）</td><td>183</td></tr><tr><td>经营年限</td><td>9 年</td></tr><tr><td>牌照号</td><td>17C8609（状态核实 ✅）</td></tr><tr><td>官方注册名</td><td>GENTLEHELP (TEO EXPRESS) PTE. LTD.</td></tr>
+  </table>
+  <h2>📞 联系与核实</h2><ul class="cases"><li>地址：160 Changi Rd, #04-07 Hexacube, Singapore 419728</li><li>MOM 牌照：17C8609</li><li class="muted">⚠️ 费用与条款以线下咨询为准；请通过 MOM 官网核验牌照与评分。</li></ul>
+
+  <p style="margin-top:28px;color:var(--muted);font-size:12px;">⚠️ 本研报由脚本生成，数据仅供研究参考。信息截至 2026-08-22；费用、置换条款等以各家中介当前正式报价为准，请通过 MOM 官网（mom.gov.sg）独立核验中介牌照与评分。评论内容来自公开渠道，仅代表评论者个人观点。</p>
+</div>
+</body>
+</html>

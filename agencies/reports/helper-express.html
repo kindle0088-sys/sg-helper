@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helper Express 中介研报 · sg-helper</title>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --ok:#15803d; --bad:#b91c1c; --bg:#f9fafb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); padding:32px 20px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  .bread { font-size:12px; color:var(--muted); margin-bottom:14px; }
+  .bread a { color:var(--accent); text-decoration:none; }
+  h1 { font-size:26px; margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  h2 { font-size:18px; margin:28px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+  .desc { font-size:13px; color:var(--muted); margin-bottom:12px; line-height:1.7; }
+  .desc b { color:var(--ink); }
+  .footnote { font-size:12px; color:var(--muted); background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-top:12px; line-height:1.8; }
+  table.mini { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  table.mini th, table.mini td { padding:8px 12px; border-bottom:1px solid var(--line); text-align:left; font-size:13px; }
+  table.mini th { background:#f3f4f6; font-size:12px; color:var(--muted); }
+  .num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .src { font-size:11px; color:var(--muted); }
+  .bar { width:110px; height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; }
+  .bar-fill { height:100%; background:var(--accent); border-radius:99px; }
+  .hero { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:6px; }
+  .hero .big { font-size:40px; font-weight:800; color:var(--accent); }
+  .hero .meta { display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:10px; font-size:13px; }
+  .hero .meta b { color:var(--ink); }
+  .hero .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:99px; background:#eff6ff; color:var(--accent); margin-right:6px; }
+  .sw { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:640px) { .sw { grid-template-columns:1fr; } }
+  .sw-col { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .sw-col h3 { font-size:14px; margin-bottom:10px; }
+  .sw-col.ok h3 { color:var(--ok); }
+  .sw-col.bad h3 { color:var(--bad); }
+  .sw-col ul { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases li { margin-bottom:8px; }
+  ul.cases .src { display:block; font-size:11px; color:var(--muted); }
+  .review-list { display:flex; flex-direction:column; gap:10px; }
+  .review { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .rv-head { display:flex; align-items:center; gap:10px; margin-bottom:6px; font-size:12px; }
+  .rv-author { font-weight:600; color:var(--ink); }
+  .rv-stars { color:#f59e0b; letter-spacing:1px; }
+  .rv-date { color:var(--muted); }
+  .rv-text { font-size:13px; line-height:1.8; color:#374151; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bread"><a href="./index.html">← 研报索引</a> ｜ <a href="../index.html">中介对比</a></div>
+  <div class="hero">
+    <h1>9 Helper Express</h1>
+    <p class="sub">HELPER EXPRESS PTE. LTD. · MOM 牌照 23C1660</p>
+    <div class="big">83.7</div>
+    <p class="desc" style="margin-top:2px;">综合评分（第 9 名 / 10）</p>
+    <div class="meta">
+      <span><b>MOM 评分</b> 3.9 / 46 评</span>
+      <span><b>Google</b> 4.8 / 221 评</span>
+      <span><b>Retention</b> 62.7%</span>
+      <span><b>Transfer</b> 0.0%</span>
+    </div>
+  </div>
+
+  
+  <h2>📊 综合评分</h2>
+  <p class="desc">综合分 <b>83.7</b>，模型：MOM 官方 30% + Google 25% + Retention 20% + Transfer 15% + 规模经验 10%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>得分</th><th>雷达</th></tr>
+    <tr><td>MOM 官方评分（权重 30%）</td><td class="num">78</td><td><div class="bar"><div class="bar-fill" style="width:78%"></div></div></td></tr><tr><td>Google 评分（权重 25%）</td><td class="num">96</td><td><div class="bar"><div class="bar-fill" style="width:96%"></div></div></td></tr><tr><td>Retention（权重 20%）</td><td class="num">90</td><td><div class="bar"><div class="bar-fill" style="width:90%"></div></div></td></tr><tr><td>Transfer（权重 15%）</td><td class="num">100</td><td><div class="bar"><div class="bar-fill" style="width:100%"></div></div></td></tr><tr><td>规模与经验（权重 10%）</td><td class="num">34</td><td><div class="bar"><div class="bar-fill" style="width:34%"></div></div></td></tr>
+  </table>
+  
+  <h2>💰 收费模式</h2>
+  <p class="desc">官网直接对比竞品：'exorbitant agency fees of up to $888 or $688'，自述以更低价格提供同等质量女佣，主打价格优势。具体自身报价未公开。</p>
+  <table class="mini">
+    <tr><th>服务项</th><th>费用</th><th>来源</th></tr>
+    
+    <tr><td>中介费</td><td class="num"><b>自述低于行业 $888/$688 水平，具体需咨询（6980 8886）</b></td><td class="src">helperexpress.com.sg</td></tr>
+  </table>
+  <p class="footnote">📌 自营缅甸培训中心，砍掉中间商降低成本。7 天营业。</p>
+  
+  <h2>⚖️ 优势与劣势</h2>
+  <div class="sw">
+    <div class="sw-col ok">
+      <h3>✅ 优势</h3>
+      <ul><li>价格定位清晰（比 $888/$688 更低），主打性价比</li><li>自营缅甸培训中心，质量控制</li><li>Google 4.8/221、MOM Transfer 0%</li></ul>
+    </div>
+    <div class="sw-col bad">
+      <h3>⚠️ 劣势 / 顾虑</h3>
+      <ul><li>MOM Retention 62.73%（低于均值）</li><li>经营仅 3 年</li><li>具体收费金额未公开</li></ul>
+    </div>
+  </div>
+  
+  <h2>📁 实际案例</h2>
+  <ul class="cases"><li>第三方评价聚合站 wherecrowded.sg 汇总客户反馈：客服 Keith 与 Brell 高效、专业、耐心，全程无缝。<span class="src">来源：wherecrowded.sg（二手汇总）</span></li></ul>
+  
+  <h2>💬 客户真实评论（Google）</h2>
+  <p class="desc">以下为 2026-08-22 抓取的 Google Maps 评论原文，仅做排版整理，未做任何删改。评论仅代表个人观点。</p>
+  <div class="review-list">
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">luke z</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">很好的女佣中介，服务很好，全程会很积极回答雇主的疑问！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Eddie Toh</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我们想和大家分享一下使用Helper Express的愉快经历。由于我父亲的病情有所变化，在我们能把他从医院接回家之前，急需一位合适的帮手。我们联系了几家医院推荐的家政公司，但都没有立即回复，也没有找到合适的候选人。直到朋友推荐了Helper Express的滕婷小姐，我们才在很短的时间内就找到了合适的帮手。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Shannon Mark</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我们面试了两三位保姆才最终选定合适的。我们为母亲找到了一位近20年来我们遇到的最好的保姆。这家中介了解我们的需求，并努力匹配合适的候选人。整个过程非常顺利，没有任何麻烦。强烈推荐！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">eunice lam</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">这是我第一次雇帮佣。我在网上搜索，然后找到了Helper Express。虽然我只是随便问问，但Teng…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Alden Goh</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">腾腾一直积极主动地为我爸爸寻找合适的帮手，而且总是及时回复。她总是尽心尽力为我们服务，我们对此非常感激。选择她的人绝对不会失望。感谢腾腾和Helper Express所做的一切！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Brina</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">非常满意腾腾推荐的缅甸籍帮手，她帮我们顺利聘用了她。一切都很顺利。对腾腾的服务很满意。希望以后一切顺利。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">S C</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">腾腾非常专业，而且乐于助人。她总是尽心尽力，确保事情顺利进行。根据我的亲身经历，我强烈推荐她。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Justin Lim</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">卓越的服务和专业精神！
+
+我对他们提供的出色服务赞不绝口。从我联系他们的那一刻起，他们的专业精神和对客户满意度的执着追求就给我留下了深刻的印象。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Nr Mslia</span>
+        <span class="rv-stars">★☆☆☆☆</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">公众警告：远离这家机构——不可靠且不负责任…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Wesly Tiew</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">Brell从始至终都提供了非常棒的支持。她解答了我所有的问题，并确保我对整个过程都感到满意。我们请到的保姆非常适合我们家。</p>
+    </div></div>
+  
+  <h2>🏛️ MOM 官方指标（EA Directory）</h2>
+  <p class="desc">数据抓取自 MOM Employment Agency Directory（2026-08-22）。行业基准：Retention 均值 62.43%、Transfer 均值 1.05%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td>MOM 官方评分</td><td>3.9（46 条评论）</td></tr><tr><td>Retention（续任率）</td><td>62.7%</td></tr><tr><td>Transfer（转手率）</td><td>0.0%</td></tr><tr><td>派工量（12 个月）</td><td>119</td></tr><tr><td>经营年限</td><td>3 年</td></tr><tr><td>牌照号</td><td>23C1660（状态核实 ✅）</td></tr><tr><td>官方注册名</td><td>HELPER EXPRESS PTE. LTD.</td></tr>
+  </table>
+  <h2>📞 联系与核实</h2><ul class="cases"><li>地址：400 Balestier Rd, #02-24, Singapore</li><li>MOM 牌照：23C1660</li><li class="muted">⚠️ 费用与条款以线下咨询为准；请通过 MOM 官网核验牌照与评分。</li></ul>
+
+  <p style="margin-top:28px;color:var(--muted);font-size:12px;">⚠️ 本研报由脚本生成，数据仅供研究参考。信息截至 2026-08-22；费用、置换条款等以各家中介当前正式报价为准，请通过 MOM 官网（mom.gov.sg）独立核验中介牌照与评分。评论内容来自公开渠道，仅代表评论者个人观点。</p>
+</div>
+</body>
+</html>

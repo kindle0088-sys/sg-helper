@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JForce Employment Service 中介研报 · sg-helper</title>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --ok:#15803d; --bad:#b91c1c; --bg:#f9fafb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); padding:32px 20px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  .bread { font-size:12px; color:var(--muted); margin-bottom:14px; }
+  .bread a { color:var(--accent); text-decoration:none; }
+  h1 { font-size:26px; margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  h2 { font-size:18px; margin:28px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+  .desc { font-size:13px; color:var(--muted); margin-bottom:12px; line-height:1.7; }
+  .desc b { color:var(--ink); }
+  .footnote { font-size:12px; color:var(--muted); background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-top:12px; line-height:1.8; }
+  table.mini { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  table.mini th, table.mini td { padding:8px 12px; border-bottom:1px solid var(--line); text-align:left; font-size:13px; }
+  table.mini th { background:#f3f4f6; font-size:12px; color:var(--muted); }
+  .num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .src { font-size:11px; color:var(--muted); }
+  .bar { width:110px; height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; }
+  .bar-fill { height:100%; background:var(--accent); border-radius:99px; }
+  .hero { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:6px; }
+  .hero .big { font-size:40px; font-weight:800; color:var(--accent); }
+  .hero .meta { display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:10px; font-size:13px; }
+  .hero .meta b { color:var(--ink); }
+  .hero .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:99px; background:#eff6ff; color:var(--accent); margin-right:6px; }
+  .sw { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:640px) { .sw { grid-template-columns:1fr; } }
+  .sw-col { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .sw-col h3 { font-size:14px; margin-bottom:10px; }
+  .sw-col.ok h3 { color:var(--ok); }
+  .sw-col.bad h3 { color:var(--bad); }
+  .sw-col ul { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases { padding-left:18px; font-size:13px; line-height:1.9; }
+  ul.cases li { margin-bottom:8px; }
+  ul.cases .src { display:block; font-size:11px; color:var(--muted); }
+  .review-list { display:flex; flex-direction:column; gap:10px; }
+  .review { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .rv-head { display:flex; align-items:center; gap:10px; margin-bottom:6px; font-size:12px; }
+  .rv-author { font-weight:600; color:var(--ink); }
+  .rv-stars { color:#f59e0b; letter-spacing:1px; }
+  .rv-date { color:var(--muted); }
+  .rv-text { font-size:13px; line-height:1.8; color:#374151; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bread"><a href="./index.html">← 研报索引</a> ｜ <a href="../index.html">中介对比</a></div>
+  <div class="hero">
+    <h1>6 JForce Employment Service</h1>
+    <p class="sub">JFORCE EMPLOYMENT SERVICE PTE. LTD. · MOM 牌照 14C7171</p>
+    <div class="big">84.0</div>
+    <p class="desc" style="margin-top:2px;">综合评分（第 6 名 / 10）</p>
+    <div class="meta">
+      <span><b>MOM 评分</b> 4 / 383 评</span>
+      <span><b>Google</b> 4.7 / 138 评</span>
+      <span><b>Retention</b> 66.3%</span>
+      <span><b>Transfer</b> 0.8%</span>
+    </div>
+  </div>
+
+  
+  <h2>📊 综合评分</h2>
+  <p class="desc">综合分 <b>84.0</b>，模型：MOM 官方 30% + Google 25% + Retention 20% + Transfer 15% + 规模经验 10%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>得分</th><th>雷达</th></tr>
+    <tr><td>MOM 官方评分（权重 30%）</td><td class="num">80</td><td><div class="bar"><div class="bar-fill" style="width:80%"></div></div></td></tr><tr><td>Google 评分（权重 25%）</td><td class="num">94</td><td><div class="bar"><div class="bar-fill" style="width:94%"></div></div></td></tr><tr><td>Retention（权重 20%）</td><td class="num">95</td><td><div class="bar"><div class="bar-fill" style="width:95%"></div></div></td></tr><tr><td>Transfer（权重 15%）</td><td class="num">79</td><td><div class="bar"><div class="bar-fill" style="width:79%"></div></div></td></tr><tr><td>规模与经验（权重 10%）</td><td class="num">58</td><td><div class="bar"><div class="bar-fill" style="width:58%"></div></div></td></tr>
+  </table>
+  
+  <h2>💰 收费模式</h2>
+  <p class="desc">官网 FAQ 未公开中介费，但公开了配套法定成本参考：保险 S$250-500/年、女佣月薪 S$500-800、Security Bond S$5,000。</p>
+  <table class="mini">
+    <tr><th>服务项</th><th>费用</th><th>来源</th></tr>
+    
+    <tr><td>中介费</td><td class="num"><b>未公开，需咨询（Boon Keng / AMK / Jurong East 三店）</b></td><td class="src">jforce.com.sg</td></tr>
+    <tr><td>Maid 保险（市场参考）</td><td class="num"><b>S$250-500/年</b></td><td class="src">jforce.com.sg FAQ</td></tr>
+    <tr><td>女佣月薪（市场参考）</td><td class="num"><b>S$500-800/月</b></td><td class="src">jforce.com.sg FAQ</td></tr>
+  </table>
+  <p class="footnote">📌 首页公布各来源国工资参考：菲律宾 S$580-800、印尼 S$550-750、缅甸 S$500-750、柬埔寨 S$450-600。</p>
+  
+  <h2>⚖️ 优势与劣势</h2>
+  <div class="sw">
+    <div class="sw-col ok">
+      <h3>✅ 优势</h3>
+      <ul><li>MOM 数据均衡：Retention 66.3%、Transfer 0.85%、placement 945（大）</li><li>Google 4.7/138 + 4.7/88（两店）</li><li>direct hire 专精、公开价格定位（无硬推销）</li></ul>
+    </div>
+    <div class="sw-col bad">
+      <h3>⚠️ 劣势 / 顾虑</h3>
+      <ul><li>MOM 评分 4.0/383（一般）</li><li>中介费未公开</li><li>置换条款无费用/次数细节（官网仅称提供 replacement options）</li></ul>
+    </div>
+  </div>
+  
+  <h2>📁 实际案例</h2>
+  <ul class="cases"><li>2015 Top 25 Prestige Award、2016 Singapore Enterprise Award（官网自述）。<span class="src">来源：jforce.com.sg</span></li></ul>
+  
+  <h2>💬 客户真实评论（Google）</h2>
+  <p class="desc">以下为 2026-08-22 抓取的 Google Maps 评论原文，仅做排版整理，未做任何删改。评论仅代表个人观点。</p>
+  <div class="review-list">
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">HaoLiaoDao HaoLiaoDao</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">感谢JForce Employment Services裕廊东分行提供的卓越服务。Yan在整个过程中表现得非常敬业和专业。在之前与另一家机构的不愉快经历后，我们的需求未能得到充分理解或满足，而JForce则耐心倾听了我们的具体要求，并为我们匹配了一批能够完全满足我们期望和独特需求的家政人员。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Ang Kin chai</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">这里提供的服务很專业, 他们会为你設想,提供正确建议, 你只要告诉他们你的需要,他们就会作出配对。你只要说yes. 所有的工作他们都会处理好,你的工作就剩下带家佣回家而已。一乐也😊…...
+喜欢…
+展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Xing Goh</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我当时急需一位帮手照顾我父亲，Jforce 的服务非常出色。我联系了他们，Yan 当天就联系了我。
+
+在我说明了我们的需求后，Yan 很快就提供了几位合适的候选人。即使在第一天之后，她仍然非常积极主动，不断发送其他合适的候选人供我们选择。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Adlin Ng</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">JForce 真的成了我首选的家政中介！我和老公真是太幸运了，一走进裕廊东分店就遇到了 Yan。她非常认真地倾听了我们的需求，并且在推荐合适的帮手时非常坦诚直率。…... 展开</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">juliana lim</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我家很幸运地偶然发现了JForce，并遇到了Shermine，她帮了我很多忙，最终帮我找到了一位合适的保姆来照顾我年迈的母亲。整个招聘过程快速高效，我也不用操心任何文书工作。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Poh Lian Kwek</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我当时需要找个保姆，于是联系了JForce就业服务公司。Shermine接待了我。她反应非常迅速，询问了我的具体要求，并认真寻找符合条件的保姆，把她们的简历发给了我。她的快速响应、认真负责、高效专业的态度给我留下了深刻的印象。</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Melissa Ng</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">第一次使用JForce的服务。目前为止服务非常流畅，特别是姚忠从一开始到安排助手都非常周到。他讲解细致，并会提前告知需要注意的事项、应该做什么以及不应该做什么。继续保持！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">T Lin</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">感谢姚忠先生，他在整个过程中都给予了我们宝贵的建议，并在了解我们的需求后，为我们匹配了合适的候选人。我们刚刚把保姆接回家，对整个过程都非常满意。强烈推荐！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Talson</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我衷心感谢颜女士在我寻找和安排家政服务人员的过程中给予的鼎力支持。她全程尽职尽责、反应迅速，展现出极高的专业素养。从筛选合适的候选人到指导我完成必要的文书工作，一切都处理得井井有条、高效便捷。多亏了她，整个过程无比顺畅。我由衷地感谢她的敬业精神和耐心，并会向所有正在寻找可靠代理人的朋友推荐她。谢谢颜女士！</p>
+    </div>
+    <div class="review">
+      <div class="rv-head">
+        <span class="rv-author">Alexis W</span>
+        <span class="rv-stars">★★★★★</span>
+        <span class="rv-date"></span>
+      </div>
+      <p class="rv-text">我们的招聘顾问姚忠先生提供了卓越的服务。我们是第一次招聘，姚忠先生在整个招聘过程中都非常专业、耐心和乐于助人。他了解我们的需求，并根据我们的需求帮助我们筛选候选人。他耐心地向我们解释了各种文件和流程。他还帮助我们解决遇到的问题，我们对此非常感激。谢谢姚忠先生！</p>
+    </div></div>
+  
+  <h2>🏛️ MOM 官方指标（EA Directory）</h2>
+  <p class="desc">数据抓取自 MOM Employment Agency Directory（2026-08-22）。行业基准：Retention 均值 62.43%、Transfer 均值 1.05%。</p>
+  <table class="mini">
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td>MOM 官方评分</td><td>4（383 条评论）</td></tr><tr><td>Retention（续任率）</td><td>66.3%</td></tr><tr><td>Transfer（转手率）</td><td>0.8%</td></tr><tr><td>派工量（12 个月）</td><td>945</td></tr><tr><td>经营年限</td><td>12 年</td></tr><tr><td>牌照号</td><td>14C7171（状态核实 ✅）</td></tr><tr><td>官方注册名</td><td>JFORCE EMPLOYMENT SERVICE PTE. LTD.</td></tr>
+  </table>
+  <h2>📞 联系与核实</h2><ul class="cases"><li>官网：<a href="https://jforce.com.sg" target="_blank">https://jforce.com.sg</a></li><li>地址：Boon Keng / Ang Mo Kio / Jurong East</li><li>MOM 牌照：14C7171</li><li class="muted">⚠️ 费用与条款以线下咨询为准；请通过 MOM 官网核验牌照与评分。</li></ul>
+
+  <p style="margin-top:28px;color:var(--muted);font-size:12px;">⚠️ 本研报由脚本生成，数据仅供研究参考。信息截至 2026-08-22；费用、置换条款等以各家中介当前正式报价为准，请通过 MOM 官网（mom.gov.sg）独立核验中介牌照与评分。评论内容来自公开渠道，仅代表评论者个人观点。</p>
+</div>
+</body>
+</html>
