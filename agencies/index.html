@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中介对比 · sg-helper</title>
+<style>
+  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --gold:#b45309; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:#f9fafb; padding:32px 20px; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  h1 { font-size:26px; margin-bottom:6px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:24px; line-height:1.7; }
+  .legend { font-size:12px; color:var(--muted); background:#fff; border:1px solid var(--line); border-radius:8px; padding:12px 16px; margin-bottom:20px; line-height:1.8; }
+  .legend b { color:var(--ink); }
+  table { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  th, td { padding:10px 12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:middle; }
+  th { font-size:12px; color:var(--muted); font-weight:600; background:#f3f4f6; }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .rank { font-weight:700; font-size:15px; width:44px; }
+  .top1 { background:#fffbeb; }
+  .name { font-weight:600; }
+  .sub { font-size:11px; color:var(--muted); }
+  .warn { font-size:11px; color:#b91c1c; margin-top:2px; }
+  .score { font-size:18px; font-weight:800; color:var(--accent); }
+  .bar { width:110px; height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:99px; }
+  .detail { background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; margin-top:16px; }
+  .detail h3 { font-size:16px; margin-bottom:4px; }
+  .detail .muted { font-size:12px; color:var(--muted); margin-bottom:12px; }
+  .detail table.mini { box-shadow:none; border:1px solid var(--line); }
+  .detail table.mini td { padding:6px 12px; }
+  .detail table.mini td:first-child { width:150px; color:var(--muted); font-size:13px; }
+  .detail table.mini td.num { font-weight:700; }
+  .notes { margin-top:12px; padding-left:18px; font-size:13px; line-height:1.8; }
+  .notes li { margin-bottom:2px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🏢 新加坡女佣中介对比</h1>
+  <p class="sub">数据日期：2026-08-22 ｜ 数据来源：MOM EA Directory（官方）+ Google Maps + 小红书观察<br>行业基准（MOM 官方，2026-08-16~17）：Retention 均值 62.43% ｜ Transfer 均值 1.05% ｜ Placement 均值 48</p>
+
+  <div class="legend">
+    <b>评分模型：</b>综合分 = MOM 官方评分 30% + Google 评分 25% + Retention 20% + Transfer 15% + 规模经验 10%。
+    Retention 以 70% 为满分；Transfer 以 0% 为满分（4% 记 0 分）；规模取派工量对数与经营年限的均值。
+    仅供决策参考，非正式评级；中介费/置换条款等需线下确认（见各家中介备注）。
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>中介</th><th>综合分</th><th>MOM 评分</th><th>Google</th>
+        <th>Retention</th><th>Transfer</th><th>派工量</th><th>年限</th><th></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+  <tr class="top1">
+    <td class="rank">1🥇</td>
+    <td>
+      <div class="name">Goodhire</div>
+      <div class="sub">JOBS AND STAFF PTE. LTD. · 16C7967</div>
+      
+    </td>
+    <td class="num score">87.5</td>
+    <td class="num">4.2 / 61 评</td>
+    <td class="num">4.8 / 133 评</td>
+    <td class="num">72.8%</td>
+    <td class="num">0.4%</td>
+    <td class="num">264</td>
+    <td class="num">10y</td>
+    <td class="num"><a href="" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">2🥈</td>
+    <td>
+      <div class="name">gentleHelp</div>
+      <div class="sub">GENTLEHELP (TEO EXPRESS) PTE. LTD. · 17C8609</div>
+      
+    </td>
+    <td class="num score">86.2</td>
+    <td class="num">4.1 / 80 评</td>
+    <td class="num">4.9 / 95 评</td>
+    <td class="num">62.1%</td>
+    <td class="num">0.0%</td>
+    <td class="num">183</td>
+    <td class="num">9y</td>
+    <td class="num"><a href="" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">3🥉</td>
+    <td>
+      <div class="name">Green Employment</div>
+      <div class="sub">GREEN EMPLOYMENT PTE. LTD. · 21C0720</div>
+      
+    </td>
+    <td class="num score">85.9</td>
+    <td class="num">4.1 / 161 评</td>
+    <td class="num">4.9 / 206 评</td>
+    <td class="num">65.0%</td>
+    <td class="num">0.3%</td>
+    <td class="num">389</td>
+    <td class="num">4y</td>
+    <td class="num"><a href="https://greenemployment.sg" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">4</td>
+    <td>
+      <div class="name">Universal Employment Agency</div>
+      <div class="sub">UNIVERSAL EMPLOYMENT AGENCY PTE. LTD. · 87C4847</div>
+      
+    </td>
+    <td class="num score">85.6</td>
+    <td class="num">3.6 / 317 评</td>
+    <td class="num">4.8 / 2480 评</td>
+    <td class="num">67.8%</td>
+    <td class="num">0.9%</td>
+    <td class="num">840</td>
+    <td class="num">39y</td>
+    <td class="num"><a href="https://universal.sg" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">5</td>
+    <td>
+      <div class="name">Status Employment (Status Maids)</div>
+      <div class="sub">STATUS EMPLOYMENT AGENCY PTE. LTD. · 16C8301</div>
+      
+    </td>
+    <td class="num score">84.5</td>
+    <td class="num">4.3 / 76 评</td>
+    <td class="num">4.9 / 313 评</td>
+    <td class="num">69.1%</td>
+    <td class="num">1.3%</td>
+    <td class="num">176</td>
+    <td class="num">9y</td>
+    <td class="num"><a href="https://statusmaids.com" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">6</td>
+    <td>
+      <div class="name">JForce Employment Service</div>
+      <div class="sub">JFORCE EMPLOYMENT SERVICE PTE. LTD. · 14C7171</div>
+      
+    </td>
+    <td class="num score">84.0</td>
+    <td class="num">4 / 383 评</td>
+    <td class="num">4.7 / 138 评</td>
+    <td class="num">66.3%</td>
+    <td class="num">0.8%</td>
+    <td class="num">945</td>
+    <td class="num">12y</td>
+    <td class="num"><a href="https://jforce.com.sg" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">7</td>
+    <td>
+      <div class="name">Ministry of Helpers</div>
+      <div class="sub">MINISTRY OF DOMESTIC HELPERS PTE. LTD. · 23C2048</div>
+      
+    </td>
+    <td class="num score">83.9</td>
+    <td class="num">4.2 / 9 评</td>
+    <td class="num">4.9 / 109 评</td>
+    <td class="num">59.1%</td>
+    <td class="num">0.0%</td>
+    <td class="num">27</td>
+    <td class="num">2y</td>
+    <td class="num"><a href="" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">8</td>
+    <td>
+      <div class="name">Eden Grace Maids</div>
+      <div class="sub">EDEN GRACE HUMAN RESOURCES PRIVATE LIMITED · 13C6831</div>
+      
+    </td>
+    <td class="num score">83.7</td>
+    <td class="num">3.9 / 127 评</td>
+    <td class="num">4.7 / 294 评</td>
+    <td class="num">62.7%</td>
+    <td class="num">0.3%</td>
+    <td class="num">320</td>
+    <td class="num">12y</td>
+    <td class="num"><a href="" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">9</td>
+    <td>
+      <div class="name">Helper Express</div>
+      <div class="sub">HELPER EXPRESS PTE. LTD. · 23C1660</div>
+      
+    </td>
+    <td class="num score">83.7</td>
+    <td class="num">3.9 / 46 评</td>
+    <td class="num">4.8 / 221 评</td>
+    <td class="num">62.7%</td>
+    <td class="num">0.0%</td>
+    <td class="num">119</td>
+    <td class="num">3y</td>
+    <td class="num"><a href="" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">10</td>
+    <td>
+      <div class="name">Nation Employment / Nation Maid Agency</div>
+      <div class="sub">NATION HUMAN RESOURCES PTE. LTD. · 12C5507</div>
+      
+    </td>
+    <td class="num score">83.3</td>
+    <td class="num">4 / 1034 评</td>
+    <td class="num">4.9 / 334 评</td>
+    <td class="num">71.0%</td>
+    <td class="num">1.8%</td>
+    <td class="num">2554</td>
+    <td class="num">14y</td>
+    <td class="num"><a href="https://www.nation.sg" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">11</td>
+    <td>
+      <div class="name">Homekeeper Maid Agency</div>
+      <div class="sub">HOMEKEEPER INTERNATIONAL PTE. LTD. · 09C5350</div>
+      
+    </td>
+    <td class="num score">83.3</td>
+    <td class="num">3.8 / 561 评</td>
+    <td class="num">4.8 / 709 评</td>
+    <td class="num">63.4%</td>
+    <td class="num">0.8%</td>
+    <td class="num">1332</td>
+    <td class="num">17y</td>
+    <td class="num"><a href="https://homekeepermaidagency.com" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">12</td>
+    <td>
+      <div class="name">Best Home Employment Agency</div>
+      <div class="sub">BEST HOME EMPLOYMENT AGENCY PTE. LTD. · 96C5039</div>
+      
+    </td>
+    <td class="num score">72.6</td>
+    <td class="num">3.8 / 660 评</td>
+    <td class="num">4.6 / 374 评</td>
+    <td class="num">60.5%</td>
+    <td class="num">3.7%</td>
+    <td class="num">1619</td>
+    <td class="num">30y</td>
+    <td class="num"><a href="https://besthome.com.sg" target="_blank">官网</a></td>
+  </tr>
+  <tr class="">
+    <td class="rank">13</td>
+    <td>
+      <div class="name">Best Maid</div>
+      <div class="sub">GODWIN EMPLOYMENT AGENCY · 17C8580</div>
+      
+    </td>
+    <td class="num score">71.6</td>
+    <td class="num">3.7 / 17 评</td>
+    <td class="num">5 / 1 评</td>
+    <td class="num">65.0%</td>
+    <td class="num">3.3%</td>
+    <td class="num">35</td>
+    <td class="num">9y</td>
+    <td class="num"><a href="" target="_blank">官网</a></td>
+  </tr>
+    </tbody>
+  </table>
+
+  <h2 style="margin-top:32px;font-size:18px;">各家中介明细</h2>
+  
+  <div class="detail" id="d-goodhire">
+    <h3>Goodhire</h3>
+    <p class="muted">JOBS AND STAFF PTE. LTD. · MOM 牌照 16C7967</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">84</td>
+      <td><div class="bar"><div class="bar-fill" style="width:84.00000000000001%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">96</td>
+      <td><div class="bar"><div class="bar-fill" style="width:96%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">100</td>
+      <td><div class="bar"><div class="bar-fill" style="width:100%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">90</td>
+      <td><div class="bar"><div class="bar-fill" style="width:90.25%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">47</td>
+      <td><div class="bar"><div class="bar-fill" style="width:47.321965492041336%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">87.5</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>聚合站称其不从女佣工资中扣费（更符合伦理的收费方式）。</li><li><b>优势：</b>不从女佣薪资扣费（聚合站）</li></ul>
+  </div>
+  <div class="detail" id="d-gentlehelp">
+    <h3>gentleHelp</h3>
+    <p class="muted">GENTLEHELP (TEO EXPRESS) PTE. LTD. · MOM 牌照 17C8609</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">82</td>
+      <td><div class="bar"><div class="bar-fill" style="width:82%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">98</td>
+      <td><div class="bar"><div class="bar-fill" style="width:98.00000000000001%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">89</td>
+      <td><div class="bar"><div class="bar-fill" style="width:88.77142857142857%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">100</td>
+      <td><div class="bar"><div class="bar-fill" style="width:100%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">44</td>
+      <td><div class="bar"><div class="bar-fill" style="width:43.78339363215327%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">86.2</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>2016 年成立。聚合站称其公开置换与退款政策。</li><li><b>优势：</b>公开置换/退款政策（聚合站）</li><li><b>置换政策：</b>聚合站称有公开政策（须核实）</li></ul>
+  </div>
+  <div class="detail" id="d-green-employment">
+    <h3>Green Employment</h3>
+    <p class="muted">GREEN EMPLOYMENT PTE. LTD. · MOM 牌照 21C0720</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">82</td>
+      <td><div class="bar"><div class="bar-fill" style="width:82%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">98</td>
+      <td><div class="bar"><div class="bar-fill" style="width:98.00000000000001%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">93</td>
+      <td><div class="bar"><div class="bar-fill" style="width:92.87142857142858%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">93</td>
+      <td><div class="bar"><div class="bar-fill" style="width:93.25%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">42</td>
+      <td><div class="bar"><div class="bar-fill" style="width:42.24272769910232%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">85.9</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>聚合站二手数据：transfer 率低于 0.4%、年派工约 305、Google 4.9（须核实）。牌照号未列出。</li><li><b>优势：</b>低 transfer 率（二手）；首次雇主引导</li><li><b>分店评分：</b>Serangoon 4.9/206, Toa Payoh 4.9/218</li></ul>
+  </div>
+  <div class="detail" id="d-universal-employment">
+    <h3>Universal Employment Agency</h3>
+    <p class="muted">UNIVERSAL EMPLOYMENT AGENCY PTE. LTD. · MOM 牌照 87C4847</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">72</td>
+      <td><div class="bar"><div class="bar-fill" style="width:72%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">96</td>
+      <td><div class="bar"><div class="bar-fill" style="width:96%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">97</td>
+      <td><div class="bar"><div class="bar-fill" style="width:96.80000000000001%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">77</td>
+      <td><div class="bar"><div class="bar-fill" style="width:77.25%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">91</td>
+      <td><div class="bar"><div class="bar-fill" style="width:90.80029206405467%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">85.6</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>1986 年成立（40 年，业内最久），宣称 10,000+ 家庭。聚合站二手数据：retention 75.35%（须官方核实）</li><li><b>优势：</b>经营年限最长；transfer 女佣池深，等待短</li></ul>
+  </div>
+  <div class="detail" id="d-status-maids">
+    <h3>Status Employment (Status Maids)</h3>
+    <p class="muted">STATUS EMPLOYMENT AGENCY PTE. LTD. · MOM 牌照 16C8301</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">86</td>
+      <td><div class="bar"><div class="bar-fill" style="width:86%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">98</td>
+      <td><div class="bar"><div class="bar-fill" style="width:98.00000000000001%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">99</td>
+      <td><div class="bar"><div class="bar-fill" style="width:98.65714285714287%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">68</td>
+      <td><div class="bar"><div class="bar-fill" style="width:67.75%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">44</td>
+      <td><div class="bar"><div class="bar-fill" style="width:43.53982401413538%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">84.5</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>2001 年成立，宣称 30,000+ 家庭。聚合站二手数据：retention 约 75%（须官方核实）。</li><li><b>优势：</b>缅甸/印尼专精；transfer 快</li></ul>
+  </div>
+  <div class="detail" id="d-jforce">
+    <h3>JForce Employment Service</h3>
+    <p class="muted">JFORCE EMPLOYMENT SERVICE PTE. LTD. · MOM 牌照 14C7171</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">80</td>
+      <td><div class="bar"><div class="bar-fill" style="width:80%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">94</td>
+      <td><div class="bar"><div class="bar-fill" style="width:94%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">95</td>
+      <td><div class="bar"><div class="bar-fill" style="width:94.71428571428571%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">79</td>
+      <td><div class="bar"><div class="bar-fill" style="width:78.75%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">58</td>
+      <td><div class="bar"><div class="bar-fill" style="width:57.78585057208701%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">84.0</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>聚合站二手数据：Google 约 4.9 分（须核实）；公开定价、无硬推销。牌照号一处写 14C7171（另一处 14C717，须官方核实）。</li><li><b>优势：</b>定价透明（二手）；direct hire 专精；Google 高分（二手）</li><li><b>分店评分：</b>Boon Keng 4.7/138, AMK 4.7/88</li></ul>
+  </div>
+  <div class="detail" id="d-ministry-of-helpers">
+    <h3>Ministry of Helpers</h3>
+    <p class="muted">MINISTRY OF DOMESTIC HELPERS PTE. LTD. · MOM 牌照 23C2048</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">84</td>
+      <td><div class="bar"><div class="bar-fill" style="width:84.00000000000001%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">98</td>
+      <td><div class="bar"><div class="bar-fill" style="width:98.00000000000001%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">84</td>
+      <td><div class="bar"><div class="bar-fill" style="width:84.41428571428573%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">100</td>
+      <td><div class="bar"><div class="bar-fill" style="width:100%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">23</td>
+      <td><div class="bar"><div class="bar-fill" style="width:23.08259777705665%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">83.9</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>聚合站称 24 小时营业、跨境业务。</li><li><b>优势：</b>24 小时</li></ul>
+  </div>
+  <div class="detail" id="d-eden-grace">
+    <h3>Eden Grace Maids</h3>
+    <p class="muted">EDEN GRACE HUMAN RESOURCES PRIVATE LIMITED · MOM 牌照 13C6831</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">78</td>
+      <td><div class="bar"><div class="bar-fill" style="width:78%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">94</td>
+      <td><div class="bar"><div class="bar-fill" style="width:94%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">90</td>
+      <td><div class="bar"><div class="bar-fill" style="width:89.54285714285714%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">92</td>
+      <td><div class="bar"><div class="bar-fill" style="width:91.75%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">51</td>
+      <td><div class="bar"><div class="bar-fill" style="width:51.02333359700278%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">83.7</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>2013 年成立。聚合站称提供 2 周内置换。</li><li><b>优势：</b>置换条款（2 周内）</li><li><b>置换政策：</b>聚合站称：2 周内置换（详情须确认）</li><li><b>分店评分：</b>HQ 4.7/294, Tampines 4.9/65</li></ul>
+  </div>
+  <div class="detail" id="d-helper-express">
+    <h3>Helper Express</h3>
+    <p class="muted">HELPER EXPRESS PTE. LTD. · MOM 牌照 23C1660</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">78</td>
+      <td><div class="bar"><div class="bar-fill" style="width:78%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">96</td>
+      <td><div class="bar"><div class="bar-fill" style="width:96%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">90</td>
+      <td><div class="bar"><div class="bar-fill" style="width:89.61428571428571%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">100</td>
+      <td><div class="bar"><div class="bar-fill" style="width:100%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">34</td>
+      <td><div class="bar"><div class="bar-fill" style="width:33.59576621501611%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">83.7</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>聚合站称 full-service 新聘与转雇主。</li></ul>
+  </div>
+  <div class="detail" id="d-nation-employment">
+    <h3>Nation Employment / Nation Maid Agency</h3>
+    <p class="muted">NATION HUMAN RESOURCES PTE. LTD. · MOM 牌照 12C5507</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">80</td>
+      <td><div class="bar"><div class="bar-fill" style="width:80%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">98</td>
+      <td><div class="bar"><div class="bar-fill" style="width:98.00000000000001%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">100</td>
+      <td><div class="bar"><div class="bar-fill" style="width:100%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">54</td>
+      <td><div class="bar"><div class="bar-fill" style="width:54.25%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">66</td>
+      <td><div class="bar"><div class="bar-fill" style="width:66.49485297360012%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">83.3</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>1993 年成立，宣称 90,000+ 家庭，ISO 9001，SPBA 2025，SGX（Advancer Global）上市子公司。聚合站二手数据：retention 69.42%、transfer 0.35%、0 demerit（须官方核实）</li><li><b>优势：</b>规模大、流程化；宣称无隐藏费用；有牌照号可查</li><li><b>顾虑：</b>大店对个案关注度可能不如小店（待查评论）</li><li><b>置换政策：</b>宣称有置换保证（详情须向中介确认）</li><li><b>分店评分：</b>Yishun 4.9/334, Jurong 4.7/566, Toa Payoh 4.8/245, Hougang 4.9/339, Tampines 4.5/131</li></ul>
+  </div>
+  <div class="detail" id="d-homekeeper">
+    <h3>Homekeeper Maid Agency</h3>
+    <p class="muted">HOMEKEEPER INTERNATIONAL PTE. LTD. · MOM 牌照 09C5350</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">76</td>
+      <td><div class="bar"><div class="bar-fill" style="width:76%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">96</td>
+      <td><div class="bar"><div class="bar-fill" style="width:96%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">91</td>
+      <td><div class="bar"><div class="bar-fill" style="width:90.55714285714286%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">79</td>
+      <td><div class="bar"><div class="bar-fill" style="width:78.75%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">66</td>
+      <td><div class="bar"><div class="bar-fill" style="width:66.17946889029601%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">83.3</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>1998 年成立。聚合站二手数据：约 4.8 / 2,200+ Google 评论（须核实）。风格被描述为引导式、适合首次雇主。</li><li><b>优势：</b>Google 评论量大且高分（二手）；transfer 专注</li><li><b>分店评分：</b>Bukit Timah 4.8/709, Yishun 5.0/618, AMK 4.8/568, Pasir Ris 4.8/562, Potong Pasir 4.8/58, Bedok 4.9/101</li></ul>
+  </div>
+  <div class="detail" id="d-best-home">
+    <h3>Best Home Employment Agency</h3>
+    <p class="muted">BEST HOME EMPLOYMENT AGENCY PTE. LTD. · MOM 牌照 96C5039</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">76</td>
+      <td><div class="bar"><div class="bar-fill" style="width:76%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">92</td>
+      <td><div class="bar"><div class="bar-fill" style="width:92%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">86</td>
+      <td><div class="bar"><div class="bar-fill" style="width:86.4%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">8</td>
+      <td><div class="bar"><div class="bar-fill" style="width:7.5%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">84</td>
+      <td><div class="bar"><div class="bar-fill" style="width:83.64804336198097%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">72.6</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>1996 年成立。CaseTrust-EA 认证（全新加坡约 19 家之一），押金上限 20%，有履约担保。宣称无隐藏费用。</li><li><b>优势：</b>CaseTrust 押金保护；资源充足</li><li><b>分店评分：</b>Thomson 4.6/374, Woodlands 4.8/76, Bukit Timah 4.7/238</li></ul>
+  </div>
+  <div class="detail" id="d-best-maid">
+    <h3>Best Maid</h3>
+    <p class="muted">GODWIN EMPLOYMENT AGENCY · MOM 牌照 17C8580</p>
+    <table class="mini">
+      
+    <tr>
+      <td>MOM 官方评分</td>
+      <td class="num">74</td>
+      <td><div class="bar"><div class="bar-fill" style="width:74%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Google 评分</td>
+      <td class="num">100</td>
+      <td><div class="bar"><div class="bar-fill" style="width:100%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Retention</td>
+      <td class="num">93</td>
+      <td><div class="bar"><div class="bar-fill" style="width:92.85714285714286%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>Transfer</td>
+      <td class="num">17</td>
+      <td><div class="bar"><div class="bar-fill" style="width:16.75%;background:#2563eb"></div></div></td>
+    </tr>
+      
+    <tr>
+      <td>规模与经验</td>
+      <td class="num">33</td>
+      <td><div class="bar"><div class="bar-fill" style="width:33.45325279503035%;background:#2563eb"></div></div></td>
+    </tr>
+      <tr><td>综合分</td><td class="num">71.6</td><td></td></tr>
+    </table>
+    <ul class="notes"><li>聚合站称约 1988 年起步，37 年记录。</li><li><b>优势：</b>经营年限长</li></ul>
+  </div>
+
+  <p style="margin-top:24px;color:var(--muted);font-size:12px;">⚠️ 本页由脚本自动生成，数据仅供研究参考。中介费、置换条款、女佣工资等以各家中介当前报价为准。MOM 数据抓取自 EA Directory（2026-08-22）。</p>
+</div>
+</body>
+</html>

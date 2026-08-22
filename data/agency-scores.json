@@ -1,0 +1,394 @@
+{
+  "generatedAt": "2026-08-22",
+  "weights": {
+    "mom": 0.3,
+    "google": 0.25,
+    "retention": 0.2,
+    "transfer": 0.15,
+    "scale": 0.1
+  },
+  "benchmarks": {
+    "retentionAvg": 62.43,
+    "transferAvg": 1.05,
+    "placementAvg": 48
+  },
+  "scores": [
+    {
+      "id": "goodhire",
+      "name": "Goodhire",
+      "total": 87.5,
+      "components": {
+        "momScore": 84.00000000000001,
+        "googleScore": 96,
+        "retentionScore": 100,
+        "transferScore": 90.25,
+        "scaleScore": 47.321965492041336
+      },
+      "momData": {
+        "officialName": "JOBS AND STAFF PTE. LTD.",
+        "license": "16C7967",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 72.77,
+        "transfer": 0.39,
+        "placement": 264,
+        "experienceYears": 10,
+        "momRating": 4.2,
+        "momReviews": 61,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.8,
+      "note": null
+    },
+    {
+      "id": "gentlehelp",
+      "name": "gentleHelp",
+      "total": 86.2,
+      "components": {
+        "momScore": 82,
+        "googleScore": 98.00000000000001,
+        "retentionScore": 88.77142857142857,
+        "transferScore": 100,
+        "scaleScore": 43.78339363215327
+      },
+      "momData": {
+        "officialName": "GENTLEHELP (TEO EXPRESS) PTE. LTD.",
+        "license": "17C8609",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 62.14,
+        "transfer": 0,
+        "placement": 183,
+        "experienceYears": 9,
+        "momRating": 4.1,
+        "momReviews": 80,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.9,
+      "note": null
+    },
+    {
+      "id": "green-employment",
+      "name": "Green Employment",
+      "total": 85.9,
+      "components": {
+        "momScore": 82,
+        "googleScore": 98.00000000000001,
+        "retentionScore": 92.87142857142858,
+        "transferScore": 93.25,
+        "scaleScore": 42.24272769910232
+      },
+      "momData": {
+        "officialName": "GREEN EMPLOYMENT PTE. LTD.",
+        "license": "21C0720",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 65.01,
+        "transfer": 0.27,
+        "placement": 389,
+        "experienceYears": 4,
+        "momRating": 4.1,
+        "momReviews": 161,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.9,
+      "note": null
+    },
+    {
+      "id": "universal-employment",
+      "name": "Universal Employment Agency",
+      "total": 85.6,
+      "components": {
+        "momScore": 72,
+        "googleScore": 96,
+        "retentionScore": 96.80000000000001,
+        "transferScore": 77.25,
+        "scaleScore": 90.80029206405467
+      },
+      "momData": {
+        "officialName": "UNIVERSAL EMPLOYMENT AGENCY PTE. LTD.",
+        "license": "87C4847",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 67.76,
+        "transfer": 0.91,
+        "placement": 840,
+        "experienceYears": 39,
+        "momRating": 3.6,
+        "momReviews": 317,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.8,
+      "note": null
+    },
+    {
+      "id": "status-maids",
+      "name": "Status Employment (Status Maids)",
+      "total": 84.5,
+      "components": {
+        "momScore": 86,
+        "googleScore": 98.00000000000001,
+        "retentionScore": 98.65714285714287,
+        "transferScore": 67.75,
+        "scaleScore": 43.53982401413538
+      },
+      "momData": {
+        "officialName": "STATUS EMPLOYMENT AGENCY PTE. LTD.",
+        "license": "16C8301",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 69.06,
+        "transfer": 1.29,
+        "placement": 176,
+        "experienceYears": 9,
+        "momRating": 4.3,
+        "momReviews": 76,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.9,
+      "note": null
+    },
+    {
+      "id": "jforce",
+      "name": "JForce Employment Service",
+      "total": 84,
+      "components": {
+        "momScore": 80,
+        "googleScore": 94,
+        "retentionScore": 94.71428571428571,
+        "transferScore": 78.75,
+        "scaleScore": 57.785850572087
+      },
+      "momData": {
+        "officialName": "JFORCE EMPLOYMENT SERVICE PTE. LTD.",
+        "license": "14C7171",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 66.3,
+        "transfer": 0.85,
+        "placement": 945,
+        "experienceYears": 12,
+        "momRating": 4,
+        "momReviews": 383,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.7,
+      "note": null
+    },
+    {
+      "id": "ministry-of-helpers",
+      "name": "Ministry of Helpers",
+      "total": 83.9,
+      "components": {
+        "momScore": 84.00000000000001,
+        "googleScore": 98.00000000000001,
+        "retentionScore": 84.41428571428573,
+        "transferScore": 100,
+        "scaleScore": 23.08259777705665
+      },
+      "momData": {
+        "officialName": "MINISTRY OF DOMESTIC HELPERS PTE. LTD.",
+        "license": "23C2048",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 59.09,
+        "transfer": 0,
+        "placement": 27,
+        "experienceYears": 2,
+        "momRating": 4.2,
+        "momReviews": 9,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.9,
+      "note": null
+    },
+    {
+      "id": "eden-grace",
+      "name": "Eden Grace Maids",
+      "total": 83.7,
+      "components": {
+        "momScore": 78,
+        "googleScore": 94,
+        "retentionScore": 89.54285714285714,
+        "transferScore": 91.75,
+        "scaleScore": 51.02333359700278
+      },
+      "momData": {
+        "officialName": "EDEN GRACE HUMAN RESOURCES PRIVATE LIMITED",
+        "license": "13C6831",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 62.68,
+        "transfer": 0.33,
+        "placement": 320,
+        "experienceYears": 12,
+        "momRating": 3.9,
+        "momReviews": 127,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.7,
+      "note": null
+    },
+    {
+      "id": "helper-express",
+      "name": "Helper Express",
+      "total": 83.7,
+      "components": {
+        "momScore": 78,
+        "googleScore": 96,
+        "retentionScore": 89.61428571428571,
+        "transferScore": 100,
+        "scaleScore": 33.59576621501611
+      },
+      "momData": {
+        "officialName": "HELPER EXPRESS PTE. LTD.",
+        "license": "23C1660",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 62.73,
+        "transfer": 0,
+        "placement": 119,
+        "experienceYears": 3,
+        "momRating": 3.9,
+        "momReviews": 46,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.8,
+      "note": null
+    },
+    {
+      "id": "nation-employment",
+      "name": "Nation Employment / Nation Maid Agency",
+      "total": 83.3,
+      "components": {
+        "momScore": 80,
+        "googleScore": 98.00000000000001,
+        "retentionScore": 100,
+        "transferScore": 54.25,
+        "scaleScore": 66.49485297360012
+      },
+      "momData": {
+        "officialName": "NATION HUMAN RESOURCES PTE. LTD.",
+        "license": "12C5507",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 70.98,
+        "transfer": 1.83,
+        "placement": 2554,
+        "experienceYears": 14,
+        "momRating": 4,
+        "momReviews": 1034,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.9,
+      "note": null
+    },
+    {
+      "id": "homekeeper",
+      "name": "Homekeeper Maid Agency",
+      "total": 83.3,
+      "components": {
+        "momScore": 76,
+        "googleScore": 96,
+        "retentionScore": 90.55714285714286,
+        "transferScore": 78.75,
+        "scaleScore": 66.17946889029601
+      },
+      "momData": {
+        "officialName": "HOMEKEEPER INTERNATIONAL PTE. LTD.",
+        "license": "09C5350",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 63.39,
+        "transfer": 0.85,
+        "placement": 1332,
+        "experienceYears": 17,
+        "momRating": 3.8,
+        "momReviews": 561,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.8,
+      "note": null
+    },
+    {
+      "id": "best-home",
+      "name": "Best Home Employment Agency",
+      "total": 72.6,
+      "components": {
+        "momScore": 76,
+        "googleScore": 92,
+        "retentionScore": 86.4,
+        "transferScore": 7.5,
+        "scaleScore": 83.64804336198097
+      },
+      "momData": {
+        "officialName": "BEST HOME EMPLOYMENT AGENCY PTE. LTD.",
+        "license": "96C5039",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 60.48,
+        "transfer": 3.7,
+        "placement": 1619,
+        "experienceYears": 30,
+        "momRating": 3.8,
+        "momReviews": 660,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 4.6,
+      "note": null
+    },
+    {
+      "id": "best-maid",
+      "name": "Best Maid",
+      "total": 71.6,
+      "components": {
+        "momScore": 74,
+        "googleScore": 100,
+        "retentionScore": 92.85714285714286,
+        "transferScore": 16.75,
+        "scaleScore": 33.45325279503035
+      },
+      "momData": {
+        "officialName": "GODWIN EMPLOYMENT AGENCY",
+        "license": "17C8580",
+        "licenseVerified": true,
+        "status": null,
+        "demeritPoints": null,
+        "retention": 65,
+        "transfer": 3.33,
+        "placement": 35,
+        "experienceYears": 9,
+        "momRating": 3.7,
+        "momReviews": 17,
+        "fetchedAt": "2026-08-22",
+        "source": "MOM EA Directory"
+      },
+      "google": 5,
+      "note": null
+    }
+  ]
+}

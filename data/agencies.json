@@ -72,7 +72,18 @@
         "source": "MOM EA Directory"
       },
       "googleBranches": "Yishun 4.9/334, Jurong 4.7/566, Toa Payoh 4.8/245, Hougang 4.9/339, Tampines 4.5/131",
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 80,
+          "googleScore": 98.00000000000001,
+          "retentionScore": 100,
+          "transferScore": 54.25,
+          "scaleScore": 66.49485297360012
+        },
+        "total": 83.3,
+        "note": null
+      }
     },
     {
       "id": "universal-employment",
@@ -127,7 +138,18 @@
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
       },
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 72,
+          "googleScore": 96,
+          "retentionScore": 96.80000000000001,
+          "transferScore": 77.25,
+          "scaleScore": 90.80029206405467
+        },
+        "total": 85.6,
+        "note": null
+      }
     },
     {
       "id": "best-home",
@@ -182,7 +204,18 @@
         "source": "MOM EA Directory"
       },
       "googleBranches": "Thomson 4.6/374, Woodlands 4.8/76, Bukit Timah 4.7/238",
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 76,
+          "googleScore": 92,
+          "retentionScore": 86.4,
+          "transferScore": 7.5,
+          "scaleScore": 83.64804336198097
+        },
+        "total": 72.6,
+        "note": null
+      }
     },
     {
       "id": "homekeeper",
@@ -237,7 +270,18 @@
         "source": "MOM EA Directory"
       },
       "googleBranches": "Bukit Timah 4.8/709, Yishun 5.0/618, AMK 4.8/568, Pasir Ris 4.8/562, Potong Pasir 4.8/58, Bedok 4.9/101",
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 76,
+          "googleScore": 96,
+          "retentionScore": 90.55714285714286,
+          "transferScore": 78.75,
+          "scaleScore": 66.17946889029601
+        },
+        "total": 83.3,
+        "note": null
+      }
     },
     {
       "id": "status-maids",
@@ -291,7 +335,18 @@
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
       },
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 86,
+          "googleScore": 98.00000000000001,
+          "retentionScore": 98.65714285714287,
+          "transferScore": 67.75,
+          "scaleScore": 43.53982401413538
+        },
+        "total": 84.5,
+        "note": null
+      }
     },
     {
       "id": "eden-grace",
@@ -342,7 +397,18 @@
         "source": "MOM EA Directory"
       },
       "googleBranches": "HQ 4.7/294, Tampines 4.9/65",
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 78,
+          "googleScore": 94,
+          "retentionScore": 89.54285714285714,
+          "transferScore": 91.75,
+          "scaleScore": 51.02333359700278
+        },
+        "total": 83.7,
+        "note": null
+      }
     },
     {
       "id": "jforce",
@@ -403,7 +469,18 @@
         "source": "MOM EA Directory"
       },
       "googleBranches": "Boon Keng 4.7/138, AMK 4.7/88",
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 80,
+          "googleScore": 94,
+          "retentionScore": 94.71428571428571,
+          "transferScore": 78.75,
+          "scaleScore": 57.785850572087
+        },
+        "total": 84,
+        "note": null
+      }
     },
     {
       "id": "green-employment",
@@ -457,7 +534,18 @@
         "source": "MOM EA Directory"
       },
       "googleBranches": "Serangoon 4.9/206, Toa Payoh 4.9/218",
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 82,
+          "googleScore": 98.00000000000001,
+          "retentionScore": 92.87142857142858,
+          "transferScore": 93.25,
+          "scaleScore": 42.24272769910232
+        },
+        "total": 85.9,
+        "note": null
+      }
     },
     {
       "id": "gentlehelp",
@@ -507,7 +595,18 @@
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
       },
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 82,
+          "googleScore": 98.00000000000001,
+          "retentionScore": 88.77142857142857,
+          "transferScore": 100,
+          "scaleScore": 43.78339363215327
+        },
+        "total": 86.2,
+        "note": null
+      }
     },
     {
       "id": "goodhire",
@@ -557,7 +656,18 @@
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
       },
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 84.00000000000001,
+          "googleScore": 96,
+          "retentionScore": 100,
+          "transferScore": 90.25,
+          "scaleScore": 47.321965492041336
+        },
+        "total": 87.5,
+        "note": null
+      }
     },
     {
       "id": "best-maid",
@@ -573,7 +683,7 @@
       ],
       "feeRange": null,
       "rating": {
-        "google": 5.0,
+        "google": 5,
         "googleCount": 1,
         "xhs": null
       },
@@ -607,7 +717,18 @@
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
       },
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 74,
+          "googleScore": 100,
+          "retentionScore": 92.85714285714286,
+          "transferScore": 16.75,
+          "scaleScore": 33.45325279503035
+        },
+        "total": 71.6,
+        "note": null
+      }
     },
     {
       "id": "ministry-of-helpers",
@@ -658,7 +779,18 @@
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
       },
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 84.00000000000001,
+          "googleScore": 98.00000000000001,
+          "retentionScore": 84.41428571428573,
+          "transferScore": 100,
+          "scaleScore": 23.08259777705665
+        },
+        "total": 83.9,
+        "note": null
+      }
     },
     {
       "id": "helper-express",
@@ -706,7 +838,18 @@
         "fetchedAt": "2026-08-22",
         "source": "MOM EA Directory"
       },
-      "ratingSource": "Google Maps 2026-08-22"
+      "ratingSource": "Google Maps 2026-08-22",
+      "score": {
+        "components": {
+          "momScore": 78,
+          "googleScore": 96,
+          "retentionScore": 89.61428571428571,
+          "transferScore": 100,
+          "scaleScore": 33.59576621501611
+        },
+        "total": 83.7,
+        "note": null
+      }
     }
   ]
 }

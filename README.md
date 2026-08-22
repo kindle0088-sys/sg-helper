@@ -47,7 +47,8 @@ GitHub Pages 从 `main` 分支根目录自动部署，push 即生效。
 - [x] 仓库骨架（public + GitHub Pages 就绪）
 - [x] 阶段 2：MOM 法律流程研究（`docs/`：legal-framework / mom-process / costs / sources）
 - [x] 阶段 3：中介收集（MOM EA Directory 官方数据 + Google 评分 + 小红书 96 篇笔记）
-- [ ] 阶段 4：中介对比评分
+- [x] 阶段 4：中介对比评分（`data/agency-scores.json` + `agencies/index.html` 报告）
+- [ ] 阶段 5：候选人简历档案
 - [ ] 阶段 4：中介对比评分
 - [ ] 阶段 5：候选人档案模板 + 生成脚本
 - [ ] 阶段 6：入职 checklist 工具
