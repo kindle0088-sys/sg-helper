@@ -13,12 +13,25 @@
   .sub { color:var(--muted); font-size:13px; margin-bottom:24px; line-height:1.7; }
   .legend { font-size:12px; color:var(--muted); background:#fff; border:1px solid var(--line); border-radius:8px; padding:12px 16px; margin-bottom:20px; line-height:1.8; }
   .legend b { color:var(--ink); }
+  .toolbar { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-bottom:14px; }
+  .search-box { position:relative; flex:1; min-width:220px; max-width:360px; }
+  .search-box input { width:100%; padding:9px 14px 9px 36px; border:1px solid var(--line); border-radius:9px; font-size:14px; background:#fff; outline:none; transition:border .15s, box-shadow .15s; }
+  .search-box input:focus { border-color:var(--accent); box-shadow:0 0 0 3px rgba(37,99,235,.12); }
+  .search-box .ic { position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--muted); font-size:14px; pointer-events:none; }
+  .search-box .clear { position:absolute; right:8px; top:50%; transform:translateY(-50%); border:none; background:none; color:var(--muted); cursor:pointer; font-size:14px; padding:2px 4px; border-radius:4px; }
+  .search-box .clear:hover { background:#f3f4f6; color:var(--ink); }
+  .result-count { font-size:12px; color:var(--muted); white-space:nowrap; }
   table { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
   th, td { padding:10px 12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:middle; }
   th { font-size:12px; color:var(--muted); font-weight:600; background:#f3f4f6; }
+  th.sortable { cursor:pointer; user-select:none; white-space:nowrap; }
+  th.sortable:hover { color:var(--accent); }
+  th.sorted { color:var(--accent); }
+  th .arrow { margin-left:3px; font-size:10px; opacity:.7; }
   td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
   .rank { font-weight:700; font-size:15px; width:44px; }
   .top1 { background:#fffbeb; }
+  tr.hidden, .detail.hidden { display:none; }
   .name { font-weight:600; }
   .sub { font-size:11px; color:var(--muted); }
   .warn { font-size:11px; color:#b91c1c; margin-top:2px; }
@@ -36,6 +49,7 @@
   .notes li { margin-bottom:2px; }
   a { color:var(--accent); text-decoration:none; }
   a:hover { text-decoration:underline; }
+  .no-result { display:none; text-align:center; padding:24px; color:var(--muted); font-size:14px; }
 </style>
 </head>
 <body>
@@ -49,228 +63,37 @@
     仅供决策参考，非正式评级；中介费/置换条款等需线下确认（见各家中介备注）。
   </div>
 
-  <table>
+  <div class="toolbar">
+    <div class="search-box">
+      <span class="ic">🔍</span>
+      <input id="searchInput" type="text" placeholder="搜索中介名称 / 牌照号…" autocomplete="off">
+      <button class="clear" id="clearBtn" title="清空">✕</button>
+    </div>
+    <span class="result-count" id="resultCount"></span>
+  </div>
+
+  <table id="mainTable">
     <thead>
       <tr>
-        <th>#</th><th>中介</th><th>综合分</th><th>MOM 评分</th><th>Google</th>
-        <th>Retention</th><th>Transfer</th><th>派工量</th><th>年限</th><th></th>
+        <th>#</th>
+        <th class="sortable" data-key="name">中介<span class="arrow"></span></th>
+        <th class="sortable" data-key="total">综合分<span class="arrow"></span></th>
+        <th class="sortable" data-key="mom">MOM 评分<span class="arrow"></span></th>
+        <th class="sortable" data-key="google">Google<span class="arrow"></span></th>
+        <th class="sortable" data-key="retention">Retention<span class="arrow"></span></th>
+        <th class="sortable" data-key="transfer">Transfer<span class="arrow"></span></th>
+        <th class="sortable" data-key="placement">派工量<span class="arrow"></span></th>
+        <th class="sortable" data-key="exp">年限<span class="arrow"></span></th>
+        <th></th>
       </tr>
     </thead>
-    <tbody>
-      
-  <tr class="top1">
-    <td class="rank">1🥇</td>
-    <td>
-      <div class="name">Goodhire</div>
-      <div class="sub">JOBS AND STAFF PTE. LTD. · 16C7967</div>
-      
-    </td>
-    <td class="num score">87.5</td>
-    <td class="num">4.2 / 61 评</td>
-    <td class="num">4.8 / 133 评</td>
-    <td class="num">72.8%</td>
-    <td class="num">0.4%</td>
-    <td class="num">264</td>
-    <td class="num">10y</td>
-    <td class="num"><a href="" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">2🥈</td>
-    <td>
-      <div class="name">gentleHelp</div>
-      <div class="sub">GENTLEHELP (TEO EXPRESS) PTE. LTD. · 17C8609</div>
-      
-    </td>
-    <td class="num score">86.2</td>
-    <td class="num">4.1 / 80 评</td>
-    <td class="num">4.9 / 95 评</td>
-    <td class="num">62.1%</td>
-    <td class="num">0.0%</td>
-    <td class="num">183</td>
-    <td class="num">9y</td>
-    <td class="num"><a href="" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">3🥉</td>
-    <td>
-      <div class="name">Green Employment</div>
-      <div class="sub">GREEN EMPLOYMENT PTE. LTD. · 21C0720</div>
-      
-    </td>
-    <td class="num score">85.9</td>
-    <td class="num">4.1 / 161 评</td>
-    <td class="num">4.9 / 206 评</td>
-    <td class="num">65.0%</td>
-    <td class="num">0.3%</td>
-    <td class="num">389</td>
-    <td class="num">4y</td>
-    <td class="num"><a href="https://greenemployment.sg" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">4</td>
-    <td>
-      <div class="name">Universal Employment Agency</div>
-      <div class="sub">UNIVERSAL EMPLOYMENT AGENCY PTE. LTD. · 87C4847</div>
-      
-    </td>
-    <td class="num score">85.6</td>
-    <td class="num">3.6 / 317 评</td>
-    <td class="num">4.8 / 2480 评</td>
-    <td class="num">67.8%</td>
-    <td class="num">0.9%</td>
-    <td class="num">840</td>
-    <td class="num">39y</td>
-    <td class="num"><a href="https://universal.sg" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">5</td>
-    <td>
-      <div class="name">Status Employment (Status Maids)</div>
-      <div class="sub">STATUS EMPLOYMENT AGENCY PTE. LTD. · 16C8301</div>
-      
-    </td>
-    <td class="num score">84.5</td>
-    <td class="num">4.3 / 76 评</td>
-    <td class="num">4.9 / 313 评</td>
-    <td class="num">69.1%</td>
-    <td class="num">1.3%</td>
-    <td class="num">176</td>
-    <td class="num">9y</td>
-    <td class="num"><a href="https://statusmaids.com" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">6</td>
-    <td>
-      <div class="name">JForce Employment Service</div>
-      <div class="sub">JFORCE EMPLOYMENT SERVICE PTE. LTD. · 14C7171</div>
-      
-    </td>
-    <td class="num score">84.0</td>
-    <td class="num">4 / 383 评</td>
-    <td class="num">4.7 / 138 评</td>
-    <td class="num">66.3%</td>
-    <td class="num">0.8%</td>
-    <td class="num">945</td>
-    <td class="num">12y</td>
-    <td class="num"><a href="https://jforce.com.sg" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">7</td>
-    <td>
-      <div class="name">Ministry of Helpers</div>
-      <div class="sub">MINISTRY OF DOMESTIC HELPERS PTE. LTD. · 23C2048</div>
-      
-    </td>
-    <td class="num score">83.9</td>
-    <td class="num">4.2 / 9 评</td>
-    <td class="num">4.9 / 109 评</td>
-    <td class="num">59.1%</td>
-    <td class="num">0.0%</td>
-    <td class="num">27</td>
-    <td class="num">2y</td>
-    <td class="num"><a href="" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">8</td>
-    <td>
-      <div class="name">Eden Grace Maids</div>
-      <div class="sub">EDEN GRACE HUMAN RESOURCES PRIVATE LIMITED · 13C6831</div>
-      
-    </td>
-    <td class="num score">83.7</td>
-    <td class="num">3.9 / 127 评</td>
-    <td class="num">4.7 / 294 评</td>
-    <td class="num">62.7%</td>
-    <td class="num">0.3%</td>
-    <td class="num">320</td>
-    <td class="num">12y</td>
-    <td class="num"><a href="" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">9</td>
-    <td>
-      <div class="name">Helper Express</div>
-      <div class="sub">HELPER EXPRESS PTE. LTD. · 23C1660</div>
-      
-    </td>
-    <td class="num score">83.7</td>
-    <td class="num">3.9 / 46 评</td>
-    <td class="num">4.8 / 221 评</td>
-    <td class="num">62.7%</td>
-    <td class="num">0.0%</td>
-    <td class="num">119</td>
-    <td class="num">3y</td>
-    <td class="num"><a href="" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">10</td>
-    <td>
-      <div class="name">Nation Employment / Nation Maid Agency</div>
-      <div class="sub">NATION HUMAN RESOURCES PTE. LTD. · 12C5507</div>
-      
-    </td>
-    <td class="num score">83.3</td>
-    <td class="num">4 / 1034 评</td>
-    <td class="num">4.9 / 334 评</td>
-    <td class="num">71.0%</td>
-    <td class="num">1.8%</td>
-    <td class="num">2554</td>
-    <td class="num">14y</td>
-    <td class="num"><a href="https://www.nation.sg" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">11</td>
-    <td>
-      <div class="name">Homekeeper Maid Agency</div>
-      <div class="sub">HOMEKEEPER INTERNATIONAL PTE. LTD. · 09C5350</div>
-      
-    </td>
-    <td class="num score">83.3</td>
-    <td class="num">3.8 / 561 评</td>
-    <td class="num">4.8 / 709 评</td>
-    <td class="num">63.4%</td>
-    <td class="num">0.8%</td>
-    <td class="num">1332</td>
-    <td class="num">17y</td>
-    <td class="num"><a href="https://homekeepermaidagency.com" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">12</td>
-    <td>
-      <div class="name">Best Home Employment Agency</div>
-      <div class="sub">BEST HOME EMPLOYMENT AGENCY PTE. LTD. · 96C5039</div>
-      
-    </td>
-    <td class="num score">72.6</td>
-    <td class="num">3.8 / 660 评</td>
-    <td class="num">4.6 / 374 评</td>
-    <td class="num">60.5%</td>
-    <td class="num">3.7%</td>
-    <td class="num">1619</td>
-    <td class="num">30y</td>
-    <td class="num"><a href="https://besthome.com.sg" target="_blank">官网</a></td>
-  </tr>
-  <tr class="">
-    <td class="rank">13</td>
-    <td>
-      <div class="name">Best Maid</div>
-      <div class="sub">GODWIN EMPLOYMENT AGENCY · 17C8580</div>
-      
-    </td>
-    <td class="num score">71.6</td>
-    <td class="num">3.7 / 17 评</td>
-    <td class="num">5 / 1 评</td>
-    <td class="num">65.0%</td>
-    <td class="num">3.3%</td>
-    <td class="num">35</td>
-    <td class="num">9y</td>
-    <td class="num"><a href="" target="_blank">官网</a></td>
-  </tr>
-    </tbody>
+    <tbody id="tbody"></tbody>
   </table>
+  <div class="no-result" id="noResult">没有匹配的中介，换个关键词试试。</div>
 
   <h2 style="margin-top:32px;font-size:18px;">各家中介明细</h2>
-  
+  <div id="details">
+    
   <div class="detail" id="d-goodhire">
     <h3>Goodhire</h3>
     <p class="muted">JOBS AND STAFF PTE. LTD. · MOM 牌照 16C7967</p>
@@ -765,8 +588,104 @@
     </table>
     <ul class="notes"><li>聚合站称约 1988 年起步，37 年记录。</li><li><b>优势：</b>经营年限长</li></ul>
   </div>
+  </div>
 
   <p style="margin-top:24px;color:var(--muted);font-size:12px;">⚠️ 本页由脚本自动生成，数据仅供研究参考。中介费、置换条款、女佣工资等以各家中介当前报价为准。MOM 数据抓取自 EA Directory（2026-08-22）。</p>
 </div>
+
+<script>
+const DATA = [{"id":"goodhire","name":"Goodhire","sub":"JOBS AND STAFF PTE. LTD. · 16C7967","note":null,"total":87.5,"mom":4.2,"momTxt":"4.2 / 61 评","google":4.8,"googleTxt":"4.8 / 133 评","retention":72.77,"transfer":0.39,"placement":264,"exp":10,"url":""},{"id":"gentlehelp","name":"gentleHelp","sub":"GENTLEHELP (TEO EXPRESS) PTE. LTD. · 17C8609","note":null,"total":86.2,"mom":4.1,"momTxt":"4.1 / 80 评","google":4.9,"googleTxt":"4.9 / 95 评","retention":62.14,"transfer":0,"placement":183,"exp":9,"url":""},{"id":"green-employment","name":"Green Employment","sub":"GREEN EMPLOYMENT PTE. LTD. · 21C0720","note":null,"total":85.9,"mom":4.1,"momTxt":"4.1 / 161 评","google":4.9,"googleTxt":"4.9 / 206 评","retention":65.01,"transfer":0.27,"placement":389,"exp":4,"url":"https://greenemployment.sg"},{"id":"universal-employment","name":"Universal Employment Agency","sub":"UNIVERSAL EMPLOYMENT AGENCY PTE. LTD. · 87C4847","note":null,"total":85.6,"mom":3.6,"momTxt":"3.6 / 317 评","google":4.8,"googleTxt":"4.8 / 2480 评","retention":67.76,"transfer":0.91,"placement":840,"exp":39,"url":"https://universal.sg"},{"id":"status-maids","name":"Status Employment (Status Maids)","sub":"STATUS EMPLOYMENT AGENCY PTE. LTD. · 16C8301","note":null,"total":84.5,"mom":4.3,"momTxt":"4.3 / 76 评","google":4.9,"googleTxt":"4.9 / 313 评","retention":69.06,"transfer":1.29,"placement":176,"exp":9,"url":"https://statusmaids.com"},{"id":"jforce","name":"JForce Employment Service","sub":"JFORCE EMPLOYMENT SERVICE PTE. LTD. · 14C7171","note":null,"total":84,"mom":4,"momTxt":"4 / 383 评","google":4.7,"googleTxt":"4.7 / 138 评","retention":66.3,"transfer":0.85,"placement":945,"exp":12,"url":"https://jforce.com.sg"},{"id":"ministry-of-helpers","name":"Ministry of Helpers","sub":"MINISTRY OF DOMESTIC HELPERS PTE. LTD. · 23C2048","note":null,"total":83.9,"mom":4.2,"momTxt":"4.2 / 9 评","google":4.9,"googleTxt":"4.9 / 109 评","retention":59.09,"transfer":0,"placement":27,"exp":2,"url":""},{"id":"eden-grace","name":"Eden Grace Maids","sub":"EDEN GRACE HUMAN RESOURCES PRIVATE LIMITED · 13C6831","note":null,"total":83.7,"mom":3.9,"momTxt":"3.9 / 127 评","google":4.7,"googleTxt":"4.7 / 294 评","retention":62.68,"transfer":0.33,"placement":320,"exp":12,"url":""},{"id":"helper-express","name":"Helper Express","sub":"HELPER EXPRESS PTE. LTD. · 23C1660","note":null,"total":83.7,"mom":3.9,"momTxt":"3.9 / 46 评","google":4.8,"googleTxt":"4.8 / 221 评","retention":62.73,"transfer":0,"placement":119,"exp":3,"url":""},{"id":"nation-employment","name":"Nation Employment / Nation Maid Agency","sub":"NATION HUMAN RESOURCES PTE. LTD. · 12C5507","note":null,"total":83.3,"mom":4,"momTxt":"4 / 1034 评","google":4.9,"googleTxt":"4.9 / 334 评","retention":70.98,"transfer":1.83,"placement":2554,"exp":14,"url":"https://www.nation.sg"},{"id":"homekeeper","name":"Homekeeper Maid Agency","sub":"HOMEKEEPER INTERNATIONAL PTE. LTD. · 09C5350","note":null,"total":83.3,"mom":3.8,"momTxt":"3.8 / 561 评","google":4.8,"googleTxt":"4.8 / 709 评","retention":63.39,"transfer":0.85,"placement":1332,"exp":17,"url":"https://homekeepermaidagency.com"},{"id":"best-home","name":"Best Home Employment Agency","sub":"BEST HOME EMPLOYMENT AGENCY PTE. LTD. · 96C5039","note":null,"total":72.6,"mom":3.8,"momTxt":"3.8 / 660 评","google":4.6,"googleTxt":"4.6 / 374 评","retention":60.48,"transfer":3.7,"placement":1619,"exp":30,"url":"https://besthome.com.sg"},{"id":"best-maid","name":"Best Maid","sub":"GODWIN EMPLOYMENT AGENCY · 17C8580","note":null,"total":71.6,"mom":3.7,"momTxt":"3.7 / 17 评","google":5,"googleTxt":"5 / 1 评","retention":65,"transfer":3.33,"placement":35,"exp":9,"url":""}];
+const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const pct = v => v != null ? v.toFixed(1) + '%' : '—';
+
+let query = '';
+let sort = { key: 'total', dir: -1 };
+
+function matches(d) {
+  if (!query) return true;
+  const hay = (d.name + ' ' + d.sub + ' ' + d.id).toLowerCase();
+  return hay.includes(query);
+}
+
+function cmp(a, b) {
+  const k = sort.key;
+  const av = a[k], bv = b[k];
+  let r;
+  if (typeof av === 'number' && typeof bv === 'number') {
+    r = (av == null ? -Infinity : av) - (bv == null ? -Infinity : bv);
+  } else {
+    r = String(av ?? '').localeCompare(String(bv ?? ''), 'zh-CN');
+  }
+  return r * sort.dir;
+}
+
+function medal(i) { return i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : ''; }
+
+function rowHtml(d, rank) {
+  return `<tr class="${rank === 1 ? 'top1' : ''}">
+    <td class="rank">${rank}${medal(rank - 1)}</td>
+    <td>
+      <div class="name">${esc(d.name)}</div>
+      <div class="sub">${esc(d.sub)}</div>
+      ${d.note ? '<div class="warn">' + esc(d.note) + '</div>' : ''}
+    </td>
+    <td class="num score">${d.total != null ? d.total.toFixed(1) : '—'}</td>
+    <td class="num">${esc(d.momTxt)}</td>
+    <td class="num">${esc(d.googleTxt)}</td>
+    <td class="num">${pct(d.retention)}</td>
+    <td class="num">${pct(d.transfer)}</td>
+    <td class="num">${d.placement ?? '—'}</td>
+    <td class="num">${d.exp != null ? d.exp + 'y' : '—'}</td>
+    <td class="num">${d.url ? '<a href="' + esc(d.url) + '" target="_blank">官网</a>' : ''}</td>
+  </tr>`;
+}
+
+function render() {
+  const list = DATA.filter(matches).sort(cmp);
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = list.map((d, i) => rowHtml(d, i + 1)).join('');
+  document.getElementById('noResult').style.display = list.length ? 'none' : 'block';
+  document.getElementById('resultCount').textContent = list.length + ' / ' + DATA.length + ' 家';
+
+  // 明细块跟随搜索过滤（排序不改变明细顺序）
+  document.querySelectorAll('#details .detail').forEach(el => {
+    const id = el.id.replace('d-', '');
+    const keep = !query || DATA.some(d => d.id === id && matches(d));
+    el.classList.toggle('hidden', !keep);
+  });
+
+  // 排序指示
+  document.querySelectorAll('th.sortable').forEach(th => {
+    const active = th.dataset.key === sort.key;
+    th.classList.toggle('sorted', active);
+    const arrow = th.querySelector('.arrow');
+    arrow.textContent = active ? (sort.dir === -1 ? '▼' : '▲') : '';
+  });
+}
+
+document.getElementById('searchInput').addEventListener('input', e => {
+  query = e.target.value.trim().toLowerCase();
+  render();
+});
+document.getElementById('clearBtn').addEventListener('click', () => {
+  document.getElementById('searchInput').value = '';
+  query = '';
+  render();
+});
+document.querySelectorAll('th.sortable').forEach(th => {
+  th.addEventListener('click', () => {
+    const k = th.dataset.key;
+    if (sort.key === k) {
+      sort.dir *= -1;
+    } else {
+      sort.key = k;
+      sort.dir = (k === 'name') ? 1 : -1; // 文本列默认升序，数值列默认降序
+    }
+    render();
+  });
+});
+
+render();
+</script>
 </body>
 </html>
