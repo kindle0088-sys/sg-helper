@@ -7,59 +7,169 @@
 <meta name="description" content="新加坡雇佣女佣管理：法律流程 / 中介对比 / 候选人档案 / 入职规划">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
 <style>
-  :root { --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:#f9fafb; padding:40px 20px; }
-  .wrap { max-width:960px; margin:0 auto; }
-  h1 { font-size:28px; margin-bottom:6px; }
-  .sub { color:var(--muted); margin-bottom:32px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; }
-  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; }
-  .card h2 { font-size:16px; margin-bottom:8px; }
-  .card p { color:var(--muted); font-size:13px; line-height:1.6; margin-bottom:12px; }
-  .card .count { font-size:12px; color:var(--accent); }
-  .status { display:inline-block; font-size:11px; padding:2px 8px; border-radius:99px; background:#f3f4f6; color:var(--muted); }
-  .status.done { background:#dcfce7; color:#15803d; }
-  .status.partial { background:#fef3c7; color:#92400e; }
-  a.go { display:inline-block; font-size:13px; color:#fff; background:var(--accent); padding:6px 14px; border-radius:6px; text-decoration:none; margin-bottom:12px; }
+:root{
+  --ink:#1e293b; --muted:#64748b; --line:#e2e8f0;
+  --teal:#0f766e; --teal-deep:#134e4a; --teal-ink:#115e59;
+  --bg:#f1f5f9;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* ===== Hero ===== */
+.hero{background:linear-gradient(135deg,#0f766e 0%,#115e59 55%,#134e4a 100%);color:#fff;position:relative;overflow:hidden;padding:64px 24px 84px}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
+.hero::after{content:'SINGAPORE';position:absolute;right:-20px;bottom:-40px;font-size:110px;font-weight:800;color:rgba(255,255,255,.05);letter-spacing:4px;white-space:nowrap}
+.wrap{max-width:1080px;margin:0 auto;position:relative}
+.hero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#99f6e4;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:5px 14px;border-radius:99px;margin-bottom:22px;letter-spacing:.5px}
+.hero h1{font-size:42px;font-weight:800;letter-spacing:.5px;line-height:1.15}
+.hero .lead{color:#ccfbf1;font-size:16px;margin-top:12px;max-width:560px}
+.hero-stats{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap;justify-content:center}
+.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:12px 22px;min-width:120px;backdrop-filter:blur(4px)}
+.stat b{display:block;font-size:22px;font-weight:800;color:#fff}
+.stat span{font-size:12px;color:#99f6e4;letter-spacing:.5px}
+
+/* ===== Sections ===== */
+.main{max-width:1080px;margin:0 auto;padding:0 24px 72px}
+.modules{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:-44px;position:relative;z-index:1}
+@media(max-width:820px){.modules{grid-template-columns:1fr}}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 28px;box-shadow:0 1px 3px rgba(15,23,42,.06);transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,23,42,.1)}
+.card-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.card-icon{width:48px;height:48px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:23px;flex-shrink:0}
+.c1 .card-icon{background:#e0f2fe;color:#0369a1}
+.c2 .card-icon{background:#ede9fe;color:#6d28d9}
+.c3 .card-icon{background:#ccfbf1;color:#0f766e}
+.c4 .card-icon{background:#fef3c7;color:#b45309}
+.card-head h2{font-size:17px;font-weight:700}
+.card-head .en{font-size:11.5px;color:#94a3b8;font-weight:500;margin-top:1px}
+.card-desc{font-size:13.5px;color:var(--muted);margin-bottom:16px}
+.items{list-style:none;margin-bottom:18px}
+.items li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 12px;border-radius:9px;font-size:13.5px;color:var(--ink);text-decoration:none;transition:background .15s ease}
+.items li:hover{background:#f8fafc}
+.items a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 12px;border-radius:9px;font-size:13.5px;color:var(--ink);text-decoration:none;transition:background .15s ease}
+.items a:hover{background:#f8fafc}
+.items .t{font-weight:500}
+.items .t .sub{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+.items .arrow{color:#cbd5e1;font-size:12px;flex-shrink:0}
+.items .pill{font-size:11px;font-weight:600;padding:2px 10px;border-radius:99px;flex-shrink:0}
+.pill.teal{background:#ccfbf1;color:#0f766e}
+.pill.blue{background:#e0f2fe;color:#0369a1}
+.pill.violet{background:#ede9fe;color:#6d28d9}
+.pill.amber{background:#fef3c7;color:#b45309}
+.pill.gray{background:#f1f5f9;color:#64748b}
+.go{display:inline-block;font-size:13px;font-weight:600;color:#fff;background:var(--teal);padding:8px 18px;border-radius:9px;text-decoration:none;transition:background .15s ease}
+.go:hover{background:var(--teal-deep)}
+.go.ghost{background:#fff;color:var(--teal);border:1.5px solid #99f6e4}
+.go.ghost:hover{background:#f0fdfa}
+
+/* ===== Footer ===== */
+footer{border-top:1px solid var(--line);padding:28px 24px 40px;color:#94a3b8;font-size:12.5px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+footer .safe{color:#10b981;font-weight:600}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>sg-helper</h1>
-  <p class="sub">新加坡女佣雇佣管理 · 法律流程 / 中介对比 / 候选人档案</p>
 
-  <div class="grid">
-    <div class="card">
-      <h2>📚 法律与流程 <span class="status done">已生成</span></h2>
-      <p>MOM 雇佣外籍女佣（MDW）的法规、成本与完整流程，中英对照。</p>
-      <a class="go" href="docs/index.html">文档索引 →</a>
-      <span class="count">docs/ · 5 篇（法律 / 流程 / 成本 / 来源 / 小红书观察）</span>
-    </div>
-    <div class="card">
-      <h2>🏢 中介对比 <span class="status done">已生成</span></h2>
-      <p>13 家中介综合评分：MOM 官方数据 + Google 评分 + retention/transfer。</p>
-      <a class="go" href="agencies/index.html">查看对比报告 →</a>
-      <a class="go" href="agencies/reports/index.html" style="background:#6b7280;">Top 10 研报 →</a>
-      <span class="count">agencies/ · 13 家</span>
-    </div>
-    <div class="card">
-      <h2>👩‍🌾 候选人档案 <span class="status done">已接入</span></h2>
-      <p>每份简历生成标准档案（脱敏公开版），支持对比筛选。</p>
-      <a class="go" href="candidates/hh331.html">HH331 · MARIA（FRESH）→</a>
-      <a class="go" href="candidates/phm030.html" style="background:#6b7280;">PHM030 · JULIE（EX OMAN）→</a>
-      <a class="go" href="candidates/mai024.html" style="background:#6b7280;">MAI024 · TA HOI MAWI（EX MYANMAR）→</a>
-      <span class="count">candidates/ · 3 份 · 2026-08-24</span>
-    </div>
-    <div class="card">
-      <h2>📋 入职规划 <span class="status partial">部分完成</span></h2>
-      <p>WP 申请 → 保险 → 接机 → 到岗 checklist（流程研究已就绪，checklist 工具待建）。</p>
-      <a class="go" href="docs/mom-process.html">流程文档 →</a>
-      <span class="count">docs/mom-process.md</span>
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <div class="wrap">
+    <span class="hero-tag">🏡 私人选佣工作台 · 公开页面已脱敏</span>
+    <h1>sg-helper</h1>
+    <p class="lead">新加坡女佣雇佣管理：从法律合规、中介对比到候选人筛选与入职落地，一站整理。</p>
+    <div class="hero-stats">
+      <div class="stat"><b>5</b><span>篇法规流程文档</span></div>
+      <div class="stat"><b>13</b><span>家中介综合对比</span></div>
+      <div class="stat"><b>3</b><span>份候选人档案</span></div>
     </div>
   </div>
+</header>
 
-  <p style="margin-top:32px; color:var(--muted); font-size:12px;">本页为骨架占位，后续由 scripts 自动生成。</p>
-</div>
+<!-- ===== 四大模块 ===== -->
+<main class="main">
+  <div class="modules">
+
+    <!-- 法律与流程 -->
+    <section class="card c1">
+      <div class="card-head">
+        <div class="card-icon">📚</div>
+        <div>
+          <h2>法律与流程</h2>
+          <div class="en">LEGAL &amp; PROCESS</div>
+        </div>
+      </div>
+      <p class="card-desc">MOM 雇佣外籍女佣（MDW）的法规、成本与完整流程，中英对照。</p>
+      <ul class="items">
+        <li><a href="docs/legal-framework.html"><span class="t">法规框架<small class="sub">雇佣资格 · 雇佣条款 · 责任义务</small></span><span class="arrow">→</span></a></li>
+        <li><a href="docs/mom-process.html"><span class="t">完整流程<small class="sub">选人 → 申请 → 到岗全链路</small></span><span class="arrow">→</span></a></li>
+        <li><a href="docs/costs.html"><span class="t">成本明细<small class="sub">月薪 / 税费 / 保险 / 中介费</small></span><span class="arrow">→</span></a></li>
+      </ul>
+      <a class="go ghost" href="docs/index.html">查看文档索引 · 5 篇 →</a>
+    </section>
+
+    <!-- 中介对比 -->
+    <section class="card c2">
+      <div class="card-head">
+        <div class="card-icon">🏢</div>
+        <div>
+          <h2>中介对比</h2>
+          <div class="en">AGENCY REVIEWS</div>
+        </div>
+      </div>
+      <p class="card-desc">13 家中介综合评分：MOM 官方数据 + Google 评分 + retention/transfer 多维度。</p>
+      <ul class="items">
+        <li><a href="agencies/index.html"><span class="t">综合评分对比<small class="sub">13 家 · 数据驱动打分</small></span><span class="pill violet">13 家</span></a></li>
+        <li><a href="agencies/reports/index.html"><span class="t">Top 10 深度研报<small class="sub">收费模式 · 优劣势 · 真实评论</small></span><span class="pill violet">研报</span></a></li>
+      </ul>
+      <a class="go ghost" href="agencies/index.html">查看对比报告 →</a>
+    </section>
+
+    <!-- 候选人档案 -->
+    <section class="card c3">
+      <div class="card-head">
+        <div class="card-icon">👩‍🌾</div>
+        <div>
+          <h2>候选人档案</h2>
+          <div class="en">CANDIDATES</div>
+        </div>
+      </div>
+      <p class="card-desc">每份简历生成标准档案（脱敏公开版），便于对比筛选。</p>
+      <ul class="items">
+        <li><a href="candidates/hh331.html"><span class="t">HH331 · MARIA<small class="sub">缅甸 · 23 岁 · 全新无经验</small></span><span class="pill teal">FRESH</span></a></li>
+        <li><a href="candidates/phm030.html"><span class="t">PHM030 · JULIE<small class="sub">缅甸 · 23 岁 · 阿曼 2 年经验</small></span><span class="pill blue">EX OMAN</span></a></li>
+        <li><a href="candidates/mai024.html"><span class="t">MAI024 · TA HOI MAWI<small class="sub">缅甸 · 24 岁 · 缅甸本地 4 年</small></span><span class="pill gray">EX MYANMAR</span></a></li>
+      </ul>
+      <a class="go ghost" href="candidates/hh331.html">浏览全部候选人 →</a>
+    </section>
+
+    <!-- 入职规划 -->
+    <section class="card c4">
+      <div class="card-head">
+        <div class="card-icon">📋</div>
+        <div>
+          <h2>入职规划</h2>
+          <div class="en">ONBOARDING</div>
+        </div>
+      </div>
+      <p class="card-desc">确定人选后的 WP 申请、保险、接机到到岗 checklist。</p>
+      <ul class="items">
+        <li><a href="docs/mom-process.html"><span class="t">WP 申请到到岗<small class="sub">流程研究已就绪</small></span><span class="pill amber">研究中</span></a></li>
+      </ul>
+      <a class="go ghost" href="docs/mom-process.html">查看流程文档 →</a>
+      <p style="margin-top:10px;font-size:12px;color:#b45309;">Checklist 工具待建，后续补全。</p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="wrap">
+    <span>sg-helper · 新加坡女佣雇佣管理 · 更新于 2026-08-24</span>
+    <span class="safe">✓ 公开页面已脱敏</span>
+  </div>
+</footer>
+
 </body>
 </html>
