@@ -63,6 +63,21 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .go:hover{background:var(--brand-deep)}
 .go.ghost{background:#fff;color:var(--brand);border:1.5px solid #bfdbfe}
 .go.ghost:hover{background:#eff6ff}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+@media(max-width:460px){.mini-grid{grid-template-columns:1fr}}
+.mini{display:block;background:#f8fafc;border:1px solid #e2e8f0;border-radius:11px;padding:11px 14px;text-decoration:none;transition:border-color .15s ease,box-shadow .15s ease}
+.mini:hover{border-color:#bfdbfe;box-shadow:0 2px 8px rgba(29,78,216,.08)}
+.mini .row1{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.mini .code{font-size:12.5px;font-weight:700;color:var(--brand)}
+.mini .flag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:99px;flex-shrink:0}
+.mini .name{font-size:14.5px;font-weight:600;color:var(--ink);margin-top:3px}
+.mini .sub{font-size:11.5px;color:#94a3b8;margin-top:1px}
+.f-cyan{background:#e0f2fe;color:#0e7490}
+.f-violet{background:#e0e7ff;color:#4338ca}
+.f-green{background:#d1fae5;color:#047857}
+.f-amber{background:#fef3c7;color:#b45309}
+.f-gray{background:#f1f5f9;color:#64748b}
+.f-red{background:#fee2e2;color:#b91c1c}
 
 /* ===== Footer ===== */
 footer{border-top:1px solid var(--line);padding:28px 24px 40px;color:#94a3b8;font-size:12.5px}
@@ -81,7 +96,7 @@ footer .safe{color:#10b981;font-weight:600}
     <div class="hero-stats">
       <div class="stat"><b>5</b><span>篇法规流程文档</span></div>
       <div class="stat"><b>13</b><span>家中介综合对比</span></div>
-      <div class="stat"><b>3</b><span>份候选人档案</span></div>
+      <div class="stat"><b>6</b><span>份候选人档案</span></div>
     </div>
   </div>
 </header>
@@ -135,12 +150,39 @@ footer .safe{color:#10b981;font-weight:600}
         </div>
       </div>
       <p class="card-desc">每份简历生成标准档案（脱敏公开版），便于对比筛选。</p>
-      <ul class="items">
-        <li><a href="candidates/hh331.html"><span class="t">HH331 · MARIA<small class="sub">缅甸 · 23 岁 · 全新无经验</small></span><span class="pill teal">FRESH</span></a></li>
-        <li><a href="candidates/phm030.html"><span class="t">PHM030 · JULIE<small class="sub">缅甸 · 23 岁 · 阿曼 2 年经验</small></span><span class="pill blue">EX OMAN</span></a></li>
-        <li><a href="candidates/mai024.html"><span class="t">MAI024 · TA HOI MAWI<small class="sub">缅甸 · 24 岁 · 缅甸本地 4 年</small></span><span class="pill gray">EX MYANMAR</span></a></li>
-      </ul>
-      <a class="go ghost" href="candidates/hh331.html">浏览全部候选人 →</a>
+      <div class="mini-grid">
+        <a class="mini" href="candidates/hh331.html">
+          <div class="row1"><span class="code">HH331</span><span class="flag f-amber">FRESH</span></div>
+          <div class="name">MARIA</div>
+          <div class="sub">缅甸 · 23 岁 · 全新</div>
+        </a>
+        <a class="mini" href="candidates/phm030.html">
+          <div class="row1"><span class="code">PHM030</span><span class="flag f-cyan">EX OMAN</span></div>
+          <div class="name">JULIE</div>
+          <div class="sub">缅甸 · 23 岁 · 阿曼 2 年</div>
+        </a>
+        <a class="mini" href="candidates/mai024.html">
+          <div class="row1"><span class="code">MAI024</span><span class="flag f-gray">EX MYANMAR</span></div>
+          <div class="name">TA HOI MAWI</div>
+          <div class="sub">缅甸 · 24 岁 · 本地 4 年</div>
+        </a>
+        <a class="mini" href="candidates/daryati.html">
+          <div class="row1"><span class="code">DARYATI</span><span class="flag f-green">INDONESIA</span></div>
+          <div class="name">DARYATI</div>
+          <div class="sub">印尼 · 33 岁 · 雅加达 6 年</div>
+        </a>
+        <a class="mini" href="candidates/dpbws648.html">
+          <div class="row1"><span class="code">DPBWS 648</span><span class="flag f-violet">JAPAN EXP</span></div>
+          <div class="name">RUSTANTI</div>
+          <div class="sub">印尼 · 24 岁 · 日本养老院</div>
+        </a>
+        <a class="mini" href="candidates/t2885.html">
+          <div class="row1"><span class="code">T2885</span><span class="flag f-green">INDONESIA</span></div>
+          <div class="name">DINI</div>
+          <div class="sub">印尼 · 34 岁 · 本地 8 年</div>
+        </a>
+      </div>
+      <a class="go ghost" href="candidates/hh331.html">浏览全部候选人 · 6 份 →</a>
     </section>
 
     <!-- 入职规划 -->
@@ -166,7 +208,7 @@ footer .safe{color:#10b981;font-weight:600}
 <!-- ===== Footer ===== -->
 <footer>
   <div class="wrap">
-    <span>sg-helper · 新加坡女佣雇佣管理 · 更新于 2026-08-24</span>
+    <span>sg-helper · 新加坡女佣雇佣管理 · 更新于 2026-08-25</span>
     <span class="safe">✓ 公开页面已脱敏</span>
   </div>
 </footer>
