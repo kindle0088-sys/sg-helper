@@ -49,6 +49,14 @@ ul.info .val{color:#0f172a;font-weight:500}
 .quote .en{color:#0f766e;font-weight:600}
 footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:28px;line-height:1.8}
 @media(max-width:560px){.hdr{padding:24px 20px}.sec{padding:18px 16px}.grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}}
+/* Pager */
+.pager{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px;margin-bottom:16px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.pg-btn{font-size:13px;font-weight:600;color:#2563eb;text-decoration:none;background:#eff6ff;border:1px solid #dbeafe;padding:7px 14px;border-radius:8px;white-space:nowrap;transition:background .15s ease}
+.pg-btn:hover{background:#dbeafe}
+.pg-btn.dim{color:#94a3b8;background:#f8fafc;border-color:#e2e8f0;pointer-events:none}
+.pg-cur{font-size:12.5px;color:#64748b;font-weight:600;text-align:center}
+.pg-cur b{color:#1d4ed8;font-size:14px}
+@media(max-width:460px){.pager{flex-wrap:wrap;justify-content:center}.pg-cur{order:-1;width:100%}}
 </style>
 </head>
 <body>
@@ -57,6 +65,12 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:28px;line-heigh
 <div class="top">
   <a class="back" href="../index.html">← 返回 sg-helper</a>
   <span class="privacy">脱敏公开版 · 隐去出生日期与联系方式</span>
+</div>
+
+<div class="pager">
+  <a class="pg-btn" href="hh331.html">← 上一份</a>
+  <span class="pg-cur">档案 <b>2</b> / 8 · JULIE</span>
+  <a class="pg-btn" href="mai024.html">下一份 →</a>
 </div>
 
 <!-- 头部 -->
@@ -93,6 +107,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:28px;line-heigh
     <div class="card"><div class="k">子女</div><div class="v">无</div></div>
     <div class="card"><div class="k">遣返机场</div><div class="v">仰光</div></div>
     <div class="card"><div class="k">休息日</div><div class="v">每月 1 天</div></div>
+    <div class="card"><div class="k">上传日</div><div class="v">2026-08-24</div></div>
   </div>
 </div>
 
@@ -177,7 +192,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:28px;line-heigh
 </div>
 
 <footer>
-  sg-helper · 候选人档案 PHM030 · 信息来源：MOM FDW Biodata（PDF） · 生成于 2026-08-24
+  sg-helper · 候选人档案 PHM030 · 信息来源：MOM FDW Biodata（PDF） · 上传于 2026-08-24
 </footer>
 
 </div>
